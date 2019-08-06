@@ -19,4 +19,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 repo_url:  https://github.com/APTrust/userguide
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Your first deposit: first-deposit.md
+  - Your first restoration: first-restore.md
+  - Glossary: glossary.md
+
 
