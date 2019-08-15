@@ -21,9 +21,9 @@ markdown_extensions:
 repo_url:  https://github.com/APTrust/userguide
 nav:
   - Home: index.md
+  - Core Concepts: core-concepts.md
   - Getting Started: getting-started.md
   - Your first deposit: first-deposit.md
   - Your first restoration: first-restore.md
   - Glossary: glossary.md
-
-
+  - Links: links.md
