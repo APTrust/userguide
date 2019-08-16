@@ -22,26 +22,26 @@ repo_url:  https://github.com/APTrust/userguide
 nav:
   - Home: index.md
   - Quick Start:
-      - index.md
-      - first_deposit_with_dart.md
-      - first_deposit_with_tools.md
+      - quick_start/index.md
+      - quick_start/first_deposit_with_dart.md
+      - quick_start/first_deposit_with_tools.md
   - Preservation Actions:
-      - index.md
-      - ingest.md
-      - updates.md
-      - restoration.md
-      - deletion.md
+      - preservation/index.md
+      - preservation/ingest.md
+      - preservation/updates.md
+      - preservation/restoration.md
+      - preservation/deletion.md
   - Bagging:
-      - index.md
-      - tools.md
+      - bagging/index.md
+      - bagging/tools.md
   - Using Pharos:
-      - index.md
-      - objects.md
-      - files.md
-      - events.md
-      - work_items.md
-      - user_management.md
-      - two_factor_auth.md
-      - rest_api.md
+      - pharos/index.md
+      - pharos/objects.md
+      - pharos/files.md
+      - pharos/events.md
+      - pharos/work_items.md
+      - pharos/user_management.md
+      - pharos/two_factor_auth.md
+      - pharos/rest_api.md
   - Glossary: glossary.md
   - Contact Us: contact_us.md
