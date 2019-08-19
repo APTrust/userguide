@@ -43,5 +43,6 @@ nav:
       - pharos/user_management.md
       - pharos/two_factor_auth.md
       - pharos/rest_api.md
+  - Partner Tools: partner_tools.md
   - Glossary: glossary.md
   - Contact Us: contact_us.md
