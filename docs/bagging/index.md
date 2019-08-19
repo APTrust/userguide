@@ -1,7 +1,41 @@
 # APTrust Bagging Requirements
 
+APTrust currently accepts bags for ingest in the APTrust BagIt format. In 2020, APTrust will begin accepting bags in Beyond the Repository (BTR) format as well, but we suggest APTrust members stick to the APTrust format.
 
 ## APTrust BagIt Specification
+
+In addition to conforming to the BagIt specification [version 0.97](https://tools.ietf.org/html/draft-kunze-bagit-14) or [version 1.0](https://tools.ietf.org/html/rfc8493), valid APTrust bags must include the tag files and tags listed below, and must meet the following criteria:
+
+* Bags must be serialized in tar format.
+
+* Tarred bags must untar to a single directory whose name matches the name of the tar file. For example, `my_bag.tar` must untar to a directory called `my_bag`.
+
+* Bags must contain either an md5 or sha256 manifest, or both
+
+* Bags must be 5 terabytes or less in size.
+
+* Bags may not contain a fetch.txt file.
+
+* Bags may contain tag manifests.
+
+* Bags mat contain files outside of the data directory other than manifests and tag manifests. APTrust will consider these to be tag files, and will not try to parse them.
+
+A valid untarred APTrust bag has the following structure:
+
+```
+           <base directory>/
+           |   aptrust-info.txt
+           |   bag-info.txt
+           |   bagit.txt
+           |   manifest-&lt;algorithm&gt;.txt (md5 AND/OR sha256)
+           |   [optional tag manifests]
+           |   [optional additional tag files]
+           \--- data/
+                 |   [payload files]
+           \--- [optional tag directories]/
+                 |   [optional tag files]
+
+```
 
 ### bagit.txt file
 
@@ -67,4 +101,6 @@ Storage-Option | This indicates how and where you want APTrust to store your bag
 !!! warning "A note on storage options"
     When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.
 
-## BTR BagIt Specification
+## BTR BagIt Profile
+
+The BTR bagit profile is not yet finalized, though it's getting close. We will update this section when the BTR format is final.
