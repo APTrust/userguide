@@ -8,7 +8,7 @@ Command line tools for Mac, Linux, and Windows are available through the links b
 
 * [Windows 64-bit, v 2.1](https://s3.amazonaws.com/aptrust.public.download/partner-apps/windows/APTrust_PartnerTools_Windows_V2.1.zip)
 
-You can view any program's built-in documentation by passing the --help flag.
+Each of these tools returns specific exit codes, so you can integrate them into your scripts. You can view any program's built-in documentation by passing the --help flag.
 
 ## List of Partner Tools
 
@@ -58,4 +58,10 @@ The config file should include the following variables:
 If you save your config file as `~/.aptrust_partner.conf` in Linux/Mac or as `%HOMEPATH%\.aptrust_partner.conf` under Windows, you will not have to specify a --config option when you run the tools. Otherwise, run the tools with the --config file pointing to the full path of your configuration file.
 
 
-## TODO: screenshot tools
+Below is a screenshot of apt_list showing the contents of an AWS receiving bucket.
+
+![apt_list](img/partner_tools/apt_list.png)
+
+apt_check_ingest shows the ingest status of items that match a specified file name.
+
+![apt_check_ingest](img/partner_tools/apt_check_ingest.png)
