@@ -21,6 +21,9 @@ For most of what you'll be doing with APTrust, [DART](https://aptrust.github.io/
 
 ## The Ingest Process
 
+!!! warning Delay in ingest
+	There can be an up to 15 Min delay until the tarred bag will show ip in the  work item queue
+
 After you upload tarred bag to your receiving bucket, APTrust's ingest process will add it to a list of items waiting to be processed. You can check the status of your bag in the list of Pharos [Work Items](../pharos/work_items), using the REST API, or using the apt_check_ingest program from the [partner tools](../partner_tools.md).
 
 [DART's dashboard](https://aptrust.github.io/dart-docs/users/dashboard/) also shows the status of items recently ingested and pending ingest.
