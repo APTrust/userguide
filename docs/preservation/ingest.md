@@ -1,6 +1,7 @@
 # Ingest
 
-Before sending materials to APTrust for ingest, you'll need to get AWS keys that allow you to upload materials to your receiving bucket. If you don't already have these, contact help@aptrust.org to get them. Also keep in mind that you'll have separate AWS keys for the demo and production environments.
+!!! notice AWS Credentials required
+	Before sending materials to APTrust for ingest, you'll need to get AWS keys that allow you to upload materials to your receiving bucket. If you don't already have these, contact help@aptrust.org to get them. Also keep in mind that you'll have separate AWS keys for the demo and production environments.
 
 You'll also need to know how to produce a valid APTrust bag. If you don't know how to do that yet, see the [bagging page](../bagging/index.md) for details, or use [DART](https://aptrust.github.io/dart-docs/users/getting_started/) to get going quickly.
 
