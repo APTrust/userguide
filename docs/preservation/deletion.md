@@ -14,7 +14,7 @@ Deleting objects from APTrust is a multi-step process.
 
 The screenshot below shows the detail page for an intellectual object. Clicking the red __Delete__ button on this page initiates the deletion process for the entire object.
 
-![Pharos Object Detail page showing the red delete button](../img/pharos/ObjectDetail.png)
+![Pharos Object Detail page showing the red delete button](../img/pharos/ObjectDetail.png# boxshadow)
 
 ## Deleting a Single File
 
@@ -22,17 +22,17 @@ To delete a single file, go to the detail page of the file and click the red __D
 
 * Search for the file using the file identifier.
 
-    ![Pharos search by file identifier](/img/pharos/FileSearch.png)
+    ![Pharos search by file identifier](/img/pharos/FileSearch.png# boxshadow)
 
 * Search for the object using the object identifier.
 
-    ![Pharos search by object identifier](../img/pharos/ObjectSearch.png)
+    ![Pharos search by object identifier](../img/pharos/ObjectSearch.png# boxshadow)
 
 If you searched by object identifier, you can click the __View Preserved Files__ button on the object detail page to find the detail page of the file you want to delete.
 
 The screenshot below shows the detail page for a generic file. Clicking the red __Delete__ button on this page initiates the deletion process for that file.
 
-![Pharos File Detail page showing the red delete button](../img/pharos/FileDetail.png)
+![Pharos File Detail page showing the red delete button](../img/pharos/FileDetail.png# boxshadow)
 
 ## Deletion Work Items
 
@@ -40,7 +40,7 @@ After an institutional administrator confirms a deletion, the deletion request w
 
 The image below shows a list of completed work items. Note that deletions usually happen fairly quickly, within minutes of your institutional admin's confirmation of the deletion request email.
 
-![Pharos Work Items page listing file deletion requests](../img/pharos/DeletionWorkItems.png)
+![Pharos Work Items page listing file deletion requests](../img/pharos/DeletionWorkItems.png# boxshadow)
 
 ##Effect of Deletion on Metadata
 
