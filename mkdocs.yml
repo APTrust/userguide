@@ -26,7 +26,6 @@ nav:
       - quick_start/first_deposit_with_dart.md
       - quick_start/first_deposit_with_tools.md
   - Preservation Actions:
-      - preservation/index.md
       - preservation/ingest.md
       - preservation/updates.md
       - preservation/restoration.md
