@@ -2,6 +2,14 @@
 
 Before proceeding with this documentation, we'd like to clarify a few core concepts and essential terms.
 
+## Generic File
+
+A single file or bitstream that makes up part of an intellectual object. For example, in a collection of jpeg photos that includes an XML metadata file, each jpeg and the XML file is a generic file.
+
+## Intellectual Object
+
+A collection of generic files logically grouped into a single unit. An intellectual object typically consists of the payload files and tag files submitted in a bag.
+
 ## Pharos
 
 Pharos is the searchable online registry that keeps track of everything you've deposited in APTrust. It includes a web UI and a REST API that enable you to do the following:
