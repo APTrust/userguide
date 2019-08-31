@@ -42,7 +42,7 @@ The image below shows a list of completed work items. Note that deletions usuall
 
 ![Pharos Work Items page listing file deletion requests](../img/pharos/DeletionWorkItems.png)
 
-##Effect of Deletion on Metadata
+## Effect of Deletion on Metadata
 
 When you delete a file, Pharos creates a deletion PREMIS event for the file that includes the date and time of deletion and the email address of the user who requested the deletion. Pharos keeps the generic file records, changing it's state from 'Active' to 'Deleted.' Pharos also keeps all prior PREMIS events and fixity records related to the file, and the file record remains accessible through both the Web UI and the member API. In addition, Pharos keeps a Work Item record that shows when the deletion was requested and when it was completed. Work Items are also available through the Web UI and the member API.
 

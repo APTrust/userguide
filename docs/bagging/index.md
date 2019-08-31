@@ -1,4 +1,4 @@
-# APTrust Bagging Requirements
+ APTrust Bagging Requirements
 
 APTrust currently accepts bags for ingest in the APTrust BagIt format. In 2020, APTrust will begin accepting bags in Beyond the Repository (BTR) format as well, but we suggest APTrust members stick to the APTrust format.
 
@@ -18,7 +18,7 @@ In addition to conforming to the BagIt specification [version 0.97](https://tool
 
 * Bags may contain tag manifests.
 
-* Bags mat contain files outside of the data directory other than manifests and tag manifests. APTrust will consider these to be tag files, and will not try to parse them.
+* Bags may contain files outside of the data directory other than manifests and tag manifests. APTrust will consider these to be tag files, and will not try to parse them.
 
 A valid untarred APTrust bag has the following structure:
 
@@ -36,6 +36,19 @@ A valid untarred APTrust bag has the following structure:
                  |   [optional tag files]
 
 ```
+
+### File and Directory Names
+
+* File and Folder names must follow POSIX conventions:
+* Contain upper or lower case letters, numbers, dots, underscores, percent signs, or dashes. (A–Z a–z 0–9 . _% -)
+* May contain virtually any printable character, except newlines, carriage returns, tabs, vertical tabs and ASCII bells. (As of 1/30/2017)
+* Are considered case sensitive.
+* MUST not begin with a dash. (-)
+* MUST not contain whitespaces
+* May contain whitespaces. (As of 1/30/2017)
+* Restricted to 255 characters in length including extension.
+* MUST be at least 1 character in length.
+
 
 ### bagit.txt file
 
@@ -58,6 +71,8 @@ Bag-Count | Two numbers separated by "of", in particular, "N of T", where T is t
 Internal-Sender-Description | A sender-local explanation of the contents and provenance. |
 Internal-Sender-Identifier | An alternate sender-specific identifier for the content and/or bag. |
 Bag-Group-Identifier | A sender-supplied identifier for the set, if any, of bags to which it logically belongs. | Greeling Photo Collection
+
+For more on bag group identifiers, see the [Bag Group Identifiers](../pharos/objects#bag-group-identifiers) section of the Objects page.
 
 For a list of other commonly-used tags in the bag-info.txt file, see the official BagIt specification for [version 0.97](https://tools.ietf.org/html/draft-kunze-bagit-14) or [version 1.0](https://tools.ietf.org/html/rfc8493).
 
@@ -100,6 +115,22 @@ Storage-Option | This indicates how and where you want APTrust to store your bag
 
 !!! warning "A note on storage options"
     When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.
+
+## Multipart bags
+
+You may split a single large bag into a number of smaller bags by using the naming convention `institution_identifier.bag_identifier.b###.of###`. That is, you append `.bag01.of16`, `.bag02.of16`, etc. to the end of the bag name of each bag in the group.
+
+Upon ingest, APTrust will treat all of the contents of all of the bags as part of a single intellectual object. Thus, the contents of `test.edu/photos.bag01.of03.tar`, `test.edu/photos.bag02.of03.tar`, and `test.edu/photos.bag03.of03.tar` would all be collected into a single intellectual object called `test.edu/photos`.
+
+Because APTrust re-bags files for restoration, the bags returned by a restoration request will not match the bags you originally submitted, but all of the payload files will be present.
+
+Generic Files in APTrust are referenced by their URI, which is the original filepath relative to the bag. File and folder names should be unique across multi-part bags to make sure all items are processed and not treated as a file update.
+
+## Versioning
+
+APTrust does not currently support versioning. When you upload new versions of existing files, APTrust overwrites the old version with the new. See [Updates](../preservation/updates.md) for details.
+
+If you want to keep multiple versions of a bag or file, append a version number or timestamp to the end of the bag or file name. For example, `test.edu/bag_of_photos` and `test.edu/bag_of_photos.v2` will be stored as separate objects, and files from the second version will not overwrite files from the first.
 
 ## BTR BagIt Profile
 
