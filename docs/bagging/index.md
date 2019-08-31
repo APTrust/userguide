@@ -1,4 +1,4 @@
- APTrust Bagging Requirements
+# APTrust Bagging Requirements
 
 APTrust currently accepts bags for ingest in the APTrust BagIt format. In 2020, APTrust will begin accepting bags in Beyond the Repository (BTR) format as well, but we suggest APTrust members stick to the APTrust format.
 
