@@ -8,9 +8,9 @@ Assuming you are already either a sustaining member, or have been added as a sub
 
 You send the following information to help@aptrust.org:
 
-* The name, email address, and phone number of a person at your organization who will act as your APTrust administrator. We prefer that you send a mobile number so you can use two-factor authentication.
+* The __name__, __email address__, and __phone number__ of a person at your organization who will act as your APTrust administrator. We prefer that you send a mobile number so you can use two-factor authentication.
 
-* Your institution's domain name. (For example, virginia.edu.)
+* Your institution's __domain name__. (For example, virginia.edu.)
 
 We'll reply to your email with the following:
 
