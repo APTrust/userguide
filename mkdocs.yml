@@ -25,10 +25,7 @@ markdown_extensions:
 repo_url:  https://github.com/APTrust/userguide
 nav:
   - Home: index.md
-  - Quick Start:
-      - quick_start/index.md
-      - quick_start/first_deposit_with_dart.md
-      - quick_start/first_deposit_with_tools.md
+  - Quick Start: quick_start.md
   - Preservation Actions:
       - preservation/ingest.md
       - preservation/updates.md
