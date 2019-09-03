@@ -1,6 +1,6 @@
 # Two-Factor Authentication
 
-Pharos supports two-factor authentication for users and institutions who want an extra layer of security. We recommend you turn on two-factor authentication for institutional administrators in the production repository, since institutional admins have the ability to delete materials.
+Pharos supports two-factor authentication for users and institutions who want an extra layer of security. Two Factor Authentication is required for institutional administrators in both the production repository and the demo repository, since institutional admins have the ability to delete materials. It is not required for institutional users, however we recommend that all users enable it.
 
 !!! tip
     Two-factor settings are separate on the production and demo repositories. Enabling or disabling this feature in the Pharos production system has no effect on the demo system and vice-versa. You'll have to set your preferences separately on each system.
@@ -8,7 +8,7 @@ Pharos supports two-factor authentication for users and institutions who want an
 
 ## Enabling Two-Factor Authentication
 
-Institutional users can enable two-factor authentication for themselves. Institutional administrators can enable it for all users at their institution. Users who enable two-factor auth for themselves can choose to disable it later. When an administrator enables two-factor auth for their institution, users cannot opt out or disable the setting.
+Institutional users can enable two-factor authentication for themselves. Institutional administrators can require it for all users at their institution, thereby forcing them to enable it. Institutional users who enable two-factor auth for themselves can choose to disable it later. When an administrator enables two-factor auth for their institution, users cannot opt out or disable the setting.
 
 ### Enabling Two-Factor for Yourself
 
@@ -18,7 +18,7 @@ To enable two-factor authentication for yourself, click the __Enable 2FA__ butto
 
 #### Update Your Mobile Number
 
-If your phone number isn't up to date, you'll need to update it in the confirmation dialog. Enter the number of your __mobile__ phone to receive two-factor authentication codes via text message or push notification. Enter your number using the international format, beginning with a plus sign and the country code. The US country code is +1.
+If your phone number isn't up to date, you'll need to update it in the confirmation dialog. Enter the number of your __mobile__ phone to receive two-factor authentication codes via text message or push notification.
 
 ![Dialog requesting you update your mobile phone number](../img/pharos/UpdateMobileNumber.png)
 
@@ -44,21 +44,19 @@ If you have Authy installed on your phone and you chose to verify via push notif
 
 ### Enabling Two-Factor for Other Users or Your Entire Institution
 
-<span style="color:red;font-weight:bold;background-color:yellow;">This section needs review and verification.</span>
-
-Institutional administrators can enable two-factor authentication for specific users at their institution, or for the institution as a whole.
+Institutional administrators can require two-factor authentication for specific users at their institution, or for the institution as a whole.
 
 To enable two-factor auth for a specific user:
 
 1. Choose __Admin > Manage Users__ from the menu in the upper right corner of the page.
 
-1. Click the green __Enable 2FA__ button to the right of the user for whom you want to enable two-factor auth.
+2. Click the green __Enable 2FA__ button to the right of the user for whom you want to enable two-factor auth.
 
-To enable two-factor auth for your institution:
+To require two-factor auth for your institution:
 
-1. Choose __Admin > Manage Institutions__ from the menu in the upper right corner of the page.
+1. Navigate to the home page by clicking the APTrust logo in the upper left hand corner.
 
-1. Click the green __Enable Mandatory Institution-Wide 2FA__ button.
+2. Click the green __Enable Mandatory Institution-Wide 2FA__ button.
 
 
 ### Choosing Your Second Factor
@@ -69,7 +67,7 @@ After enabling two-factor authentication, you'll be presented with an option to 
 
 ### Grace Period for New Users
 
-<span style="color:red;font-weight:bold;background-color:yellow;">When does the grace period start? To whom does it apply, and for how long?</span>
+New users have a grace period during which they will be prompted to enabled two-factor authentication. On the production repository, this grace period is 30 days long. On the demo repository, this grace period is 90 days long. The grace period begins when the user's account is created. It applies to all users for whom two-factor auth is required (institutional administrators and institutional users for whom two-factor auth has been required at their institution).
 
 ### If You're Locked Out
 
