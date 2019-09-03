@@ -2,7 +2,7 @@
 
 APTrust records PREMIS events for intellectual objects and generic files. You can view a list of all events related to your instution's objects and files by clicking the __Events__ tab in Pharos.
 
-![List of PREMIS events](/img/pharos/PremisEventsList.png)
+![List of PREMIS events](../img/pharos/PremisEventsList.png)
 
 Use the filters on the left side of the page to filter by event type and outcome, but note that although the sidebar lists all of the event types defined by the Library of Congress's PREMIS specification, APTrust only implements the event types listed below.
 
@@ -13,7 +13,7 @@ Use the filters on the left side of the page to filter by event type and outcome
 
 Use the search bar at the top of the page to find specific events, or events related to specific objects or files.
 
-![PREMIS event search](/img/pharos/PremisEventSearch.png)
+![PREMIS event search](../img/pharos/PremisEventSearch.png)
 
 Choose _Event Identifier_ to search for specific events by UUID. Chose _Object Identifier_ to find events related to a specific object, or _File Identifier_ to find file-specific events.
 

@@ -2,7 +2,7 @@
 
 Work items are tasks that APTrust systems perform in response to depositor requests. The Work Items list shows the status of your institution's recent requests. You can view the list by clicking the Work Items tab in Pharos.
 
-![Work Item list](/img/pharos/WorkItemList.png)
+![Work Item list](../img/pharos/WorkItemList.png)
 
 You can filter the list to specific actions, statuses, and stages by clicking any of the action/status/stage names in the left column.
 

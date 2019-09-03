@@ -6,7 +6,7 @@ An intellectual object is a logical collection of files. Pharos typically create
 
 To view a list of your institution's intellectual objects, click the __Objects__ tab.
 
-![List of intellectual objects](/img/pharos/ObjectList.png)
+![List of intellectual objects](../img/pharos/ObjectList.png)
 
 You can also use the search bar to locate objects by identifier, name, title, bag group identifier, or alternate identifier.
 
@@ -26,4 +26,4 @@ A group of objects called `test.edu/smith_photos_1946`, `test.edu/smith_photos_1
 
 Click any object title in the list of objects to view its details. Note that the object detail page includes buttons to view all of the object's files and events, and if you have sufficient privileges, to restore or delete the object.
 
-![Intellectual object detail page](/img/pharos/ObjectDetail.png)
+![Intellectual object detail page](../img/pharos/ObjectDetail.png)

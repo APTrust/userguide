@@ -22,7 +22,7 @@ To delete a single file, go to the detail page of the file and click the red __D
 
 * Search for the file using the file identifier.
 
-    ![Pharos search by file identifier](/img/pharos/FileSearch.png)
+    ![Pharos search by file identifier](../img/pharos/FileSearch.png)
 
 * Search for the object using the object identifier.
 

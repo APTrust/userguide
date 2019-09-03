@@ -20,7 +20,7 @@ To use the API, you'll need to get an API token from Pharos. Follow these steps:
 
 1. On the profile page, click the __Generate API Secret Key__ button.
 
-![Button to generate an API key for Pharos](/img/pharos/APIKeyGeneration.png)
+![Button to generate an API key for Pharos](../img/pharos/APIKeyGeneration.png)
 
 !!! note "Separate Keys for Demo and Production Repositories"
     The key you generate on https://demo.aptrust.org will only work on the demo server. The key you generate on https://repo.aptrust.org will only work on the production server.

@@ -4,11 +4,11 @@
 
 You can restore an intellectual object by navigating to the object detail page and clicking the __Restore Object__ button. To reach the object detail page, you can either click on the name of the object in the object list:
 
-![List of intellectual objects](/img/pharos/ObjectList.png)
+![List of intellectual objects](../img/pharos/ObjectList.png)
 
 Or search by object identifier:
 
-![Pharos search by object identifier](/img/pharos/ObjectSearch.png)
+![Pharos search by object identifier](../img/pharos/ObjectSearch.png)
 
 After you click __Restore Object__, APTrust does the following:
 
@@ -50,15 +50,15 @@ To restore an individual file, navigate to the file's detail page in Pharos and 
 
 * Search for the file using the file identifier.
 
-    ![Pharos search by file identifier](/img/pharos/FileSearch.png)
+    ![Pharos search by file identifier](../img/pharos/FileSearch.png)
 
 * Search for the object using the object identifier.
 
-    ![Pharos search by object identifier](/img/pharos/ObjectSearch.png)
+    ![Pharos search by object identifier](../img/pharos/ObjectSearch.png)
 
 If you searched by object identifier, you can click the __View Preserved Files__ button on the object detail page to find the detail page of the file you want to restore. The __Restore File__ button appears at the bottom of the page.
 
-![Pharos File Detail page showing the restore button](/img/pharos/FileDetail.png)
+![Pharos File Detail page showing the restore button](../img/pharos/FileDetail.png)
 
 APTrust performs the following steps for file restoration:
 
@@ -91,7 +91,7 @@ Restoring an item usually takes anywhere from 10 minutes to 24 hours, depending 
 
 You can check the progress of your restoration requests in Pharos' Work Items list or the Pharos REST API. <span style="color:red;">[Need link to REST API doc.]</span>
 
-![Pharos work items list showing completed restoration requests](/img/pharos/RestorationWorkItems.png)
+![Pharos work items list showing completed restoration requests](../img/pharos/RestorationWorkItems.png)
 
 When a restoration is complete, the file or bag will be waiting in your restoration bucket and APTrust will send an email to your institutional admins. The email includes information about the location of the restored file so you can download it.
 

@@ -4,7 +4,7 @@
 
 [DART](https://aptrust.github.io/dart-docs/users/getting_started/) provides both a graphical UI and a command-line interface for building bags and uploading them to APTrust. If you're in a hurry, DART is the best way to get started. If you want to build an APTrust ingest workflow through a point-and-click interface and later incorporate that workflow into a set of scripted tasks, DART is also a good choice, as it supports both graphical and comman-line use.
 
-![Job review and run](/img/dart/run_completed.png)
+![Job review and run](../img/dart/run_completed.png)
 
 ## Partner Tools
 
