@@ -10,6 +10,8 @@ In addition to conforming to the BagIt specification [version 0.97](https://tool
 
 * Tarred bags must untar to a single directory whose name matches the name of the tar file. For example, `my_bag.tar` must untar to a directory called `my_bag`.
 
+* The name of the tarred bag file must not include directories. `my.edu.my_bag.tar` is valid. `C:\path\to\my.edu.my_bag.tar` is not.
+
 * Bags must contain either an md5 or sha256 manifest, or both
 
 * Bags must be 5 terabytes or less in size.
@@ -19,6 +21,8 @@ In addition to conforming to the BagIt specification [version 0.97](https://tool
 * Bags may contain tag manifests.
 
 * Bags may contain files outside of the data directory other than manifests and tag manifests. APTrust will consider these to be tag files, and will not try to parse them.
+
+* When uploading multipart bags, use the [multipart bag naming format](#multipart-bags) described below.
 
 A valid untarred APTrust bag has the following structure:
 
