@@ -3,6 +3,11 @@
 ## The Deletion Process
 
 Deleting objects from APTrust is a multi-step process.
+blockdiag {
+	Admin makes deletion request -> APTrust sends email to admins for confirmation
+-> Admin confirms -> System queues deletion
+}
+
 
 1. An institutional administrator requests deletion of a file or entire object by clicking the delete button in Pharos (see below). Note that only institutional administrators can request deletions.
 
