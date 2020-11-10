@@ -34,8 +34,12 @@ X-Pharos-API-User: user@example.com
 X-Pharos-API-KEY: topsecretapikey
 ```
 
-## Using the service
+## REST API Documentation
 
-You'll find interactive Swagger documentation for the REST API at https://aptrust.github.io/pharos/.
+For full interactive documentation of our REST API, see our [Swagger Documentation](https://aptrust.github.io/pharos/){target=_blank}.
 
-If you don't have the means to develop your own API client, you can use the apt_check_ingest program in the [APTrust Partner Tools](../partner_tools.md) to check the status of ingested items and items pending ingest.
+## Partner Tools That Use the REST API
+
+If you don't have the means to develop your own API client, you can use the apt_check_ingest program in the [APTrust Partner Tools](../partner_tools.md) to check the status of ingested and pending items. This command-line
+tool returns JSON data that can be parsed by Ruby, Python, PHP and other
+scripting languages.

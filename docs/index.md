@@ -22,7 +22,7 @@ We'll reply to your email with the following:
 
 Once your local administrator has access to Pharos, they can add new users and/or adminstrators for your institution. Pharos users have access to all features except:
 
-* Adding and deactivtivating user accounts.
+* Adding and deactivating user accounts.
 * Approving requests to delete materials from the repository.
 
 Pharos administrators can do both of the above.

@@ -25,6 +25,8 @@ apt_list | Lists the contents of your receiving and restoration buckets. Require
 apt_download | Downloads restored bags from your restoration buckets. Requires AWS keys.
 apt_delete | Deletes restored bags from your restoration buckets. Requires AWS keys.
 
+Note that each of these tools has a `--help` option to display available flags,
+output formats, and return codes.
 
 ## Configuration File
 
