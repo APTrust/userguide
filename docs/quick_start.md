@@ -42,4 +42,4 @@ If you want to bag materials yourself, be sure your bags conform to the [APTrust
 
 ### REST API Integration
 
-If you're interested in automating deposits, restorations and other preservation activities, see our [REST API](/pharos/rest_api) and [Swagger Docs](https://aptrust.github.io/pharos/){target=_blank}
+If you're interested in automating deposits, restorations and other preservation activities, see our [REST API](../pharos/rest_api) and [Swagger Docs](https://aptrust.github.io/pharos/){target=_blank}
