@@ -34,11 +34,11 @@ DART allows you to test test out different bagging and uploading options through
 
 If your local repository uses Fedora, you can [export APTrust-compliant bags directly from Fedora](https://github.com/fcrepo4-labs/fcrepo-import-export/blob/master/README.md#running-the-importexport-utility-with-a-bagit-support) and then upload them to your receiving bucket for ingest.
 
-After Fedora produces the bag, you can use APTrust [apt_upload tool](/partner_tools/) to upload the bag to your receiving bucket. From there, APTrust ingest services will pick it up for processing, and you can track its progress in the [Pharos Work Items](/pharos/work_items/) list.
+After Fedora produces the bag, you can use APTrust [apt_upload tool](../partner_tools) to upload the bag to your receiving bucket. From there, APTrust ingest services will pick it up for processing, and you can track its progress in the [Pharos Work Items](../pharos/work_items/) list.
 
 ### Custom Bagging
 
-If you want to bag materials yourself, be sure your bags conform to the [APTrust bagging requirements](/bagging/). After bagging, you can use APTrust's [apt_upload tool](/partner_tools/) or other publicly available tools such as the [MinIO client](https://docs.min.io/docs/minio-client-complete-guide) to upload your bag.
+If you want to bag materials yourself, be sure your bags conform to the [APTrust bagging requirements](../bagging/). After bagging, you can use APTrust's [apt_upload tool](../partner_tools/) or other publicly available tools such as the [MinIO client](https://docs.min.io/docs/minio-client-complete-guide) to upload your bag.
 
 ### REST API Integration
 

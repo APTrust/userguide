@@ -138,4 +138,4 @@ If you want to keep multiple versions of a bag or file, append a version number 
 
 ## BTR BagIt Profile
 
-The BTR bagit profile is not yet finalized, though it's getting close. We will update this section when the BTR format is final.
+APTrust plans to support version 1.0 of the [BTR bagit profile](https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json){target=_blank} later in 2021. Support will include both the ingest and restoration of BTR bags.
