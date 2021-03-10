@@ -16,7 +16,7 @@ You can log in to Pharos, APTrust's online registry, at the URLs below:
 
 ## Adding Users
 
-See the [User Management](/pharos/user_management) page for info on how to add users to your institution's Pharos account.
+See the [User Management](../pharos/user_management) page for info on how to add users to your institution's Pharos account.
 
 ## Making Your First Deposit
 
