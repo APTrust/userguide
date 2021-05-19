@@ -89,7 +89,7 @@ Restoring an item usually takes anywhere from 10 minutes to 24 hours, depending 
 
 ## Monitoring Restoration Progress
 
-You can check the progress of your restoration requests in Pharos' Work Items list or the Pharos REST API. <span style="color:red;">[Need link to REST API doc.]</span>
+You can check the progress of your restoration requests in Pharos' Work Items list or the [Pharos REST API](https://aptrust.github.io/pharos/){target=_blank}.
 
 ![Pharos work items list showing completed restoration requests](../img/pharos/RestorationWorkItems.png)
 
