@@ -22,7 +22,7 @@ In addition to conforming to the BagIt specification [version 0.97](https://tool
 
 * Bags may contain files outside of the data directory other than manifests and tag manifests. APTrust will consider these to be tag files, and will not try to parse them.
 
-* When uploading multipart bags, use the [multipart bag naming format](#multipart-bags) described below.
+* When uploading multipart bags, use Bag-Group-Identifier tag to indicate that the bags belong together, or use the [multipart bag naming format](#multipart-bags) described below. (But note that the multipart bag naming format will soon be deprecated.)
 
 A valid untarred APTrust bag has the following structure:
 
@@ -120,7 +120,10 @@ Storage-Option | This indicates how and where you want APTrust to store your bag
 !!! warning "A note on storage options"
     When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.
 
-## Multipart bags
+## Multipart bags - DEPRECATED
+
+!!! warning "Deprecation Notice"
+    APTrust will soon end support for the multipart naming format described in this section. Use the standard Bag-Group-Identifier tag instead, as described in the following section.
 
 You may split a single large bag into a number of smaller bags by using the naming convention `institution_identifier.bag_identifier.b###.of###`. That is, you append `.bag01.of16`, `.bag02.of16`, etc. to the end of the bag name of each bag in the group.
 
@@ -129,6 +132,14 @@ Upon ingest, APTrust will treat all of the contents of all of the bags as part o
 Because APTrust re-bags files for restoration, the bags returned by a restoration request will not match the bags you originally submitted, but all of the payload files will be present.
 
 Generic Files in APTrust are referenced by their URI, which is the original filepath relative to the bag. File and folder names should be unique across multi-part bags to make sure all items are processed and not treated as a file update.
+
+## Multipart bags - THE NEW WAY
+
+Please use the Bag-Group-Identifier tag in the bag-info.txt file to indicate that multiple bags are part of the same group. Bag-Group-Identifier is part of the BagIt standard described in [RFC 8493](https://datatracker.ietf.org/doc/html/rfc8493){target=_blank}. The specification defines a Bag-Group-Identifier as `A sender-supplied identifier for the set, if any, of bags to which it logically belongs.`
+
+Pharos supports searching by Bag-Group-Identifier, which makes it easy for you to see which bags and files belong to the same logical group.
+
+The Bag-Group-Identifier tag provides the additional advantage of allowing you to restore specific parts of a collection without having to restore the entire collection. Under the old multipart naming scheme, all bag parts would be merged into a single giant bag. Bags sharing a Bag-Group-Identifier remain distinct intellectual objects and can be restored individually.
 
 ## Versioning
 
