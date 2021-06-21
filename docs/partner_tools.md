@@ -2,11 +2,11 @@
 
 Command line tools for Mac, Linux, and Windows are available through the links below:
 
-* [OSX 64-bit, v 2.1](https://s3.amazonaws.com/aptrust.public.download/partner-apps/osx/APTrust_Partner_Tools_Mac_V2.1.zip)
+* [OSX 64-bit, v 2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/osx/APTrust_Partner_Tools_Mac_2.2-beta.zip)
 
-* [Linux 64-bit, v 2.1](https://s3.amazonaws.com/aptrust.public.download/partner-apps/linux/APTrust_Partner_Tools_Linux_V2.1.zip )
+* [Linux 64-bit, v 2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/linux/APTrust_Partner_Tools_Linux_2.2-beta.zip)
 
-* [Windows 64-bit, v 2.1](https://s3.amazonaws.com/aptrust.public.download/partner-apps/windows/APTrust_PartnerTools_Windows_V2.1.zip)
+* [Windows 64-bit, v 2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/windows/APTrust_Partner_Tools_Windows_2.2-beta.zip)
 
 Each of these tools returns specific exit codes, so you can integrate them into your scripts. You can view any program's built-in documentation by passing the --help flag.
 
