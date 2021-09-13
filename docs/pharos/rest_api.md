@@ -31,7 +31,7 @@ To connect to the REST API, send your Pharos login email address and your API ke
 
 ```
 X-Pharos-API-User: user@example.com
-X-Pharos-API-KEY: topsecretapikey
+X-Pharos-API-Key: topsecretapikey
 ```
 
 ## REST API Documentation
