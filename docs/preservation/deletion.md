@@ -3,9 +3,15 @@
 ## The Deletion Process
 
 Deleting objects from APTrust is a multi-step process.
+
 blockdiag {
-	Admin makes deletion request -> APTrust sends email to admins for confirmation
--> Admin confirms -> System queues deletion
+    orientation = portrait;
+    default_fontsize = 6;
+
+    "Admin makes deletion request" ->
+    "APTrust sends email to admins for confirmation" ->
+    "Admin confirms" ->
+    "System queues deletion";
 }
 
 

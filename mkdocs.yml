@@ -7,6 +7,8 @@ markdown_extensions:
   - attr_list
   - admonition
   - codehilite
+  - markdown_blockdiag:
+      format: svg
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret

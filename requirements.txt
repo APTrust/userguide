@@ -2,4 +2,4 @@ mkdocs
 mkdocs-material
 pymdown-extensions
 fontawesome_markdown
-
+markdown-blockdiag
