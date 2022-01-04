@@ -61,7 +61,7 @@ The bag must have a bagit.txt file, with the following tags.
 Tag | Allowed values
 ----|----
 BagIt-Version | 0.97 or 1.0
-BagIt-Version | UTF-8
+Tag-File-Character-Encoding | UTF-8
 
 ### bag-info.txt file
 
