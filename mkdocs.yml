@@ -46,5 +46,8 @@ nav:
       - pharos/two_factor_auth.md
       - pharos/rest_api.md
   - Partner Tools: partner_tools.md
+  - Registry:
+      - registry/index.md
+      - registry/api_changes.md
   - Glossary: glossary.md
   - Contact Us: contact_us.md
