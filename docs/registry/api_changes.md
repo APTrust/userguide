@@ -65,9 +65,9 @@ Sorting parameter names use the pattern {field_name}__{direction}, with two unde
 
 Examples:
 
-* intellectual_object_identifier - Sort by intellectual object identifier, ascending.
-* intellectual_object_identifier__asc - Sort by intellectual object identifier, ascending.
-* intellectual_object_identifier__desc - Sort by intellectual object identifier, descending.
+* `intellectual_object_identifier` - Sort by intellectual object identifier, ascending.
+* `intellectual_object_identifier__asc` - Sort by intellectual object identifier, ascending.
+* `intellectual_object_identifier__desc` - Sort by intellectual object identifier, descending.
 
 ### Filtering
 
@@ -97,7 +97,7 @@ API endpoints for the following types are new. Please follow the links for detai
 
 ### Changed
 
-The following paths have changed as noted.
+The following endpoints have changed as noted.
 
 * `/member-api/v2/files/{institution_identifier}` -> `/member-api/v3/files`
 * `/member-api/v2/files/{intellectual_object_identifier}` -> `/member-api/v3/files?intellectual_object_id={object_id}`
@@ -120,19 +120,19 @@ This returns a Generic File object with nested Premis Events, Checksums and Stor
 
 The GenericFileView object returned by calls to `/member-api/v3/files` is a superset of the File object returned by the Pharos API. In addition to the old Pharos fields, GenericFileView contains the following:
 
-* size (integer) - The size of the file, in bytes.
-* object_identifier (string) - The identifier of the Intellectual Object to which this file belongs.
-* access (string) - The file's access setting.
-* institution_id (integer) - The ID of the institution that owns this file.
-* institution_name (string) - The name of the institution that owns this file.
-* institution_identifier (string) - The identifier (domain name) of the institution that owns this file.
-* storage_option (string) - Describes where this file is stored.
-* uuid (string) - The object's preservation identifier.
-* md5 (string) - The most recently calculated md5 checksum for this file.
-* sha1 (string) - The most recently calculated sha1 checksum for this file.
-* sha256 (string) - The most recently calculated sha256 checksum for this file.
-* sha512 (string) - The most recently calculated sha512 checksum for this file.
-* storage_records (Array{Storage Record}) - A list of storage records indicating where this file is saved in preservation storage.
+* `size` (integer) - The size of the file, in bytes.
+* `object_identifier` (string) - The identifier of the Intellectual Object to which this file belongs.
+* `access` (string) - The file's access setting.
+* `institution_id` (integer) - The ID of the institution that owns this file.
+* `institution_name` (string) - The name of the institution that owns this file.
+* `institution_identifier` (string) - The identifier (domain name) of the institution that owns this file.
+* `storage_option` (string) - Describes where this file is stored.
+* `uuid` (string) - The object's preservation identifier.
+* `md5` (string) - The most recently calculated md5 checksum for this file.
+* `sha1` (string) - The most recently calculated sha1 checksum for this file.
+* `sha256` (string) - The most recently calculated sha256 checksum for this file.
+* `sha512` (string) - The most recently calculated sha512 checksum for this file.
+* `storage_records` (Array{Storage Record}) - A list of storage records indicating where this file is saved in preservation storage.
 
 
 
@@ -140,32 +140,100 @@ The GenericFileView object returned by calls to `/member-api/v3/files` is a supe
 
 ### Changed
 
+The following endpoints have changed as noted.
+
+* `/member-api/v2/objects` -> `/member-api/v3/objects`
+* `/member-api/v2/objects/{institution_identifier}` -> `/member-api/v3/objects`
+
+Note that the member API allows you to retrieve information about object belonging to your own institution only.
+
 ### Deleted
+
+The following endpoint is no longer implemented:
+
+* `/member-api/v2/objects/restore/{intellectual_object_id}`
 
 ### Added
 
+Registry adds the following Intellectual Object endpoint:
+
+`/member-api/v3/objects/show/{id}`
+
+This returns an Intellectual Object summary. The summary does not include files or events because many objects have thousands of files and tens or hundreds of thousands of events. Use the file and event endpoints to retrieve paged lists of files and events.
+
 ### JSON Changes
 
+The Intellectual Object view records returned by the Registry API are a superset of the old Pharos object records. In addition to the fields returned by Pharos, Registry adds the following:
+
+* `bag_group_identifier` (string) - Identifies the group of bags to which this bag belongs. This is often empty
+* `storage_option` (string) - Describes where this object's files are stored.
+* `bagit_profile_identifier` (string) - Describes the BagIt profile used to create and restore this object. This will be either and APTrust or BTR profile identifier.
+* `source_organization` (string) - The value of the Source-Organization tag in the object's bag-info.txt file.
+* `internal_sender_identifier` (string) - The value of the Internal-Sender-Identifier tag in the object's bag-info.txt file.
+* `internal_sender_description` (string) - The value of the Internal-Sender-Description tag in the object's bag-info.txt file.
+* `institution_name` (string) - The name of the institution that deposited this object.
+* `institution_identifier` (string) - The identifier (domain name) of the institution that deposited this object.
+* `institution_type` (string) - Indicates whether the institution that owns this object is a member institution (account) or subscribing institution (sub-account).
+* `institution_parent_id` (integer) - ID of this institution's parent. Applicable to subscriber institutions (sub-accounts) only.
+* `file_count` (integer) - The total number of files preserved for this object. This includes payload files and preserved manifests. APTrust does not preserve manifests or tag manifests. This number can change over time as additional new files are ingested or existing ones are deleted.
+* `size` (integer) - The total number of bytes for all files preserved for this object. This number can change over time as additional new files are ingested or existing ones are deleted.
+* `payload_file_count` (integer) - The total number of files in this object's payload. I.e., inside the data directory of the bag that was uploaded for deposit. This number can change over time as additional new files are ingested or existing ones are deleted.
+* `payload_size` (integer) - Total size, in bytes, of the files in this object's payload directory (the data directory of the bag that was uploaded for ingest). This number can change over time as additional new files are ingested or existing ones are deleted.
 
 
 ## Premis Events
 
 ### Changed
 
+The following endpoints have changed as noted.
+
+* `/member-api/v2/events/{generic_file_identifier}` -> `/member-api/v3/events?generic_file_identifier={identifier}` or `/member-api/v3/events?generic_file_id={id}`
+* `/member-api/v2/events/{intellectual_object_identifier}` -> `/member-api/v3/events?intellectual_object_identifier={identifier}` or `/member-api/v3/events?intellectual_object_id={id}`
+
 ### Deleted
+
+The following endpoint was deleted because member institutions can retrieve only their own events.
+
+* `/member-api/v2/events/{institution_identifier}`
 
 ### Added
 
+The new endpoint `/member-api/v3/events/show/{id}` displays details of a single event.
+
 ### JSON Changes
 
+The version 3 JSON contains all of the fields from the version 2 API, plus the following:
 
+* `institution_name` (string) - The name of the institution to which the event pertains.
 
 ## Work Items
 
 ### Changed
 
+The following endpoints have changed as noted.
+
+* `/member-api/v2/items` - `/member-api/v3/items`
+
 ### Deleted
+
+No Work Item endpoints were deleted.
 
 ### Added
 
+The following endpoint was added:
+
+* `/member-api/v3/items/show/{id}`
+
 ### JSON Changes
+
+* `alt_identifier` (string) - An alternate identifier for this object to which this Work Item pertains, supplied by the depositor.
+* `bag_group_identifier` (string) - An optional identifier naming the logical group to which this object belongs. For instance, if ten bags are all part of the same collection, the collection name may be used as the group identifier associating all ten bags.
+* `bagit_profile_identifier` (string) - The identifier of the BagIt profile used to create this bag. This can be either the APTrust profile URL or the BTR profile URL. Bags will be restored using the same profile under which they were submitted.
+* `date_processed` (datetime as string) - The date and time of last known activity on this work item. This timestamp may change several times during multipart processes such as ingest.
+* `institution_identifier` (string) - The identifier (domain name) of the institution that owns the files or objects to which this deletion request pertains.
+* `institution_name` (string) - The name of the institution that owns the files or objects to which this work item pertains.
+* `internal_sender_identifier` (string) - An optional identifier for internal use by the depositor. The identifier belongs to the object to which this work item pertains.
+* `node` (string) - The hostname of the microservice worker currently processing this item. If this is empty, the item is not currently being processed.
+* `pid` (integer) - The process ID of the worker that is currently working on this item. If this is empty, the item is not currently being processed.
+* `source_organization` (string) - The name of the institution that submitted the object for ingest. This comes from the Source-Organization tag in the original bag.
+* `storage_option` (string) - Indicates where the object's files are stored.
