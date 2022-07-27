@@ -2,7 +2,9 @@
 
 Command line tools for Mac, Linux, and Windows are available through the links below:
 
-* [OSX 64-bit, v 2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/osx/APTrust_Partner_Tools_Mac_2.2-beta.zip)
+* [OSX Intel 64-bit, v 2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/osx/APTrust_Partner_Tools_Mac_2.2-beta.zip)
+
+* [OSX M1 & M2, v2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/osx/PartnerTools-2.2-beta-M1.zip)
 
 * [Linux 64-bit, v 2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/linux/APTrust_Partner_Tools_Linux_2.2-beta.zip)
 
