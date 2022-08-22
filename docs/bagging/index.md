@@ -149,4 +149,8 @@ If you want to keep multiple versions of a bag or file, append a version number 
 
 ## BTR BagIt Profile
 
-APTrust plans to support version 1.0 of the [BTR bagit profile](https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json){target=_blank} later in 2021. Support will include both the ingest and restoration of BTR bags.
+APTrust plans to support version 1.0 of the [BTR bagit profile](https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json){target=_blank} later in 2022. Support will include both the ingest and restoration of BTR bags.
+
+## Bagging Empty Folders
+
+APTrust cannot preserve or restore empty folders. If you want to include an empty folder in your bag, add an empty file to it, and we will preserve it. We recommend creating an empty file called `.keep`. The leading period in the filename ensures that it will be hidden from most file browsers, making the directory appear empty. The name `.keep` is traditionally used to indicate that the folder, although empty, should be preserved.
