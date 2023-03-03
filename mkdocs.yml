@@ -36,18 +36,17 @@ nav:
   - Bagging:
       - bagging/index.md
       - bagging/tools.md
-  - Using Pharos:
-      - pharos/index.md
-      - pharos/objects.md
-      - pharos/files.md
-      - pharos/events.md
-      - pharos/work_items.md
-      - pharos/user_management.md
-      - pharos/two_factor_auth.md
-      - pharos/rest_api.md
-  - Partner Tools: partner_tools.md
-  - Registry:
+  - Using Registry:
       - registry/index.md
+      - registry/objects.md
+      - registry/files.md
+      - registry/events.md
+      - registry/work_items.md
+      - registry/user_management.md
+      - registry/two_factor_auth.md
+      - registry/spot_tests.md
+      - registry/rest_api.md
       - registry/api_changes.md
+  - Partner Tools: partner_tools.md
   - Glossary: glossary.md
   - Contact Us: contact_us.md

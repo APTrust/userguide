@@ -1,21 +1,14 @@
 # Premis Events
 
-APTrust records PREMIS events for intellectual objects and generic files. You can view a list of all events related to your instution's objects and files by clicking the __Events__ tab in Pharos.
+APTrust records PREMIS events for intellectual objects and generic files. You can view a list of all events related to your instution's objects and files by clicking the __Events__ link under  __More Options__ tab in the left nav.
 
-![List of PREMIS events](../img/pharos/PremisEventsList.png)
+![List of PREMIS events](../img/registry/PremisEventsList.png)
 
-Use the filters on the left side of the page to filter by event type and outcome, but note that although the sidebar lists all of the event types defined by the Library of Congress's PREMIS specification, APTrust only implements the event types listed below.
+Use the filters at the top of the page to filter by event type, date, outcome, file identifier and object identifier.
 
-!!! tip
-    Clicking the Events tab may result in a long delay before the page loads. The system contains tens of millions of events, and we're working on improving the load time.
+!!! note
 
-## Searching for Events
-
-Use the search bar at the top of the page to find specific events, or events related to specific objects or files.
-
-![PREMIS event search](../img/pharos/PremisEventSearch.png)
-
-Choose _Event Identifier_ to search for specific events by UUID. Chose _Object Identifier_ to find events related to a specific object, or _File Identifier_ to find file-specific events.
+    Note that although the sidebar lists all of the event types defined by the Library of Congress's PREMIS specification, APTrust only implements the event types listed below.
 
 ## Object-Level Events
 
@@ -29,13 +22,13 @@ The APTrust repository records the following PREMIS events for intellectual obje
 
 * __Identifier Assignment__ - The object was assigned an identifier. APTrust object identifiers use the pattern `<institution.domain>/<object_name>`, where object_name is the name of the tarred bag, minus the .tar extension. For example, `test.edu/bag_of_photos`.
 
-* __Deletion__ - The object was deleted. This means that all of its component files were deleted. Pharos keeps a record of the object and all of its files after deletion, though it does not retain the files themselves.
+* __Deletion__ - The object was deleted. This means that all of its component files were deleted. Registry keeps a record of the object and all of its files after deletion, though it does not retain the files themselves.
 
 ## File-Level Events
 
 APTrust records the following PREMIS events for the generic files that make up each intellectual object:
 
-* __Ingestion__ - The file has been copied to long-term preservation storage and its metadata has been saved in Pharos.
+* __Ingestion__ - The file has been copied to long-term preservation storage and its metadata has been saved in Registry.
 
 * __Identifier Assignment__ - The file has been assigned an APTrust identifier, in the form `<object_identifier>/<file_relative_path>`, where file_relative_path is the location of the file in the bag in which it was submitted. For example, if test.edu submits a bag called bag_of_photos, the payload file data/photo1.jpg would have the identifier `test.edu/bag_of_photos/data/photo1.jpg`.
 
