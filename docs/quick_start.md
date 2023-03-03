@@ -2,7 +2,7 @@
 
 ## Logging In
 
-You can log in to Pharos, APTrust's online registry, at the URLs below:
+You can log in to Registry, APTrust's online registry, at the URLs below:
 
 * __Staging Repository__ - https://staging.aptrust.org
     - Staging is for very new, potentially unstable features.
@@ -16,11 +16,11 @@ You can log in to Pharos, APTrust's online registry, at the URLs below:
 
 ## Adding Users
 
-See the [User Management](../pharos/user_management) page for info on how to add users to your institution's Pharos account.
+See the [User Management](../registry/user_management) page for info on how to add users to your institution's Registry account.
 
 ## Making Your First Deposit
 
-We suggest you make your first deposits in the [demo repository](https://demo.aptrust.org), so you can test out your workflows and get a feel for how Pharos works.
+We suggest you make your first deposits in the [demo repository](https://demo.aptrust.org), so you can test out your workflows and get a feel for how Registry works.
 
 ### Depositing with DART
 
@@ -34,7 +34,7 @@ DART allows you to test test out different bagging and uploading options through
 
 If your local repository uses Fedora, you can [export APTrust-compliant bags directly from Fedora](https://github.com/fcrepo4-labs/fcrepo-import-export/blob/master/README.md#running-the-importexport-utility-with-a-bagit-support) and then upload them to your receiving bucket for ingest.
 
-After Fedora produces the bag, you can use APTrust [apt_upload tool](../partner_tools) to upload the bag to your receiving bucket. From there, APTrust ingest services will pick it up for processing, and you can track its progress in the [Pharos Work Items](../pharos/work_items/) list.
+After Fedora produces the bag, you can use APTrust [apt_upload tool](../partner_tools) to upload the bag to your receiving bucket. From there, APTrust ingest services will pick it up for processing, and you can track its progress in the [Registry Work Items](../registry/work_items/) list.
 
 ### Custom Bagging
 
@@ -42,4 +42,4 @@ If you want to bag materials yourself, be sure your bags conform to the [APTrust
 
 ### REST API Integration
 
-If you're interested in automating deposits, restorations and other preservation activities, see our [REST API](../pharos/rest_api) and [Swagger Docs](https://aptrust.github.io/pharos/){target=_blank}
+If you're interested in automating deposits, restorations and other preservation activities, see our [REST API](../registry/rest_api) and [Swagger Docs](https://aptrust.github.io/registry/){target=_blank}

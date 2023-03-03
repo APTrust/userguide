@@ -1,5 +1,11 @@
 # Partner Tools
 
+!!! warning
+
+    APTrust partner tools have not yet been updated to work with the
+    Registry. Current tools still use the outdated Pharos API. We
+    expect to update the partner tools in 2023.
+
 Command line tools for Mac, Linux, and Windows are available through the links below:
 
 * [OSX Intel 64-bit, v 2.2-beta](https://s3.amazonaws.com/aptrust.public.download/partner-apps/osx/APTrust_Partner_Tools_Mac_2.2-beta.zip)

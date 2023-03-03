@@ -14,17 +14,17 @@ You send the following information to help@aptrust.org:
 
 We'll reply to your email with the following:
 
-* Information on how to log in to your Pharos account. Pharos is our online registry, showing what you have deposited with APTrust and exposing the features you'll need to restore, delete, query, and audit your materials.
+* Information on how to log in to your Registry account. Registry is our online registry, showing what you have deposited with APTrust and exposing the features you'll need to restore, delete, query, and audit your materials.
 
 * A set of AWS credentials that you'll use to upload matierials to our system.
 
 ## First Steps
 
-Once your local administrator has access to Pharos, they can add new users and/or adminstrators for your institution. Pharos users have access to all features except:
+Once your local administrator has access to Registry, they can add new users and/or adminstrators for your institution. Registry users have access to all features except:
 
 * Adding and deactivating user accounts.
 * Approving requests to delete materials from the repository.
 
-Pharos administrators can do both of the above.
+Registry administrators can do both of the above.
 
 If you're new to APTrust, you will likely start out by using our demo system to fine-tune your ingest workflows. Once you are able to push materials successfully into the demo repository, you can begin using the production system.

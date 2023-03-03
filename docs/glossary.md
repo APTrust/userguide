@@ -10,9 +10,9 @@ A single file or bitstream that makes up part of an intellectual object. For exa
 
 A collection of generic files logically grouped into a single unit. An intellectual object typically consists of the payload files and tag files submitted in a bag.
 
-## Pharos
+## Registry
 
-Pharos is the searchable online registry that keeps track of everything you've deposited in APTrust. It includes a web UI and a REST API that enable you to do the following:
+Registry is the searchable online registry that keeps track of everything you've deposited in APTrust. It includes a web UI and a REST API that enable you to do the following:
 
 * See what items you've deposited
 * Search for items by object name, file name, and a number of other attributes
@@ -22,15 +22,15 @@ Pharos is the searchable online registry that keeps track of everything you've d
 * Query the status of ingest and restoration requests in progress
 * Add and remove user accounts for your institution
 
-Pharos includes both a demo and production system. The demo system is for depositors to test new workflows and to get familiar with the system's general features. The production system is for long-term preservation.
+Registry includes both a demo and production system. The demo system is for depositors to test new workflows and to get familiar with the system's general features. The production system is for long-term preservation.
 
-**Pharos Demo URL**: https://demo.aptrust.org
+**Registry Demo URL**: https://demo.aptrust.org
 
-**Pharos Production URL**: https://repo.aptrust.org
+**Registry Production URL**: https://repo.aptrust.org
 
 
 !!! info "API Keys and Separate Systems"
-    Once you have a valid Pharos login, you can generate your own API key to use the REST API. [Link when available...] Keep in mind that while your login email may be the same for both the demo and production Pharos systems, your API keys will be different.
+    Once you have a valid Registry login, you can generate your own API key to use the REST API. [Link when available...] Keep in mind that while your login email may be the same for both the demo and production Registry systems, your API keys will be different.
 
 
 ## Receiving Bucket

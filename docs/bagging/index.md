@@ -76,7 +76,7 @@ Internal-Sender-Description | A sender-local explanation of the contents and pro
 Internal-Sender-Identifier | An alternate sender-specific identifier for the content and/or bag. |
 Bag-Group-Identifier | A sender-supplied identifier for the set, if any, of bags to which it logically belongs. | Greeling Photo Collection
 
-For more on bag group identifiers, see the [Bag Group Identifiers](../pharos/objects#bag-group-identifiers) section of the Objects page.
+For more on bag group identifiers, see the [Bag Group Identifiers](../registry/objects#bag-group-identifiers) section of the Objects page.
 
 For a list of other commonly-used tags in the bag-info.txt file, see the official BagIt specification for [version 0.97](https://tools.ietf.org/html/draft-kunze-bagit-14) or [version 1.0](https://tools.ietf.org/html/rfc8493).
 
@@ -89,7 +89,7 @@ This file must contain the following tags:
 Tag  | Description
 ---- | ----
 Title | A human readable title for searching and listing in APTrust. This cannot be empty.
-Description | A human-readable description of the bag. This will appear in Pharos. |
+Description | A human-readable description of the bag. This will appear in Registry. |
 Access | One of three access options listed below. The access option describes who can see an object's metadata, including its name and description, a list of its generic files and events. APTrust does not currently provide access to the objects themselves, except when you restore one of your bags. No matter which access option you choose, no other institution can access your intellectual object.
 Storage-Option | This indicates how and where you want APTrust to store your bag. If omitted, Storage-Option defaults to "Standard". See the section on Storage Options below for more information.
 
@@ -137,7 +137,7 @@ Generic Files in APTrust are referenced by their URI, which is the original file
 
 Please use the Bag-Group-Identifier tag in the bag-info.txt file to indicate that multiple bags are part of the same group. Bag-Group-Identifier is part of the BagIt standard described in [RFC 8493](https://datatracker.ietf.org/doc/html/rfc8493){target=_blank}. The specification defines a Bag-Group-Identifier as `A sender-supplied identifier for the set, if any, of bags to which it logically belongs.`
 
-Pharos supports searching by Bag-Group-Identifier, which makes it easy for you to see which bags and files belong to the same logical group.
+Registry supports searching by Bag-Group-Identifier, which makes it easy for you to see which bags and files belong to the same logical group.
 
 The Bag-Group-Identifier tag provides the additional advantage of allowing you to restore specific parts of a collection without having to restore the entire collection. Under the old multipart naming scheme, all bag parts would be merged into a single giant bag. Bags sharing a Bag-Group-Identifier remain distinct intellectual objects and can be restored individually.
 
