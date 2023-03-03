@@ -1,6 +1,10 @@
 # APTrust Bagging Requirements
 
-APTrust currently accepts bags for ingest in the APTrust BagIt format. In 2020, APTrust will begin accepting bags in Beyond the Repository (BTR) format as well, but we suggest APTrust members stick to the APTrust format.
+APTrust currently accepts bags for ingest that use the APTrust BagIt and Beyond the Repository (BTR) BagIt profiles. Bags will be restored using the same profile as the submission.
+
+For info on what constitutes a valid BTR bag, see version 1.0 of the [BTR bagit profile](https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json){target=_blank}.
+
+The remainder of this page will discuss the APTrust format and the allowed options to use when bagging.
 
 ## APTrust BagIt Specification
 
@@ -146,10 +150,6 @@ The Bag-Group-Identifier tag provides the additional advantage of allowing you t
 APTrust does not currently support versioning. When you upload new versions of existing files, APTrust overwrites the old version with the new. See [Updates](../preservation/updates.md) for details.
 
 If you want to keep multiple versions of a bag or file, append a version number or timestamp to the end of the bag or file name. For example, `test.edu/bag_of_photos` and `test.edu/bag_of_photos.v2` will be stored as separate objects, and files from the second version will not overwrite files from the first.
-
-## BTR BagIt Profile
-
-APTrust plans to support version 1.0 of the [BTR bagit profile](https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json){target=_blank} later in 2022. Support will include both the ingest and restoration of BTR bags.
 
 ## Bagging Empty Folders
 

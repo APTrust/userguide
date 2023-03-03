@@ -10,6 +10,12 @@
 
 While our suite of command-line tools does not include a bagger, it does include `apt_validate` to help you validate tarred or untarred bags before uploading them for ingest. See our [Partner Tools](tools.md) page for more info.
 
+!!! warning
+
+    Not all partner tools have been brought up to date to work with Registry.
+    We plan to update partner tools later in 2023. For bagging, stick with
+    DART or DART Runner for now.
+
 ## Python BagIt
 
 If you want to roll your own bagger, try the Library of Congress's bagit.py module, or create a variation of the work already started by the University of Miami or North Carolina State University.

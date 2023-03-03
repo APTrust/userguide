@@ -2,13 +2,15 @@
 
 ## Restoring Intellectual Objects
 
-You can restore an intellectual object by navigating to the object detail page and clicking the __Restore Object__ button. To reach the object detail page, you can either click on the name of the object in the object list:
+You can restore an intellectual object by navigating to the object detail page and clicking the __Restore__ button.
 
-![List of intellectual objects](../img/pharos/ObjectList.png)
+You can find an object by going to the Object List page, clicking __More Filters__, and typing its identifier into the identifier search field.
 
-Or search by object identifier:
+![List of intellectual objects](../img/registry/ObjectsList.png)
 
-![Pharos search by object identifier](../img/pharos/ObjectSearch.png)
+When you reach the object detail page, click the blue __Restore__ button in the upper right corner of the page.
+
+![Top of object detail page](../img/registry/ObjectDetailTop.png)
 
 After you click __Restore Object__, APTrust does the following:
 
@@ -46,19 +48,25 @@ These last two points are important. In some cases, you or someone at your insti
 
 ## Restoring Individual Files
 
-To restore an individual file, navigate to the file's detail page in Pharos and click the __Restore File__ button. You can find the file detail page in one of two ways:
+You can restore individual files from the Intellectual Object page or from the Generic File Detail page. To restore from the Intellectual Object page:
 
-* Search for the file using the file identifier.
+1. Locate the file you want to restore. If you don't see it in the list of files below the donut charts, you can search for it by identifier or you can click one of the arrows below the list to load another page of file results.
+1. Click the plus sign next to the file you want to restore. This opens the file detail view.
+1. Scroll down to the end of the shaded file detail view and click the __Restore File__ button.
 
-    ![Pharos search by file identifier](../img/pharos/FileSearch.png)
+![Object file detail](../img/registry/ObjectFileDetail.png)
 
-* Search for the object using the object identifier.
 
-    ![Pharos search by object identifier](../img/pharos/ObjectSearch.png)
+You can also restore files from the file detail page. To do so:
 
-If you searched by object identifier, you can click the __View Preserved Files__ button on the object detail page to find the detail page of the file you want to restore. The __Restore File__ button appears at the bottom of the page.
+1. Click __More Options__ in the left nav.
+1. Click __Files__.
+1. Enter the file identifier in the search box and click __Filter__.
+1. Click on the file you want to restore. This will open the file detail view.
+1. Scroll to the bottom of the page and click __Restore__.
 
-![Pharos File Detail page showing the restore button](../img/pharos/FileDetail.png)
+![File detail view - bottom](../img/registry/FileDetailBottom.png)
+
 
 APTrust performs the following steps for file restoration:
 
@@ -89,9 +97,9 @@ Restoring an item usually takes anywhere from 10 minutes to 24 hours, depending 
 
 ## Monitoring Restoration Progress
 
-You can check the progress of your restoration requests in Pharos' Work Items list or the [Pharos REST API](https://aptrust.github.io/pharos/){target=_blank}.
+You can check the progress of your restoration requests in Registry' Work Items list or the [Registry REST API](https://aptrust.github.io/registry/){target=_blank}.
 
-![Pharos work items list showing completed restoration requests](../img/pharos/RestorationWorkItems.png)
+![Registry work items list showing completed restoration requests](../img/registry/RestorationWorkItems.png)
 
 When a restoration is complete, the file or bag will be waiting in your restoration bucket and APTrust will send an email to your institutional admins. The email includes information about the location of the restored file so you can download it.
 

@@ -27,12 +27,12 @@ This update policy has three important implications:
 
 1. You can update metadata in a bag by uploading only the metadata, as long as there's at least one file in the data directory and the bag is otherwise valid. This may be useful for bags that contain 100GB of data and 100KB of frequently-updated metadata.
 
-In Pharos, updating (overwriting) an existing file in a bag causes the following to happen:
+In Registry, updating (overwriting) an existing file in a bag causes the following to happen:
 
 1. A new PREMIS ingestion event appears with the date of the new ingest.
 
 1. Two new PREMIS fixity generation events appear, one with the md5 checksum of the new file, and one with the sha256 checksum.
 
-The Pharos file page for the updated file will show the new checksums for the file at the bottom of the page, along with the date on which the new checksums were calculated. Below those will be the older checksums, and the dates they were calculated.
+The Registry file page for the updated file will show the new checksums for the file at the bottom of the page, along with the date on which the new checksums were calculated. Below those will be the older checksums, and the dates they were calculated.
 
 Future fixity checks on the updated files will test against _the latest fixity value_ of the updated files.

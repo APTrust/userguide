@@ -45,6 +45,7 @@ nav:
       - registry/user_management.md
       - registry/two_factor_auth.md
       - registry/spot_tests.md
+      - registry/reports.md
       - registry/rest_api.md
       - registry/api_changes.md
   - Partner Tools: partner_tools.md

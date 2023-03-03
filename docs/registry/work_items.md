@@ -4,7 +4,7 @@ Work items are tasks that APTrust systems perform in response to depositor reque
 
 ![Work Item list](../img/registry/WorkItemList.png)
 
-You can filter the list to specific actions, statuses, and stages using the controls at the top of the list. To select multiple actions, statuses or stages, hold the shift key while clicking on items in the select list.
+You can filter the list to specific actions, statuses, and stages using the controls at the top of the list. To select multiple actions, statuses or stages, hold the Control key while clicking on items in the select list.
 
 Click __More Filters__ to see a list of additional filters to help you narrow your search.
 
