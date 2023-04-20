@@ -49,5 +49,6 @@ nav:
       - registry/rest_api.md
       - registry/api_changes.md
   - Partner Tools: partner_tools.md
+  - Old Partner Tools: old_partner_tools.md
   - Glossary: glossary.md
   - Contact Us: contact_us.md
