@@ -17,12 +17,12 @@ anyone can use apt-cmd's bagging and S3 features.
 
 # Downloads
 
-| Platform | Architecture | Download URL |
-| -------- | ------------ | ------------ |
-| Windows | Intel 64-bit | Coming soon... |
-| Mac  | Intel 64-bit | Coming soon... |
-| Mac  | Apple Silicon (M series) | Coming soon... |
-| Linux | Intel 64-bit | Coming soon... |
+| Platform | Architecture | Version | SHA-256 |
+| -------- | ------------ | ------- | ------- |
+| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/windows/apt-cmd.exe) | Intel 64-bit | v3.0.0-beta | b12d7daf68ca2a2ea99ea208143e4571cf49fd8221ea1998a9b4f5db9774b631 |
+| [Mac Intel](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/mac-intel/apt-cmd)  | Intel 64-bit | v3.0.0-beta | 1b5ceb015744e9ca818e5526f0940988fd4dad7f56c1bde105762bd89522265b |
+| [Mac ARM](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/mac-arm/apt-cmd) | Apple Silicon (M series) | v3.0.0-beta | 0327e04b44137ce856b342542563133b9f8184364513394013bf200939dd6c8e |
+| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/linux/apt-cmd) | Intel 64-bit | v3.0.0-beta | 4c1937567c5a31752bad04147efd1577dc1e3995f8334f225b5b683709117f58 |
 
 APTrust partner tools are open source, distributed under the BSD 2-clause license. The source code is available on github at [https://github.com/APTrust/partner-tools](https://github.com/APTrust/partner-tools){target=_blank}.
 
