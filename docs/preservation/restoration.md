@@ -43,6 +43,13 @@ Restored bags tend to differ in the following ways from your originally submitte
 
 These last point is important. In some cases, you or someone at your institution may have deleted files from a bag, or uploaded newer versions of files in a bag after the bag was initially ingested. Deleted files cannot be restored, and the restored bag will always contain the last uploaded version of each file.
 
+You can find information about upldated and deleted files in the APTrust registry.
+
+1. Go to https://repo.aptrust.org/objects
+2. Search for the object you want to investigate. The easiest way to find an object is by its identifier.
+3. Scroll down the object detail page to the list of **Active Files**.
+4. Click the plus sign next to a file record to see its checksum history. If a newer version of a file was uploaded after initial ingest, this view will show you the old and new checksums, and the dates on which the checksum changed. You'll find more info, including a full list of Premis events, on the file detail page. Go to https://repo.aptrust.org/files and enter paste in the file identifier.
+4. To see a list of files deleted from the current object, click the **show deleted files** link on the top right side of the **Active Files** list.
 
 ## Restoring Individual Files
 
