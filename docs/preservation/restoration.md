@@ -39,11 +39,9 @@ Restored bags tend to differ in the following ways from your originally submitte
 
 * Restored bags include md5 and sha256 tag manifests while bags submitted for ingest typically have neither.
 
-* Restored bags include a `PremisEvents.json` file describing all PREMIS events related to the bag and its contents since it was ingested.
-
 * Restored bags include the __latest__ version of each preserved file in the payload (data) directory.
 
-These last two points are important. In some cases, you or someone at your institution may have deleted files from a bag, or uploaded newer versions of files in a bag after the bag was initially ingested. The PremisEvents.json file includes a list of all deletions and re-ingests. In cases where files have been deleted or updated, these event records can help you understand why the restored payload does not match the payload of the originally submitted bag.
+These last point is important. In some cases, you or someone at your institution may have deleted files from a bag, or uploaded newer versions of files in a bag after the bag was initially ingested. Deleted files cannot be restored, and the restored bag will always contain the last uploaded version of each file.
 
 
 ## Restoring Individual Files
