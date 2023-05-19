@@ -18,10 +18,10 @@ The screenshot below shows the detail page for an intellectual object. Clicking 
 
 ## Deleting a Single File
 
-You can delete individual files from the Intellectual Object page or from the Generic File Detail page. To restore from the Intellectual Object page:
+You can delete individual files from the Intellectual Object page or from the Generic File Detail page. To delete from the Intellectual Object page:
 
-1. Locate the file you want to restore. If you don't see it in the list of files below the donut charts, you can search for it by identifier or you can click one of the arrows below the list to load another page of file results.
-1. Click the plus sign next to the file you want to restore. This opens the file detail view.
+1. Locate the file you want to delete. If you don't see it in the list of files below the donut charts, you can search for it by identifier or you can click one of the arrows below the list to load another page of file results.
+1. Click the plus sign next to the file you want to delete. This opens the file detail view.
 1. Scroll down to the end of the shaded file detail view and click the __Delete File__ button.
 
 ![Object file detail](../img/registry/ObjectFileDetailDeleteRestore.png)
@@ -32,7 +32,7 @@ You can also delete files from the file detail page. To do so:
 1. Click __More Options__ in the left nav.
 1. Click __Files__.
 1. Enter the file identifier in the search box and click __Filter__.
-1. Click on the file you want to restore. This will open the file detail view.
+1. Click on the file you want to delete. This will open the file detail view.
 1. Scroll to the bottom of the page and click __Delete__.
 
 ![File detail view - bottom](../img/registry/FileDetailDeleteRestore.png)
