@@ -609,8 +609,8 @@ Ids are numeric.
 ### Examples
 
 ```bash
-apt-cmd registry get object <object_identifier>
-apt-cmd registry get object <object_id>
+apt-cmd registry get object identifier=<object_identifier>
+apt-cmd registry get object id=<object_id>
 ```
 
 ## Get Object Response Format
