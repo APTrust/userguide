@@ -1,0 +1,1786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../registry/api_changes/">
+      
+      
+        <link rel="next" href="../old_partner_tools/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Partner Tools - APTrust User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aptrust-partner-tools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="APTrust User Guide" class="md-header__button md-logo" aria-label="APTrust User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            APTrust User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Partner Tools
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/APTrust/userguide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="APTrust User Guide" class="md-nav__button md-logo" aria-label="APTrust User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    APTrust User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/APTrust/userguide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick_start/" class="md-nav__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Preservation Actions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Preservation Actions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preservation/ingest/" class="md-nav__link">
+        Ingest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preservation/updates/" class="md-nav__link">
+        Updates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preservation/restoration/" class="md-nav__link">
+        Restoration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preservation/deletion/" class="md-nav__link">
+        Deletion
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Bagging
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Bagging
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bagging/" class="md-nav__link">
+        APTrust Bagging Requirements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bagging/tools/" class="md-nav__link">
+        Bagging Tools
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Using Registry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Using Registry
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/" class="md-nav__link">
+        Using Registry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/objects/" class="md-nav__link">
+        Intellectual Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/files/" class="md-nav__link">
+        Generic Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/events/" class="md-nav__link">
+        Premis Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/work_items/" class="md-nav__link">
+        Work Items
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/user_management/" class="md-nav__link">
+        User Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/two_factor_auth/" class="md-nav__link">
+        Two-Factor Authentication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/spot_tests/" class="md-nav__link">
+        Configuring Restoration Spot Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/reports/" class="md-nav__link">
+        Reports
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/rest_api/" class="md-nav__link">
+        Registry REST API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registry/api_changes/" class="md-nav__link">
+        API Changes from Pharos
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Partner Tools
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../old_partner_tools/" class="md-nav__link">
+        Old Partner Tools
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact_us/" class="md-nav__link">
+        Contact Us
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="aptrust-partner-tools">APTrust Partner Tools</h1>
+<p>The aptrust command-line utility (apt-cmd, aka Partner Tools) enables you to create and validate bags, manage S3 files, and query data in the APTrust Registry. This tool replaces the older version 2.x partner tools which did not have bag creation features and worked only with Pharos.</p>
+<p>You can create workflows with apt-cmd that include:</p>
+<ul>
+<li>creating a bag</li>
+<li>validating the bag</li>
+<li>uploading the bag to an S3 bucket</li>
+<li>checking the APTrust registry to see when the bag was ingested</li>
+<li>retrieving object and file details, including checksums and PREMIS events,
+from the APTrust registry</li>
+</ul>
+<p>For bag creating and validation, the current release supports tarred bags
+only. Though access to the APTrust registry is limited to APTrust depositors,
+anyone can use apt-cmd's bagging and S3 features.</p>
+<h1 id="downloads">Downloads</h1>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Architecture</th>
+<th>Version</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/windows/apt-cmd.exe">Windows</a></td>
+<td>Intel 64-bit</td>
+<td>v3.0.0-beta</td>
+<td>b12d7daf68ca2a2ea99ea208143e4571cf49fd8221ea1998a9b4f5db9774b631</td>
+</tr>
+<tr>
+<td><a href="https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/mac-intel/apt-cmd">Mac Intel</a></td>
+<td>Intel 64-bit</td>
+<td>v3.0.0-beta</td>
+<td>1b5ceb015744e9ca818e5526f0940988fd4dad7f56c1bde105762bd89522265b</td>
+</tr>
+<tr>
+<td><a href="https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/mac-arm/apt-cmd">Mac ARM</a></td>
+<td>Apple Silicon (M series)</td>
+<td>v3.0.0-beta</td>
+<td>0327e04b44137ce856b342542563133b9f8184364513394013bf200939dd6c8e</td>
+</tr>
+<tr>
+<td><a href="https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0-beta/linux/apt-cmd">Linux</a></td>
+<td>Intel 64-bit</td>
+<td>v3.0.0-beta</td>
+<td>88d13960e50478066a6426ffd49e4763feece4642b7420e0d2e4f8d9412e9c88</td>
+</tr>
+</tbody>
+</table>
+<p>APTrust partner tools are open source, distributed under the BSD 2-clause license. The source code is available on github at <a href="https://github.com/APTrust/partner-tools" target="_blank">https://github.com/APTrust/partner-tools</a>.</p>
+<h2 id="help-and-troubleshooting">Help and Troubleshooting</h2>
+<p>You can get help for any apt-cmd command using the <code>--help</code> flag.
+For example, <code>apt-cmd --help</code> shows the list of available commands. To get
+help with a specific command, try <code>apt-cmd [command] --help</code>. For example,
+<code>apt-cmd bag create --help</code>.</p>
+<p>All operations support the <code>--debug</code> flag. When supplied, apt-cmd will print
+out additional detailed information about what it's doing.</p>
+<h2 id="exit-codes">Exit Codes</h2>
+<p>The apt-cmd tool returns consistent exit codes for all operations. If you're
+using apt-cmd in scripts, check the exit code of each call to ensure it
+succeeded.</p>
+<p>An exit code of 0 (zero) indicates the call succeeded. A non-zero exit code
+means the call failed.</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>The operation completed without errors.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>The operation failed due to a runtime error. Causes may include a network error, full disk, lack of file permissions, etc.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The bag you validated turned out to be invalid. Check the error output for details.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The operation failed due to a user error. This is almost always caused by missing or invalid command-line parameters, or missing/invalid configuration settings.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The operation did not complete because an external service responded with an error. Common causes including passing bad authentication values to the APTrust registry or the remote S3 service, requesting an object that doesn't exist, and requesting an item you're not authorized to access.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="creating-a-bag">Creating a Bag</h2>
+<p>You can create bags that conform to the APTrust, BTR or empty BagIt profile.
+If you specify the empty profile, apt-cmd will create a valid bag with the
+tags and manifests you specify.</p>
+<p>The example below demonstrates how to speficy flags and tag values.</p>
+<p>For tag values, use the format "filename.txt/Tag-Name=tag value". If you
+omit the file name, it defaults to bag-info.txt. For example, the following
+two tags will both be written into the Source-Organization tag in
+bag-info.txt:</p>
+<div class="highlight"><pre><span></span><code>  --tags=&quot;bag-info.txt/Source-Organization=Faber College&quot;
+  --tags=&quot;Source-Organization=Faber College&quot;
+</code></pre></div>
+<p>Note that tag values are quoted in their entirety, both the name and
+the value.</p>
+<p>Apply double quotes to values containing special characters such as
+spaces and symbols and to values containing environment variables that
+you want to expand, such as "$HOME".</p>
+<p>Apply single quotes to values containing symbols that you don't want
+the shell to expand, such as curly braces, ampersands, and random dollar
+signs.</p>
+<p>You can specify any tag files and tag names you want.</p>
+<p>The following example packages the directory /home/josie/photos according
+to the APTrust BagIt profile and writes the tarred bag into
+/home/josie/bags/photos.tar.</p>
+<p>This bag will include md5 and sha256 manifests and tag manifests. It will
+also include the specified tags in the bag-info.txt and aptrust-info.txt
+tag files.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--profile<span class="o">=</span>aptrust<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--manifest-algs<span class="o">=</span><span class="s1">&#39;md5,sha256&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--output-file<span class="o">=</span><span class="s1">&#39;/home/josie/bags/photos.tar&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--bag-dir<span class="o">=</span><span class="s1">&#39;/home/josie/photos&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Title=My Bag of Photos&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Access=Institution&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Storage-Option=Standard&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;bag-info.txt/Source-Organization=Faber College&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;Custom-Tag=Single quoted because it {contains} $weird &amp;characters&#39;</span>
+</code></pre></div>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<ol>
+<li>Use the --debug flag to get the program to tell what it thinks it's
+   supposed to be doing.</li>
+<li>If you use backslashes, as in the example able, be sure there are no
+   trailing spaces or any characters other than a newline following the
+   backslash.</li>
+</ol>
+<h3 id="limitations">Limitations</h3>
+<ol>
+<li>This tool currently supports only APTrust, BTR, and empty/generic
+   BagIt profiles.</li>
+<li>For now, all bags will be output as tar files.</li>
+<li>This tool currently supports only the md5, sha1, sha256, and sha512
+   algorithms for manifests and tag manifests.</li>
+<li>This tool currently will not generate a fetch.txt file.</li>
+</ol>
+<h2 id="validating-a-bag">Validating a Bag</h2>
+<p>Currently, apt-cmd validates only tarred bags. The following commands
+validate a bag according to the APTrust BagIt profile:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>my_bag.tar
+<span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>-p<span class="w"> </span>aptrust<span class="w"> </span>my_bag.tar
+</code></pre></div>
+<p>To validate a bag using the Beyond the Repository (BTR) profile:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>-p<span class="w"> </span>btr<span class="w"> </span>my_bag.tar
+</code></pre></div>
+<p>To validate a bag using the empty profile:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>-p<span class="w"> </span>empty<span class="w"> </span>my_bag.tar
+</code></pre></div>
+<p>The empty profile simply ensures the bag is valid according to the general
+BagIt specification.</p>
+<h3 id="limitations_1">Limitations</h3>
+<p>The validator only works with tarred bags and will not validate fetch.txt files.</p>
+<h1 id="s3-commands">S3 Commands</h1>
+<p>apt-cmd can upload to and download from any service with an S3-compliant
+API. It can also list bucket contents in JSON or text formats, and delete
+items from S3.</p>
+<p>To access S3 services, you'll need to S3 credentials, as specified in the
+<a href="#configuration-settings">Configuration Settings</a> section below.</p>
+<h2 id="uploading-a-file-to-an-s3-bucket">Uploading a File to an S3 Bucket</h2>
+<p>apt-cmd can upload a file to any S3-compatible service. For this to work,
+you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
+environment, or in a config file specified with the --config flag.</p>
+<h3 id="examples">Examples</h3>
+<p>Upload file photo.jpg to Amazon's S3 service:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>upload<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>photo.jpg
+</code></pre></div>
+<p>Upload the same file, but call it renamed.jpg in S3:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>upload<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w">  </span><span class="se">\</span>
+<span class="w">             </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--key<span class="o">=</span><span class="s1">&#39;renamed.jpg&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>photo.jpg
+</code></pre></div>
+<h2 id="listing-the-contents-of-an-s3-bucket">Listing the Contents of an S3 Bucket</h2>
+<p>You can list files from any S3-compatible service. For this to work,
+you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
+environment, or in a config file specified with the --config flag.</p>
+<p>List output is in JSON format, unless you specify <code>--format=text</code>.</p>
+<h3 id="examples_1">Examples</h3>
+<p>List items in my_bucket with prefix "photo":</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>list<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span>my_bucket<span class="w"> </span>--prefix<span class="o">=</span>photo
+</code></pre></div>
+<p>List 10 items in my_bucket with prefix "photo", using plain text output:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>list<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--bucket<span class="o">=</span>my_bucket<span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--prefix<span class="o">=</span>photo<span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--maxitems<span class="o">=</span><span class="m">10</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--format<span class="o">=</span>text
+</code></pre></div>
+<h2 id="downloading-an-s3-file">Downloading an S3 File</h2>
+<p>You can download files from any S3-compatible service. For this to work,
+you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
+environment, or in a config file specified with the --config flag.</p>
+<h3 id="examples_2">Examples</h3>
+<p>Download a file from Amazon's S3 service into the current directory:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>download<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>--key<span class="o">=</span><span class="s1">&#39;photo_001.jpg&#39;</span>
+</code></pre></div>
+<p>Download the same file and save it with a custom name on your desktop:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>download<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w">  </span><span class="se">\</span>
+<span class="w">               </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">               </span>--key<span class="o">=</span><span class="s1">&#39;photo_001.jpg&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">               </span>--save-as<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Desktop/vacation.jpg&quot;</span>
+</code></pre></div>
+<h2 id="deleting-an-s3-file">Deleting an S3 File</h2>
+<p>You can delete objects from any S3-compatible service. For this to work,
+you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
+environment, or in a config file specified with the --config flag.</p>
+<h3 id="example">Example</h3>
+<p>Delete object photo.jpg from my-bucket on AWS S3:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>delete<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>--key<span class="o">=</span><span class="s1">&#39;photo.jpg&#39;</span>
+</code></pre></div>
+<p>Note: This returns exit status zero and <code>'{ "result": "OK" }'</code> if the key is
+successfully deleted or if the key wasn't in the bucket to begin with.</p>
+<h1 id="registry-commands">Registry Commands</h1>
+<p>Registry commands retrieve information from the APTrust registry. You'll
+need APTrust credentials to query the Registry. See
+<a href="#configuration-settings">Configuration Settings</a> below for info on how
+to pass these credentials to apt-cmd.</p>
+<h2 id="listing-registry-work-items">Listing Registry Work Items</h2>
+<p>List work items from the APTrust registry, or run a special "quick report."</p>
+<p>You'll typically want to list work items so you can track the progress of
+an ingest or restoration.</p>
+<p>Note that when filtering Work Items, Objects or Files using any of the list
+commands, you can supply filters as name-value pairs on the command line.
+These pairs <strong>do not use the double-dash (--) prefix</strong>.</p>
+<h3 id="examples_3">Examples</h3>
+<p>List recent ingests:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">action</span><span class="o">=</span><span class="s1">&#39;Ingest&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
+</code></pre></div>
+<p>List all work items since April 6, 2023:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">date_processed__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
+</code></pre></div>
+<p>List failed work items:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">status</span><span class="o">=</span><span class="s1">&#39;Failed&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
+</code></pre></div>
+<p>List work items pertaining to a tar file you uploaded:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">name</span><span class="o">=</span><span class="s1">&#39;bag-of-photos.tar&#39;</span>
+</code></pre></div>
+<p>List work items pertaining to a bag with a specific etag:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">etag</span><span class="o">=</span><span class="s1">&#39;987654321-100&#39;</span>
+</code></pre></div>
+<p>List work items pertaining to a specific intellectual object:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/TestBag&#39;</span>
+</code></pre></div>
+<p>List restorations or deletions of a specific file:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">generic_file_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/TestBag/data/photo1.jpg&#39;</span>
+</code></pre></div>
+<h3 id="quick-reports">Quick Reports</h3>
+<p>List all items from the past 30 days that are still in process:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span>--report<span class="o">=</span>inprocess
+</code></pre></div>
+<p>List all items from the past 30 days that failed or were cancelled:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span>--report<span class="o">=</span>problems
+</code></pre></div>
+<p>List all restorations from the past 30 days:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span>--report<span class="o">=</span>restorations
+</code></pre></div>
+<p>When running quick reports, this tool ignores all other query params.</p>
+<h3 id="workitem-list-filter-options">WorkItem List Filter Options</h3>
+<p>When querying for Work Items, apt-cmd supports the following filter
+options:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DataType</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td>string</td>
+<td>The action, one of: Delete, Restore Object, Restore File, Glacier Restore, Ingest</td>
+</tr>
+<tr>
+<td>action__in</td>
+<td>string</td>
+<td>You can specify this multiple times to get results that include any of the named actions. For example, to get work items pertaining to any type of restoration, specify <code>action_in="Restore Object" action_in="Restore File" action_in="Glacier Restore"</code></td>
+</tr>
+<tr>
+<td>alt_identifier</td>
+<td>string</td>
+<td>Return work items pertaining to objects with this alternate identifier.</td>
+</tr>
+<tr>
+<td>bag_date__gteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return work items pertaining to bags created on or after this date.</td>
+</tr>
+<tr>
+<td>bag_date__lteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return work items pertaining to bags created on or before this date.</td>
+</tr>
+<tr>
+<td>bag_group_identifier</td>
+<td>string</td>
+<td>Return work items pertaining to bags having this bag group identifier. (Exact match only. Group identifier prefixes won't work here.)</td>
+</tr>
+<tr>
+<td>bagit_profile_identifier</td>
+<td>string</td>
+<td>Return work items pertaining to bags having this BagIt profile identifier. Allowed values are <a href="https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json">https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json</a> (for the BTR profile), and <a href="https://raw.githubusercontent.com/APTrust/preservation-services/master/profiles/aptrust-v2.2.json">https://raw.githubusercontent.com/APTrust/preservation-services/master/profiles/aptrust-v2.2.json</a> (for the APTrust profile).</td>
+</tr>
+<tr>
+<td>date_processed__gteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return items last touched by a worker process on or after this date.</td>
+</tr>
+<tr>
+<td>date_processed__lteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return items last touched by a worker process on or before this date.</td>
+</tr>
+<tr>
+<td>etag</td>
+<td>string</td>
+<td>Return work items pertaining to an uploaded bag with this etag.</td>
+</tr>
+<tr>
+<td>generic_file_id</td>
+<td>integer</td>
+<td>Return work items pertaining to this generic file.</td>
+</tr>
+<tr>
+<td>generic_file_id__is_null</td>
+<td>string</td>
+<td>Set this to "true" to retrieve work items with an empty generic file identifier. Results will include only object-level work items, such as ingests, object deletions and object restorations.</td>
+</tr>
+<tr>
+<td>generic_file_identifier</td>
+<td>string</td>
+<td>Return work items pertaining to the generic file with this identifier.</td>
+</tr>
+<tr>
+<td>intellectual_object_id</td>
+<td>integer</td>
+<td>Return work items pertaining to this intellectual object. Note that for ingests, the object id will be empty until the ingest completes.</td>
+</tr>
+<tr>
+<td>intellectual_object_id__is_null</td>
+<td>string</td>
+<td>Set this to "true" to include work items with an empty intellectual object id. This will return ingests that have not yet completed. All other work items are associated with an object.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The name of the tar file you want to check on. This is the name of the file you uploaded to your receiving bucket for ingest. For example, "virginia.edu/bag-of-photos.tar".</td>
+</tr>
+<tr>
+<td>needs_admin_review</td>
+<td>string</td>
+<td>Set this to "true" if you want to retrieve work items that have been flagged as problematic, requiring review from an APTrust administrator.</td>
+</tr>
+<tr>
+<td>node__is_null</td>
+<td>string</td>
+<td>Set this to "true" to retrieve work items with a null worker node. These items are currently not being worked on by any process. Items are in this state when awaiting processing and when processing has completed.</td>
+</tr>
+<tr>
+<td>node__not_null</td>
+<td>string</td>
+<td>Set this to "true" to retrieve items that are undergoing active processing by an ingest, restoration or deletion worker.</td>
+</tr>
+<tr>
+<td>object_identifier</td>
+<td>string</td>
+<td>Return items associated with this intellectual object identifier.</td>
+</tr>
+<tr>
+<td>queued_at__is_null</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return items queued for work on or after this date.</td>
+</tr>
+<tr>
+<td>queued_at__not_null</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return items queued for work on or before this date.</td>
+</tr>
+<tr>
+<td>retry</td>
+<td>string</td>
+<td>Set this to "true" to retrieve items that are eligible for processing. Set to "false" to retrieve problematic items that either will not be retried or require manually requeueing.</td>
+</tr>
+<tr>
+<td>size__gteq</td>
+<td>integer</td>
+<td>Return work items associated with files or objects containing at least this number of bytes.</td>
+</tr>
+<tr>
+<td>size__lteq</td>
+<td>integer</td>
+<td>Return work items associated with files or objects containing no more than this number of bytes.</td>
+</tr>
+<tr>
+<td>stage</td>
+<td>string</td>
+<td>Return items in this stage of processing. Allowed values: Available in S3, Cleanup, Copy To Staging, Fetch, Format Identification, Package, Receive, Record, Reingest Check, Requested, Resolve, Restoring, Storage Validation, Store, Unpack, Validate.</td>
+</tr>
+<tr>
+<td>stage__in</td>
+<td>string</td>
+<td>Specify this filter multiple times to retrieve items in any one of a number of stages. For example, to retrieve items in the Store, Unpack, or Validate stages, use <code>stage__in=Store stage__in=Unpack stage_in=Validate</code></td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>Retrieve items having this status. Values include Cancelled, Failed, Pending, Started, Success, Suspended.</td>
+</tr>
+<tr>
+<td>status__in</td>
+<td>string</td>
+<td>Specify this filter multiple times to retrieve items having any of a number of statuses. For example, to retrieve items with Pending and Started status, use <code>status__in=Pending status__in=Started</code>.</td>
+</tr>
+<tr>
+<td>storage_option</td>
+<td>string</td>
+<td>Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-VA</td>
+</tr>
+<tr>
+<td>user</td>
+<td>string (email address)</td>
+<td>Return work items initiated by the user with this email address.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workitem-list-paging-and-sort-options">WorkItem List Paging and Sort Options</h3>
+<p>By default, the <code>list workitems</code> command returns the first 25 results,
+sorting items by id. You can override these defaults with the following
+settings.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DataType</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>per_page</td>
+<td>integer</td>
+<td>The number of results to return per request. Default is 25. Max is 1000.</td>
+</tr>
+<tr>
+<td>page</td>
+<td>integer</td>
+<td>The page of results you want to retrieve. Default is 1.</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>string</td>
+<td>Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, <code>sort=name</code> sorts by the name of the tar file, while <code>sort=name__desc</code> does a reverse sort by name.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workitem-list-response-format">WorkItem List Response Format</h3>
+<p>The <code>workitem list</code> command returns JSON in the following format.
+Note that <code>count</code> indicates the total number of results, while
+<code>next</code> and <code>previous</code> are URLs pointing to the next and previous
+pages of results.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Delete&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;aptrust_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bucket&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;date_processed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;inst_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;needs_admin_review&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;queued_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;retry&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;stage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Available in S3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;stage_started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.912Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cancelled&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.912Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="retrieving-a-single-registry-work-item">Retrieving a Single Registry Work Item</h2>
+<p>To retrieve a single WorkItem record from the APTrust Registry, use the
+command below. Note that id is an integer.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>workitem<span class="w"> </span>&lt;id&gt;
+</code></pre></div>
+<h3 id="workitem-get-response-format">WorkItem Get Response Format</h3>
+<p>The command <code>aptrust registry get workitem</code> returns JSON in the following
+format:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Restore Object&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;aptrust_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.969Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bucket&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;date_processed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;generic_file_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;inst_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;needs_admin_review&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;queued_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;retry&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;stage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Available in S3&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;stage_started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cancelled&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="listing-registry-objects">Listing Registry Objects</h2>
+<p>You can list objects from the APTrust Registry, with filters.</p>
+<h3 id="examples_4">Examples</h3>
+<p>List 20 objects ordered by identifer:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>objects<span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span><span class="w"> </span><span class="nv">per_page</span><span class="o">=</span><span class="s1">&#39;20&#39;</span>
+</code></pre></div>
+<p>List 20 objects reverse ordered by identifer:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>objects<span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier__desc&#39;</span><span class="w"> </span><span class="nv">per_page</span><span class="o">=</span><span class="s1">&#39;20&#39;</span>
+</code></pre></div>
+<p>List objects created after April 6, 2023</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">created_at__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span>
+</code></pre></div>
+<h3 id="object-list-filter-options">Object List Filter Options</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DataType</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access</td>
+<td>string</td>
+<td>Return objects with this access setting. Available values : consortia, institution, restricted</td>
+</tr>
+<tr>
+<td>alt_identifier</td>
+<td>string</td>
+<td>Return objects with this alternate identifier.</td>
+</tr>
+<tr>
+<td>alt_identifier__starts_with</td>
+<td>string</td>
+<td>Return objects whose alternate identifier starts with the speficied string.</td>
+</tr>
+<tr>
+<td>bag_group_identifier</td>
+<td>string</td>
+<td>Return objects with this bag group identifier.</td>
+</tr>
+<tr>
+<td>bag_group_identifier__starts_with</td>
+<td>string</td>
+<td>Return objects whose bag group identifier starts with the specified string.</td>
+</tr>
+<tr>
+<td>bagit_profile_identifier</td>
+<td>string</td>
+<td>Return objects with this BagIt profile identifier. Available values : <a href="https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json">https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json</a> (BTR profile) and <a href="https://raw.githubusercontent.com/APTrust/preservation-services/master/profiles/aptrust-v2.2.json">https://raw.githubusercontent.com/APTrust/preservation-services/master/profiles/aptrust-v2.2.json</a> (APTrust profile).</td>
+</tr>
+<tr>
+<td>created_at__gteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return objects created on or after the given date.</td>
+</tr>
+<tr>
+<td>created_at__lteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return objects created on or before the given date.</td>
+</tr>
+<tr>
+<td>etag</td>
+<td>string</td>
+<td>Return the object with this etag.</td>
+</tr>
+<tr>
+<td>file_count__gteq</td>
+<td>integer</td>
+<td>Return objects containing at least this number of files.</td>
+</tr>
+<tr>
+<td>file_count__lteq</td>
+<td>integer</td>
+<td>Return objects containing no more than this number of files.</td>
+</tr>
+<tr>
+<td>identifier</td>
+<td>string</td>
+<td>Return the object with this identifier.</td>
+</tr>
+<tr>
+<td>internal_sender_identifier</td>
+<td>string</td>
+<td>Return the object with this internal sender identifier.</td>
+</tr>
+<tr>
+<td>size__gteq</td>
+<td>integer</td>
+<td>Return objects whose size is at least this number of bytes.</td>
+</tr>
+<tr>
+<td>size__lteq</td>
+<td>integer</td>
+<td>Return objects whose size is no more than this number of bytes.</td>
+</tr>
+<tr>
+<td>state</td>
+<td>string</td>
+<td>Return objects with this state. A = Active, D = Deleted. Available values: A, D.</td>
+</tr>
+<tr>
+<td>storage_option</td>
+<td>string</td>
+<td>Return objects with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-VA.</td>
+</tr>
+<tr>
+<td>updated_at__gteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return objects updated on or after the given timestamp.</td>
+</tr>
+<tr>
+<td>updated_at__lteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return objects updated on or before the given timestamp.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-list-paging-and-sort-options">Object List Paging and Sort Options</h3>
+<p>By default, the <code>list objects</code> command returns the first 25 results,
+sorting objects by id. You can override these defaults with the following
+settings.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DataType</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>per_page</td>
+<td>integer</td>
+<td>The number of results to return per request. Default is 25. Max is 1000.</td>
+</tr>
+<tr>
+<td>page</td>
+<td>integer</td>
+<td>The page of results you want to retrieve. Default is 1.</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>string</td>
+<td>Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, <code>sort=identifier</code> sorts by the object identifier, while <code>sort=identifier__desc</code> does a reverse sort by identifier.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-list-response-format">Object List Response Format</h3>
+<p>The <code>list objects</code> command returns JSON with the following format. Note that
+<code>count</code> is the total number of resuls matching your query, while <code>next</code> and
+<code>previous</code> are URLs pointing to the next and previous pages of results.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:25:28.513Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:25:28.513Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;internal_sender_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MemberInstitution&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_parent_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;payload_file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;payload_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="retrieving-a-single-registry-object">Retrieving a Single Registry Object</h2>
+<p>You can retrieve objects from the Registry by identifier or
+by id. Object identifiers are strings, such as 'example.edu/photos'.
+Ids are numeric.</p>
+<h3 id="examples_5">Examples</h3>
+<div class="highlight"><pre><span></span><code>apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>object<span class="w"> </span><span class="nv">identifier</span><span class="o">=</span>&lt;object_identifier&gt;
+apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>object<span class="w"> </span><span class="nv">id</span><span class="o">=</span>&lt;object_id&gt;
+</code></pre></div>
+<h2 id="get-object-response-format">Get Object Response Format</h2>
+<p>The <code>get object</code> command returns JSON in the following format:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:52:35.412Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:52:35.412Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;internal_sender_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MemberInstitution&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_parent_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload_file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="listing-registry-files">Listing Registry Files</h2>
+<p>The <code>list files</code> command lists files from the APTrust Registry,
+applying whatever filters you specify. Note that the file JSON returned
+by this call includes only summary information for each file, while
+the <code>get file</code> call returns more detailed info.</p>
+<h3 id="examples_6">Examples</h3>
+<p>List files belonging to object test.edu/my_bag, ordered by identifer:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">intellectual_object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/my_bag&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span>
+</code></pre></div>
+<p>List only the first 10 files from that same bag:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">intellectual_object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/my_bag&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span><span class="w"> </span><span class="nv">per_page</span><span class="o">=</span><span class="m">10</span>
+</code></pre></div>
+<p>List files created after April 6, 2023</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">created_at__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span>
+</code></pre></div>
+<h3 id="file-list-filter-options">File List Filter Options</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DataType</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>created_at__gteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return files created on or after the given timestamp.</td>
+</tr>
+<tr>
+<td>created_at__lteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return files created on or before the given timestamp.</td>
+</tr>
+<tr>
+<td>identifier</td>
+<td>string</td>
+<td>Return the file with this identifier.</td>
+</tr>
+<tr>
+<td>intellectual_object_id</td>
+<td>integer</td>
+<td>Return files belonging to the specified intellectual object.</td>
+</tr>
+<tr>
+<td>last_fixity_check__gteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return files whose last fixity check was on or after the given timestamp.</td>
+</tr>
+<tr>
+<td>last_fixity_check__lteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return files whose last fixity check was on or before the given timestamp.</td>
+</tr>
+<tr>
+<td>size__gteq</td>
+<td>integer</td>
+<td>Return files whose size is at least this number of bytes.</td>
+</tr>
+<tr>
+<td>size__lteq</td>
+<td>integer</td>
+<td>Return files whose size is no more than this number of bytes.</td>
+</tr>
+<tr>
+<td>state</td>
+<td>string</td>
+<td>Return files with this state. A = Active, D = Deleted. Available values: A, D.</td>
+</tr>
+<tr>
+<td>storage_option</td>
+<td>string</td>
+<td>Return files with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-VA.</td>
+</tr>
+<tr>
+<td>updated_at__gteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return files updated on or after the given timestamp.</td>
+</tr>
+<tr>
+<td>updated_at__lteq</td>
+<td>date string 'yyyy-mm-dd'</td>
+<td>Return files updated on or before the given timestamp.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="file-list-paging-and-sort-options">File List Paging and Sort Options</h3>
+<p>By default, the <code>list files</code> command returns the first 25 results,
+sorting files by id. You can override these defaults with the following
+settings.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DataType</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>per_page</td>
+<td>integer</td>
+<td>The number of results to return per request. Default is 25. Max is 1000.</td>
+</tr>
+<tr>
+<td>page</td>
+<td>integer</td>
+<td>The page of results you want to retrieve. Default is 1.</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>string</td>
+<td>Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, <code>sort=identifier</code> sorts by the file identifier, while <code>sort=identifier__desc</code> does a reverse sort by identifier.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="file-list-response-format">File List Response Format</h3>
+<p>The <code>list files</code> command returns JSON with the following format. Note that
+<code>count</code> is the total number of resuls matching your query, while <code>next</code> and
+<code>previous</code> are URLs pointing to the next and previous pages of results.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;file_format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;last_fixity_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.164Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;md5&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha256&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha512&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.165Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.165Z&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="retrieving-a-single-registry-file">Retrieving a Single Registry File</h2>
+<p>You can retrieve a JSON record from the APTrust registry describing a
+generic file with a specified identifier or id. File identifiers are strings,
+such as 'example.edu/photos/data/image1.jpg'. Ids are numeric.</p>
+<p>Note that this call returns not only the generic file info, but also all
+of the checksums and PREMIS events associated with the file.</p>
+<h3 id="examples_7">Examples</h3>
+<div class="highlight"><pre><span></span><code>apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>file<span class="w"> </span>&lt;file_identifier&gt;
+apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>file<span class="w"> </span>&lt;file_id&gt;
+</code></pre></div>
+<h2 id="get-file-response-format">Get File Response Format</h2>
+<p>The <code>get file</code> command returns JSON in the following format:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;file_format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;last_fixity_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;premis_events&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;agent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;date_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;event_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;access assignment&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;old_uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome_detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome_information&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;checksums&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;algorithm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;md5&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;datetime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;digest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;storage_records&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="configuration-settings">Configuration Settings</h2>
+<p>apt-cmd will read configuration values from a config file if you specify one
+with the --config flag. Otherwise, it will read config values from the
+environment. The <a href="https://github.com/APTrust/partner-tools/blob/master/testconfig.env" target="_blank">testconfig.env</a> file shows a sample
+configuration used for testing.</p>
+<p>Config files can use .env, JSON, or YAML format. Just be sure to include the
+correct file extension (.env, .yml, .yaml, or .json) so apt-cmd knows how to
+parse the file.</p>
+<p>You may find it useful to maintain separate config file for separate profiles.
+For example, you may want to store S3 credentials for Amazon in aws.env,
+credentials for Wasabi in wasabi.env, and for Minio in minio.env.</p>
+<p>Or, you can skip config files altogether and use environment variables
+like so:</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nv">APTRUST_AWS_KEY</span><span class="o">=</span>my_key<span class="w"> </span><span class="nv">APTRUST_AWS_SECRET</span><span class="o">=</span>my_secrete<span class="w"> </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>upload<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>photo.jpg
+</code></pre></div>
+<p>apt-cmd uses the following settings.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APTRUST_AWS_KEY</td>
+<td>Access Key ID to access S3. Required only for S3 operations. Works with any S3-compatible service.</td>
+</tr>
+<tr>
+<td>APTRUST_AWS_SECRET</td>
+<td>Secret access key to access S3. Required only for S3 operations. Works with any S3-compatible service.</td>
+</tr>
+<tr>
+<td>APTRUST_REGISTRY_URL</td>
+<td>URL of the APTrust registry you want to access. Production is <a href="https://repo.aptrust.org">https://repo.aptrust.org</a>. Demo is <a href="https://demo.aptrust.org">https://demo.aptrust.org</a>. Required only for registry operations.</td>
+</tr>
+<tr>
+<td>APTRUST_REGISTRY_API_VERSION</td>
+<td>Version of the current registry API. For now, this should be <code>v3</code>. Required only for registry operations.</td>
+</tr>
+<tr>
+<td>APTRUST_REGISTRY_EMAIL</td>
+<td>The email address associated with your APTrust registry account. Required only for registry operations.</td>
+</tr>
+<tr>
+<td>APTRUST_REGISTRY_API_KEY</td>
+<td>The API key associated with your APTrust registry account. Required only for registry operations.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

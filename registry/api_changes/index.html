@@ -1,0 +1,1364 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../rest_api/">
+      
+      
+        <link rel="next" href="../../partner_tools/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>API Changes from Pharos - APTrust User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-changes-from-pharos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="APTrust User Guide" class="md-header__button md-logo" aria-label="APTrust User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            APTrust User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API Changes from Pharos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/APTrust/userguide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="APTrust User Guide" class="md-nav__button md-logo" aria-label="APTrust User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    APTrust User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/APTrust/userguide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick_start/" class="md-nav__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Preservation Actions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Preservation Actions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preservation/ingest/" class="md-nav__link">
+        Ingest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preservation/updates/" class="md-nav__link">
+        Updates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preservation/restoration/" class="md-nav__link">
+        Restoration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preservation/deletion/" class="md-nav__link">
+        Deletion
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Bagging
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Bagging
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bagging/" class="md-nav__link">
+        APTrust Bagging Requirements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bagging/tools/" class="md-nav__link">
+        Bagging Tools
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Using Registry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Using Registry
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Using Registry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/" class="md-nav__link">
+        Intellectual Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/" class="md-nav__link">
+        Generic Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        Premis Events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../work_items/" class="md-nav__link">
+        Work Items
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_management/" class="md-nav__link">
+        User Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../two_factor_auth/" class="md-nav__link">
+        Two-Factor Authentication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spot_tests/" class="md-nav__link">
+        Configuring Restoration Spot Tests
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reports/" class="md-nav__link">
+        Reports
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rest_api/" class="md-nav__link">
+        Registry REST API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          API Changes from Pharos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        API Changes from Pharos
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-ids-instead-of-identifiers" class="md-nav__link">
+    Using IDs Instead of Identifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-structure" class="md-nav__link">
+    List Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-parameter-changes" class="md-nav__link">
+    Query Parameter Changes
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Parameter Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sorting" class="md-nav__link">
+    Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    Filtering
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-endpoints" class="md-nav__link">
+    New Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-files" class="md-nav__link">
+    Generic Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Generic Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intellectual-objects" class="md-nav__link">
+    Intellectual Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Intellectual Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted_1" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes_1" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#premis-events" class="md-nav__link">
+    Premis Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Premis Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted_2" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes_2" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-items" class="md-nav__link">
+    Work Items
+  </a>
+  
+    <nav class="md-nav" aria-label="Work Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted_3" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes_3" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../partner_tools/" class="md-nav__link">
+        Partner Tools
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../old_partner_tools/" class="md-nav__link">
+        Old Partner Tools
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact_us/" class="md-nav__link">
+        Contact Us
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-ids-instead-of-identifiers" class="md-nav__link">
+    Using IDs Instead of Identifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-structure" class="md-nav__link">
+    List Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-parameter-changes" class="md-nav__link">
+    Query Parameter Changes
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Parameter Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sorting" class="md-nav__link">
+    Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    Filtering
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-endpoints" class="md-nav__link">
+    New Endpoints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-files" class="md-nav__link">
+    Generic Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Generic Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intellectual-objects" class="md-nav__link">
+    Intellectual Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Intellectual Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted_1" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes_1" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#premis-events" class="md-nav__link">
+    Premis Events
+  </a>
+  
+    <nav class="md-nav" aria-label="Premis Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted_2" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes_2" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-items" class="md-nav__link">
+    Work Items
+  </a>
+  
+    <nav class="md-nav" aria-label="Work Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    Changed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleted_3" class="md-nav__link">
+    Deleted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-changes_3" class="md-nav__link">
+    JSON Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="api-changes-from-pharos">API Changes from Pharos</h1>
+<p>The primary API changes from Pharos to Registry include:</p>
+<ul>
+<li>Change in endpoint prefix from <strong>/member-api/v2/</strong> to <strong>/member-api/v3/</strong></li>
+<li>Use of numeric IDs in URLs instead of object and file identifiers.</li>
+<li>Changes to some filter and sort parameters in endpoints that return lists of records. Registry includes more filter and sort options than Pharos.</li>
+<li>Minor changes to JSON structure of responses. Registry generally returns richer data that is easier to understand.</li>
+</ul>
+<h2 id="using-ids-instead-of-identifiers">Using IDs Instead of Identifiers</h2>
+<p>The change from identifiers to IDs deserves special mention. In the Pharos REST API, you would request file information with a URL like this:</p>
+<p><code>GET /member-api/v2/files/test.edu/my-object/data/my-file.pdf</code></p>
+<p>The corresponding request in the Registry API looks like this:</p>
+<p><code>GET /member-api/v3/files/21145</code></p>
+<p>The reason for this change is that file identifiers contain slashes, just like URL path identifiers. They also often contain characters that are illegal in URLs and require special encoding. In addition, Pharos URLs could contain query strings after the embedded file identifer.</p>
+<p>In practice, URLs with long, messy file names followed by query strings became nearly impossible to parse. The <a href="https://github.com/APTrust/pharos/blob/master/config/routes.rb#L53-L54" target="_blank">pattern</a> for extracting embedded file identifiers from URLs became unmaintainable, and still cannot match a number of identifiers in our system.</p>
+<p>This change creates a problem. Object and file identifiers are semantic and knowable to depositors. Numeric IDs are opaque and unknowable. So how can you can map the known to the unknown?</p>
+<p>Easy. These requests will return object and file records that include IDs:</p>
+<p><code>GET /member-api/v3/objects?identifier={object-identifier}</code></p>
+<p><code>GET /member-api/v3/files?identifier={file-identifier}</code></p>
+<h2 id="list-structure">List Structure</h2>
+<p>For endpoints returning lists of records (object, files, events, etc.), Pharos returned this format:</p>
+<div class="highlight"><pre><span></span><code>{
+   count: integer,
+   next: string (url),
+   previous: string (url),
+   results: array of objects
+}
+</code></pre></div>
+<p>Registry returns this format. The only difference is that <code>results</code> is now <code>items</code>:</p>
+<div class="highlight"><pre><span></span><code>{
+   count: integer,
+   next: string (url),
+   previous: string (url),
+   items: array of objects
+}
+</code></pre></div>
+<p>Changes in item structure are described below.</p>
+<h2 id="query-parameter-changes">Query Parameter Changes</h2>
+<p>Endpoints returning lists support more sorting and filtering parameters than their Pharos counterparts. While the exact parameters for each endpoint are listed in the <a _target="blank" href="https://aptrust.github.io/registry/">Registry Swagger docs</a>, you should note the following patterns.</p>
+<h3 id="sorting">Sorting</h3>
+<p>Sorting parameter names use the pattern {field_name}__{direction}, with two underscores before direction. If no direction is specified, it defaults to <code>asc</code>.</p>
+<p>Examples:</p>
+<ul>
+<li><code>intellectual_object_identifier</code> - Sort by intellectual object identifier, ascending.</li>
+<li><code>intellectual_object_identifier__asc</code> - Sort by intellectual object identifier, ascending.</li>
+<li><code>intellectual_object_identifier__desc</code> - Sort by intellectual object identifier, descending.</li>
+</ul>
+<h3 id="filtering">Filtering</h3>
+<p>Filtering parameter names generally match JSON field names. For example, to get a list of files or objects stored in Standard storage, add the following to your query string:</p>
+<p><code>storage_option=Standard</code></p>
+<p>For datetime and numeric fields, append <code>__gteq</code> or <code>__lteq</code> to the field name to find items whose field value is "greater than or equal to" (gteq) or "less than or equal to" (lteq) the specified value. Note the <strong>double</strong> unscore before each suffix.</p>
+<p>Examples:</p>
+<ul>
+<li><code>created_at__gteq=2022-08-01&amp;created_at__lteq=2022-08-31</code> returns records created between August 1, 2022 and August 31, 2022.</li>
+<li><code>size__gteq=1000</code> returns records where size is at least 1000 bytes.</li>
+<li><code>size__lteq=1000</code> returns records where size is less than or equal to 1000 bytes.</li>
+<li><code>size__gteq=1000&amp;size__lteq=2000</code> returns records where size is between 1000 and 2000 bytes.</li>
+<li><code>size=1000</code> return records where size is exactly 1000 bytes.</li>
+</ul>
+<h2 id="new-endpoints">New Endpoints</h2>
+<p>API endpoints for the following types are new. Please follow the links for details.</p>
+<ul>
+<li><a href="https://aptrust.github.io/registry/#/Alerts" target="_blank">Alerts</a></li>
+<li><a href="https://aptrust.github.io/registry/#/Checksums" target="_blank">Checksums</a></li>
+<li><a href="https://aptrust.github.io/registry/#/Deletion%20Requests" target="_blank">Deletion Requests</a></li>
+</ul>
+<h2 id="generic-files">Generic Files</h2>
+<h3 id="changed">Changed</h3>
+<p>The following endpoints have changed as noted.</p>
+<ul>
+<li><code>/member-api/v2/files/{institution_identifier}</code> -&gt; <code>/member-api/v3/files</code></li>
+<li><code>/member-api/v2/files/{intellectual_object_identifier}</code> -&gt; <code>/member-api/v3/files?intellectual_object_id={object_id}</code></li>
+</ul>
+<h3 id="deleted">Deleted</h3>
+<p>The following endpoint is no longer implemented:</p>
+<ul>
+<li><code>/member-api/v2/files/restore/{generic_file_id}</code></li>
+</ul>
+<h3 id="added">Added</h3>
+<p>Registry adds the following Generic File endpoint:</p>
+<p><code>/member-api/v3/files/show/{id}</code></p>
+<p>This returns a Generic File object with nested Premis Events, Checksums and Storage Records.</p>
+<h3 id="json-changes">JSON Changes</h3>
+<p>The GenericFileView object returned by calls to <code>/member-api/v3/files</code> is a superset of the File object returned by the Pharos API. In addition to the old Pharos fields, GenericFileView contains the following:</p>
+<ul>
+<li><code>size</code> (integer) - The size of the file, in bytes.</li>
+<li><code>object_identifier</code> (string) - The identifier of the Intellectual Object to which this file belongs.</li>
+<li><code>access</code> (string) - The file's access setting.</li>
+<li><code>institution_id</code> (integer) - The ID of the institution that owns this file.</li>
+<li><code>institution_name</code> (string) - The name of the institution that owns this file.</li>
+<li><code>institution_identifier</code> (string) - The identifier (domain name) of the institution that owns this file.</li>
+<li><code>storage_option</code> (string) - Describes where this file is stored.</li>
+<li><code>uuid</code> (string) - The object's preservation identifier.</li>
+<li><code>md5</code> (string) - The most recently calculated md5 checksum for this file.</li>
+<li><code>sha1</code> (string) - The most recently calculated sha1 checksum for this file.</li>
+<li><code>sha256</code> (string) - The most recently calculated sha256 checksum for this file.</li>
+<li><code>sha512</code> (string) - The most recently calculated sha512 checksum for this file.</li>
+<li><code>storage_records</code> (Array{Storage Record}) - A list of storage records indicating where this file is saved in preservation storage.</li>
+</ul>
+<h2 id="intellectual-objects">Intellectual Objects</h2>
+<h3 id="changed_1">Changed</h3>
+<p>The following endpoints have changed as noted.</p>
+<ul>
+<li><code>/member-api/v2/objects</code> -&gt; <code>/member-api/v3/objects</code></li>
+<li><code>/member-api/v2/objects/{institution_identifier}</code> -&gt; <code>/member-api/v3/objects</code></li>
+</ul>
+<p>Note that the member API allows you to retrieve information about object belonging to your own institution only.</p>
+<h3 id="deleted_1">Deleted</h3>
+<p>The following endpoint is no longer implemented:</p>
+<ul>
+<li><code>/member-api/v2/objects/restore/{intellectual_object_id}</code></li>
+</ul>
+<h3 id="added_1">Added</h3>
+<p>Registry adds the following Intellectual Object endpoint:</p>
+<p><code>/member-api/v3/objects/show/{id}</code></p>
+<p>This returns an Intellectual Object summary. The summary does not include files or events because many objects have thousands of files and tens or hundreds of thousands of events. Use the file and event endpoints to retrieve paged lists of files and events.</p>
+<h3 id="json-changes_1">JSON Changes</h3>
+<p>The Intellectual Object view records returned by the Registry API are a superset of the old Pharos object records. In addition to the fields returned by Pharos, Registry adds the following:</p>
+<ul>
+<li><code>bag_group_identifier</code> (string) - Identifies the group of bags to which this bag belongs. This is often empty</li>
+<li><code>storage_option</code> (string) - Describes where this object's files are stored.</li>
+<li><code>bagit_profile_identifier</code> (string) - Describes the BagIt profile used to create and restore this object. This will be either and APTrust or BTR profile identifier.</li>
+<li><code>source_organization</code> (string) - The value of the Source-Organization tag in the object's bag-info.txt file.</li>
+<li><code>internal_sender_identifier</code> (string) - The value of the Internal-Sender-Identifier tag in the object's bag-info.txt file.</li>
+<li><code>internal_sender_description</code> (string) - The value of the Internal-Sender-Description tag in the object's bag-info.txt file.</li>
+<li><code>institution_name</code> (string) - The name of the institution that deposited this object.</li>
+<li><code>institution_identifier</code> (string) - The identifier (domain name) of the institution that deposited this object.</li>
+<li><code>institution_type</code> (string) - Indicates whether the institution that owns this object is a member institution (account) or subscribing institution (sub-account).</li>
+<li><code>institution_parent_id</code> (integer) - ID of this institution's parent. Applicable to subscriber institutions (sub-accounts) only.</li>
+<li><code>file_count</code> (integer) - The total number of files preserved for this object. This includes payload files and preserved manifests. APTrust does not preserve manifests or tag manifests. This number can change over time as additional new files are ingested or existing ones are deleted.</li>
+<li><code>size</code> (integer) - The total number of bytes for all files preserved for this object. This number can change over time as additional new files are ingested or existing ones are deleted.</li>
+<li><code>payload_file_count</code> (integer) - The total number of files in this object's payload. I.e., inside the data directory of the bag that was uploaded for deposit. This number can change over time as additional new files are ingested or existing ones are deleted.</li>
+<li><code>payload_size</code> (integer) - Total size, in bytes, of the files in this object's payload directory (the data directory of the bag that was uploaded for ingest). This number can change over time as additional new files are ingested or existing ones are deleted.</li>
+</ul>
+<h2 id="premis-events">Premis Events</h2>
+<h3 id="changed_2">Changed</h3>
+<p>The following endpoints have changed as noted.</p>
+<ul>
+<li><code>/member-api/v2/events/{generic_file_identifier}</code> -&gt; <code>/member-api/v3/events?generic_file_identifier={identifier}</code> or <code>/member-api/v3/events?generic_file_id={id}</code></li>
+<li><code>/member-api/v2/events/{intellectual_object_identifier}</code> -&gt; <code>/member-api/v3/events?intellectual_object_identifier={identifier}</code> or <code>/member-api/v3/events?intellectual_object_id={id}</code></li>
+</ul>
+<h3 id="deleted_2">Deleted</h3>
+<p>The following endpoint was deleted because member institutions can retrieve only their own events.</p>
+<ul>
+<li><code>/member-api/v2/events/{institution_identifier}</code></li>
+</ul>
+<h3 id="added_2">Added</h3>
+<p>The new endpoint <code>/member-api/v3/events/show/{id}</code> displays details of a single event.</p>
+<h3 id="json-changes_2">JSON Changes</h3>
+<p>The version 3 JSON contains all of the fields from the version 2 API, plus the following:</p>
+<ul>
+<li><code>institution_name</code> (string) - The name of the institution to which the event pertains.</li>
+</ul>
+<h2 id="work-items">Work Items</h2>
+<h3 id="changed_3">Changed</h3>
+<p>The following endpoints have changed as noted.</p>
+<ul>
+<li><code>/member-api/v2/items</code> - <code>/member-api/v3/items</code></li>
+</ul>
+<h3 id="deleted_3">Deleted</h3>
+<p>No Work Item endpoints were deleted.</p>
+<h3 id="added_3">Added</h3>
+<p>The following endpoint was added:</p>
+<ul>
+<li><code>/member-api/v3/items/show/{id}</code></li>
+</ul>
+<h3 id="json-changes_3">JSON Changes</h3>
+<ul>
+<li><code>alt_identifier</code> (string) - An alternate identifier for this object to which this Work Item pertains, supplied by the depositor.</li>
+<li><code>bag_group_identifier</code> (string) - An optional identifier naming the logical group to which this object belongs. For instance, if ten bags are all part of the same collection, the collection name may be used as the group identifier associating all ten bags.</li>
+<li><code>bagit_profile_identifier</code> (string) - The identifier of the BagIt profile used to create this bag. This can be either the APTrust profile URL or the BTR profile URL. Bags will be restored using the same profile under which they were submitted.</li>
+<li><code>date_processed</code> (datetime as string) - The date and time of last known activity on this work item. This timestamp may change several times during multipart processes such as ingest.</li>
+<li><code>institution_identifier</code> (string) - The identifier (domain name) of the institution that owns the files or objects to which this deletion request pertains.</li>
+<li><code>institution_name</code> (string) - The name of the institution that owns the files or objects to which this work item pertains.</li>
+<li><code>internal_sender_identifier</code> (string) - An optional identifier for internal use by the depositor. The identifier belongs to the object to which this work item pertains.</li>
+<li><code>node</code> (string) - The hostname of the microservice worker currently processing this item. If this is empty, the item is not currently being processed.</li>
+<li><code>pid</code> (integer) - The process ID of the worker that is currently working on this item. If this is empty, the item is not currently being processed.</li>
+<li><code>source_organization</code> (string) - The name of the institution that submitted the object for ingest. This comes from the Source-Organization tag in the original bag.</li>
+<li><code>storage_option</code> (string) - Indicates where the object's files are stored.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
