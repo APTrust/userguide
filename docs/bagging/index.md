@@ -16,7 +16,7 @@ In addition to conforming to the BagIt specification [version 0.97](https://tool
 
 * The name of the tarred bag file must not include directories. `my.edu.my_bag.tar` is valid. `C:\path\to\my.edu.my_bag.tar` is not.
 
-* Bags must contain either an md5 or sha256 manifest, or both
+* Bags must contain an md5 manifest and may also contain a sha256 manifest.
 
 * Bags must be 5 terabytes or less in size.
 
