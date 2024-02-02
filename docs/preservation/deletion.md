@@ -70,3 +70,9 @@ When you delete a file, Registry creates a deletion PREMIS event for the file th
 Contact help@aptrust.org if you want to delete a large number of objects. For bulk deletions, the depositor sends us a list of items to delete and APTrust initiates the process.
 
 Your institutional admins will still have to confirm the deletions before we execute them, but the process can save you having to click on the delete button on a large number of object or file detail pages.
+
+## Reingest After Deletion
+
+If you delete an object and then upload a new version, Registry will mark the deleted object as active again and will create a new ingest event. The new object will include all of the files in the newly uploaded bag. If any of the newly uploaded files have the same identifier as a deleted file, Registry will mark the previously deleted file as active again, and will record the new version's checksums along with a new ingest event.
+
+In short, it's safe to delete an object and then re-upload it.
