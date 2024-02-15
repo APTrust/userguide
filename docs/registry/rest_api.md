@@ -10,6 +10,9 @@ The most common uses of the API are:
 * Querying for an inventory of files
 * Checking the status of pending work items, such as ingests and restorations
 
+!!! warning "Perl API Clients"
+    The APTrust Registry is protected against distributed denial of service (DDOS) attacks by CloudFlare. CloudFlare may refuse access to Perl LWP clients. To get around this, you can set the User-Agent name of your LWP client like so: `$ua->agent('Mozilla/5.0');` Another alternative is to use the WWW::Mechanize package as described in this [StackOverflow thread](https://stackoverflow.com/questions/29057331/waiting-for-cloudflare-ddos-protection-lwp-perl){target=_blank}.
+
 ## Getting an API Key
 
 To use the API, you'll need to get an API token from Registry. Follow these steps:
