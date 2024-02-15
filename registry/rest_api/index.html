@@ -790,6 +790,10 @@
 <li>Querying for an inventory of files</li>
 <li>Checking the status of pending work items, such as ingests and restorations</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Perl API Clients</p>
+<p>The APTrust Registry is protected against distributed denial of service (DDOS) attacks by CloudFlare. CloudFlare may refuse access to Perl LWP clients. To get around this, you can set the User-Agent name of your LWP client like so: <code>$ua-&gt;agent('Mozilla/5.0');</code> Another alternative is to use the WWW::Mechanize package as described in this <a href="https://stackoverflow.com/questions/29057331/waiting-for-cloudflare-ddos-protection-lwp-perl" target="_blank">StackOverflow thread</a>.</p>
+</div>
 <h2 id="getting-an-api-key">Getting an API Key</h2>
 <p>To use the API, you'll need to get an API token from Registry. Follow these steps:</p>
 <ol>
