@@ -15,7 +15,7 @@ For bag creating and validation, the current release supports tarred bags
 only. Though access to the APTrust registry is limited to APTrust depositors,
 anyone can use apt-cmd's bagging and S3 features.
 
-# Downloads
+## Downloads
 
 | Platform | Architecture | Version | SHA-256 |
 | -------- | ------------ | ------- | ------- |
@@ -152,7 +152,7 @@ BagIt specification.
 
 The validator only works with tarred bags and will not validate fetch.txt files.
 
-# S3 Commands
+## S3 Commands
 
 apt-cmd can upload to and download from any service with an S3-compliant
 API. It can also list bucket contents in JSON or text formats, and delete
@@ -250,7 +250,7 @@ Delete object photo.jpg from my-bucket on AWS S3:
 Note: This returns exit status zero and `'{ "result": "OK" }'` if the key is
 successfully deleted or if the key wasn't in the bucket to begin with.
 
-# Registry Commands
+## Registry Commands
 
 Registry commands retrieve information from the APTrust registry. You'll
 need APTrust credentials to query the Registry. See
