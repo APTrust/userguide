@@ -826,20 +826,38 @@
 </ol>
 <h3 id="notes-on-restored-bags">Notes on Restored Bags</h3>
 <p>Because we rebuild bags for restoration, the bag you get back will not exactly match the bag you deposited, though we do guarantee that it contains all of the latest versions of all of the payload files.</p>
+<p>If you submitted a bag that was packaged according to the BTR BagIt Profile, it will restored
+in BTR format. All other bags will be restored in APTrust format. </p>
 <p>Restored bags tend to differ in the following ways from your originally submitted bags:</p>
 <ul>
 <li>
-<p>Restored bags have both sha256 and md5 manifests, while the bag you originally deposited typically has only one or the other.</p>
+<p>Restored APTrust bags have both sha256 and md5 manifests, while the bag you originally deposited typically has only one or the other.</p>
 </li>
 <li>
-<p>Restored bags include md5 and sha256 tag manifests while bags submitted for ingest typically have neither.</p>
+<p>Restored APTrust bags include md5 and sha256 tag manifests while bags submitted for ingest typically have neither.</p>
+</li>
+<li>
+<p>Restored BTR bags include sha1, sha256, and sha512 manifests and tag manifests, even if the original bag included only one of these.</p>
+</li>
+<li>
+<p>Restored bags include a modified bag-info.txt file. The modified file will include all of the tags and values included in the last ingested version of the bag, but:</p>
+<ul>
+<li>The bag will have a new Payload-Oxum.</li>
+<li>The original Payload-Oxum will be included as Original-Payload-Oxum.</li>
+<li>The bag will have a new Bagging-Date describing when APTrust's bag restorer rebuilt the bag.</li>
+<li>The original Bagging-Date will be included as Original-Bagging-Date.</li>
+<li>The bag will have a new Bag-Size describing the size of the restored bag.</li>
+<li>The original Bag-Size will be included as Original-Bag-Size.</li>
+<li>The bag will have a new Bagging-Software value saying that the bag was created by the APTrust restorer.</li>
+<li>The original Bagging-Software name will included as Original-Bagging-Software.</li>
+</ul>
 </li>
 <li>
 <p>Restored bags include the <strong>latest</strong> version of each preserved file in the payload (data) directory.</p>
 </li>
 </ul>
-<p>These last point is important. In some cases, you or someone at your institution may have deleted files from a bag, or uploaded newer versions of files in a bag after the bag was initially ingested. Deleted files cannot be restored, and the restored bag will always contain the last uploaded version of each file.</p>
-<p>You can find information about upldated and deleted files in the APTrust registry.</p>
+<p>This last point is important. In some cases, you or someone at your institution may have deleted files from a bag, or uploaded newer versions of files in a bag after the bag was initially ingested. Deleted files cannot be restored, and the restored bag will always contain the last uploaded version of each file.</p>
+<p>You can find information about updated and deleted files in the APTrust registry.</p>
 <ol>
 <li>Go to <a href="https://repo.aptrust.org/objects">https://repo.aptrust.org/objects</a></li>
 <li>Search for the object you want to investigate. The easiest way to find an object is by its identifier.</li>
@@ -847,6 +865,8 @@
 <li>Click the plus sign next to a file record to see its checksum history. If a newer version of a file was uploaded after initial ingest, this view will show you the old and new checksums, and the dates on which the checksum changed. You'll find more info, including a full list of Premis events, on the file detail page. Go to <a href="https://repo.aptrust.org/files">https://repo.aptrust.org/files</a> and enter paste in the file identifier.</li>
 <li>To see a list of files deleted from the current object, click the <strong>show deleted files</strong> link on the top right side of the <strong>Active Files</strong> list.</li>
 </ol>
+<p>Because files may have been added to or deleted from a bag after its initial ingest, the Bag-Size and Payload-Oxum of the restored bag may differ from the Bag-Size and Payload-Oxum of any individual ingests. This is why we include both the current and original values in the restored version.</p>
+<p>If you're curious about why the contents of a restored bag differ from the original, the object's PREMIS events should provide a detailed record of all additions and deletions. See <a href="/registry/events">PREMIS Events</a> for more info.</p>
 <h2 id="restoring-individual-files">Restoring Individual Files</h2>
 <p>You can restore individual files from the Intellectual Object page or from the Generic File Detail page. To restore from the Intellectual Object page:</p>
 <ol>
