@@ -33,23 +33,43 @@ After you click __Restore Object__, APTrust does the following:
 
 Because we rebuild bags for restoration, the bag you get back will not exactly match the bag you deposited, though we do guarantee that it contains all of the latest versions of all of the payload files.
 
+If you submitted a bag that was packaged according to the BTR BagIt Profile, it will restored
+in BTR format. All other bags will be restored in APTrust format. 
+
 Restored bags tend to differ in the following ways from your originally submitted bags:
 
-* Restored bags have both sha256 and md5 manifests, while the bag you originally deposited typically has only one or the other.
+* Restored APTrust bags have both sha256 and md5 manifests, while the bag you originally deposited typically has only one or the other.
 
-* Restored bags include md5 and sha256 tag manifests while bags submitted for ingest typically have neither.
+* Restored APTrust bags include md5 and sha256 tag manifests while bags submitted for ingest typically have neither.
+
+* Restored BTR bags include sha1, sha256, and sha512 manifests and tag manifests, even if the original bag included only one of these.
+
+* Restored bags include a modified bag-info.txt file. The modified file will include all of the tags and values included in the last ingested version of the bag, but:
+
+    * The bag will have a new Payload-Oxum.
+    * The original Payload-Oxum will be included as Original-Payload-Oxum.
+    * The bag will have a new Bagging-Date describing when APTrust's bag restorer rebuilt the bag.
+    * The original Bagging-Date will be included as Original-Bagging-Date.
+    * The bag will have a new Bag-Size describing the size of the restored bag.
+    * The original Bag-Size will be included as Original-Bag-Size.
+    * The bag will have a new Bagging-Software value saying that the bag was created by the APTrust restorer.
+    * The original Bagging-Software name will included as Original-Bagging-Software.
 
 * Restored bags include the __latest__ version of each preserved file in the payload (data) directory.
 
-These last point is important. In some cases, you or someone at your institution may have deleted files from a bag, or uploaded newer versions of files in a bag after the bag was initially ingested. Deleted files cannot be restored, and the restored bag will always contain the last uploaded version of each file.
+This last point is important. In some cases, you or someone at your institution may have deleted files from a bag, or uploaded newer versions of files in a bag after the bag was initially ingested. Deleted files cannot be restored, and the restored bag will always contain the last uploaded version of each file.
 
-You can find information about upldated and deleted files in the APTrust registry.
+You can find information about updated and deleted files in the APTrust registry.
 
 1. Go to https://repo.aptrust.org/objects
 2. Search for the object you want to investigate. The easiest way to find an object is by its identifier.
 3. Scroll down the object detail page to the list of **Active Files**.
 4. Click the plus sign next to a file record to see its checksum history. If a newer version of a file was uploaded after initial ingest, this view will show you the old and new checksums, and the dates on which the checksum changed. You'll find more info, including a full list of Premis events, on the file detail page. Go to https://repo.aptrust.org/files and enter paste in the file identifier.
 4. To see a list of files deleted from the current object, click the **show deleted files** link on the top right side of the **Active Files** list.
+
+Because files may have been added to or deleted from a bag after its initial ingest, the Bag-Size and Payload-Oxum of the restored bag may differ from the Bag-Size and Payload-Oxum of any individual ingests. This is why we include both the current and original values in the restored version.
+
+If you're curious about why the contents of a restored bag differ from the original, the object's PREMIS events should provide a detailed record of all additions and deletions. See [PREMIS Events](/registry/events) for more info.
 
 ## Restoring Individual Files
 

@@ -6,6 +6,15 @@ For info on what constitutes a valid BTR bag, see version 1.0 of the [BTR bagit 
 
 The remainder of this page will discuss the APTrust format and the allowed options to use when bagging.
 
+!!! note
+    When you upload a bag to APTrust, ingest services will look at the BagIt-Profile-Identifier
+    tag in the bag-info.txt file. If this is set to 
+    https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json,
+    it will be validated according to the BTR BagIt profile. 
+
+    If BagIt-Profile-Identifier is set to any other value, or if the value is missing,
+    ingest services will validate the bag according to the APTrust profile.
+
 ## APTrust BagIt Specification
 
 In addition to conforming to the BagIt specification [version 0.97](https://tools.ietf.org/html/draft-kunze-bagit-14) or [version 1.0](https://tools.ietf.org/html/rfc8493), valid APTrust bags must include the tag files and tags listed below, and must meet the following criteria:
