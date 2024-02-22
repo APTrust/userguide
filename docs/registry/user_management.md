@@ -42,3 +42,14 @@ Institutional administrators can add new users at their institition. To add a ne
     1. Institutional User - This role can send materials to APTrust for ingest, and can view and restore files and objects that are not restricted.
 
 ![Edit user](../img/registry/UserEdit.png)
+
+## Reactivating Deactivated Users
+
+1. Click the __Users__ link in the left nav bar.
+1. Click on the name of the users you want to reactivate. Deactivated users have a non-empty Disabled date describing when their account was disabled. In the screenshot below, the first user in the list was deactivated on January 15, 2021.
+
+    ![User list with deactivated user](../img/registry/UserListIncludingDeactivated.png)
+
+1. On the user's detail page, click the __Reactivate__ button.
+
+    ![User detail page with Reactivate button](../img/registry/UserReactivate.png)
