@@ -10,6 +10,25 @@ Deleting objects from APTrust is a multi-step process.
 
 3. If one additional admin clicks the 'confirm deletion' link in the email, the files or objects will be deleted.
 
+## Minimum Retention Period
+
+Files and objects stored in S3 or in APTrust's Standard storage option (which includes both S3 and Glacier)
+can be deleted at any time.
+
+Items stored in Glacier, Glacier Deep Archive and Wasabi cannot be deleted until they have been stored for 
+the minimum retention period. Minimum retention periods are:
+
+* __Glacier__ 90 days
+* __Glacier Deep Archive__ 180 days
+* __Wasabi__ 90 days
+
+For files and objects that have not met the minimum retention period, Registry's __Delete__ button will be
+disabled. Hovering over the button will display a message describing why the item can't be deleted
+and the date it will become eligible for deletion.
+
+Minimum retention periods do not apply to file and object updates. You can update files and objects at
+any time after ingest, regardless of storage option and minimum retention periods. 
+
 ## Deleting an Intellectual Object
 
 The screenshot below shows the detail page for an intellectual object. Clicking the __Delete__ button on this page initiates the deletion process for the entire object.
