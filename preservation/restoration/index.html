@@ -826,8 +826,14 @@
 </ol>
 <h3 id="notes-on-restored-bags">Notes on Restored Bags</h3>
 <p>Because we rebuild bags for restoration, the bag you get back will not exactly match the bag you deposited, though we do guarantee that it contains all of the latest versions of all of the payload files.</p>
-<p>If you submitted a bag that was packaged according to the BTR BagIt Profile, it will restored
-in BTR format. All other bags will be restored in APTrust format. </p>
+<p>If you submitted a bag that was packaged according to the BTR BagIt Profile, it will restored in BTR format. All other bags will be restored in APTrust format.</p>
+<p>Note that, in addition to payload files, we preserve and restore the following tag files:</p>
+<ul>
+<li>aptrust-info.txt</li>
+<li>bag-info.txt (Which will be modified on restoration. See below.)</li>
+<li>Any other file outside the original bag's data directory that is not a manifest, tag manifest or fetch.txt file.</li>
+</ul>
+<p>We preserve the files above because they often contain important metadata.</p>
 <p>Restored bags tend to differ in the following ways from your originally submitted bags:</p>
 <ul>
 <li>
