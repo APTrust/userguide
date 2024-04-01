@@ -33,8 +33,15 @@ After you click __Restore Object__, APTrust does the following:
 
 Because we rebuild bags for restoration, the bag you get back will not exactly match the bag you deposited, though we do guarantee that it contains all of the latest versions of all of the payload files.
 
-If you submitted a bag that was packaged according to the BTR BagIt Profile, it will restored
-in BTR format. All other bags will be restored in APTrust format. 
+If you submitted a bag that was packaged according to the BTR BagIt Profile, it will restored in BTR format. All other bags will be restored in APTrust format.
+
+Note that, in addition to payload files, we preserve and restore the following tag files:
+
+* aptrust-info.txt
+* bag-info.txt (Which will be modified on restoration. See below.)
+* Any other file outside the original bag's data directory that is not a manifest, tag manifest or fetch.txt file.
+
+We preserve the files above because they often contain important metadata.
 
 Restored bags tend to differ in the following ways from your originally submitted bags:
 
