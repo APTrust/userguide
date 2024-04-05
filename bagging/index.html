@@ -426,15 +426,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#allowed-access-values" class="md-nav__link">
-    Allowed Access Values
+  <a href="#allowed-storage-option-values" class="md-nav__link">
+    Allowed Storage-Option Values
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#allowed-storage-option-values" class="md-nav__link">
-    Allowed Storage-Option Values
+  <a href="#storage-options-and-fixity-checks" class="md-nav__link">
+    Storage Options and Fixity Checks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allowed-access-values" class="md-nav__link">
+    Allowed Access Values
   </a>
   
 </li>
@@ -818,15 +825,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#allowed-access-values" class="md-nav__link">
-    Allowed Access Values
+  <a href="#allowed-storage-option-values" class="md-nav__link">
+    Allowed Storage-Option Values
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#allowed-storage-option-values" class="md-nav__link">
-    Allowed Storage-Option Values
+  <a href="#storage-options-and-fixity-checks" class="md-nav__link">
+    Storage Options and Fixity Checks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allowed-access-values" class="md-nav__link">
+    Allowed Access Values
   </a>
   
 </li>
@@ -896,9 +910,9 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When you upload a bag to APTrust, ingest services will look at the BagIt-Profile-Identifier
-tag in the bag-info.txt file. If this is set to 
+tag in the bag-info.txt file. If this is set to
 <a href="https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json">https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json</a>,
-it will be validated according to the BTR BagIt profile. </p>
+it will be validated according to the BTR BagIt profile.</p>
 <p>If BagIt-Profile-Identifier is set to any other value, or if the value is missing,
 ingest services will validate the bag according to the APTrust profile.</p>
 </div>
@@ -1052,18 +1066,6 @@ ingest services will validate the bag according to the APTrust profile.</p>
 </tr>
 </tbody>
 </table>
-<h4 id="allowed-access-values">Allowed Access Values</h4>
-<ul>
-<li>
-<p><strong>Restricted</strong>: Metadata about this object is accessible to the institutional administrator (at the depositing institution) and to the APTrust admin. No one else can even see that this object exists in the repository.</p>
-</li>
-<li>
-<p><strong>Institution</strong>: All users at the depositing institution can see metadata about this object.</p>
-</li>
-<li>
-<p><strong>Consortia</strong>: All APTrust members can see this object's metadata.</p>
-</li>
-</ul>
 <h4 id="allowed-storage-option-values">Allowed Storage-Option Values</h4>
 <ul>
 <li>
@@ -1087,11 +1089,31 @@ ingest services will validate the bag according to the APTrust profile.</p>
 <li>
 <p><strong>Glacier-Deep-VA</strong>: Files will be stored ONLY in Glacier Deep Archive, in AWS's Northern Virginia region, and will be encrypted during storage. APTrust will not perform any fixity checks on these files.</p>
 </li>
+<li>
+<p><strong>Wasabi-OR</strong>: Files will be stored only in Wasabi's Oregon data center. These files will receive fixity checks every 90 days.</p>
+</li>
+<li>
+<p><strong>Wasabi-VA</strong>: Files will be stored only in Wasabi's Virginia data center. These files will receive fixity checks every 90 days.</p>
+</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">A note on storage options</p>
 <p>When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.</p>
 </div>
+<h4 id="storage-options-and-fixity-checks">Storage Options and Fixity Checks</h4>
+<p>As noted in the list of storage options above, we check fixity only on items in S3 and Wasabi storage, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard, Wasabi-OR or Wasabi-VA storage options.</p>
+<h4 id="allowed-access-values">Allowed Access Values</h4>
+<ul>
+<li>
+<p><strong>Restricted</strong>: Metadata about this object is accessible to the institutional administrator (at the depositing institution) and to the APTrust admin. No one else can even see that this object exists in the repository.</p>
+</li>
+<li>
+<p><strong>Institution</strong>: All users at the depositing institution can see metadata about this object.</p>
+</li>
+<li>
+<p><del><strong>Consortia</strong>: All APTrust members can see this object's metadata.</del> DEPRECATED. Consortial access was never implemented in the APTrust repository. Use Restricted or Institution instead.</p>
+</li>
+</ul>
 <h2 id="multipart-bags-deprecated">Multipart bags - DEPRECATED</h2>
 <div class="admonition warning">
 <p class="admonition-title">Deprecation Notice</p>
