@@ -8,9 +8,9 @@ The remainder of this page will discuss the APTrust format and the allowed optio
 
 !!! note
     When you upload a bag to APTrust, ingest services will look at the BagIt-Profile-Identifier
-    tag in the bag-info.txt file. If this is set to 
+    tag in the bag-info.txt file. If this is set to
     https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json,
-    it will be validated according to the BTR BagIt profile. 
+    it will be validated according to the BTR BagIt profile.
 
     If BagIt-Profile-Identifier is set to any other value, or if the value is missing,
     ingest services will validate the bag according to the APTrust profile.
@@ -106,14 +106,6 @@ Description | A human-readable description of the bag. This will appear in Regis
 Access | One of three access options listed below. The access option describes who can see an object's metadata, including its name and description, a list of its generic files and events. APTrust does not currently provide access to the objects themselves, except when you restore one of your bags. No matter which access option you choose, no other institution can access your intellectual object.
 Storage-Option | This indicates how and where you want APTrust to store your bag. If omitted, Storage-Option defaults to "Standard". See the section on Storage Options below for more information.
 
-#### Allowed Access Values
-
-* __Restricted__: Metadata about this object is accessible to the institutional administrator (at the depositing institution) and to the APTrust admin. No one else can even see that this object exists in the repository.
-
-* __Institution__: All users at the depositing institution can see metadata about this object.
-
-* __Consortia__: All APTrust members can see this object's metadata.
-
 #### Allowed Storage-Option Values
 
 * __Standard__: The bag's contents will be store in S3 in Northern Virginia and Glacier in Oregon. APTrust will perform fixity checks on the S3 files every 90 days.
@@ -130,8 +122,25 @@ Storage-Option | This indicates how and where you want APTrust to store your bag
 
 * __Glacier-Deep-VA__: Files will be stored ONLY in Glacier Deep Archive, in AWS's Northern Virginia region, and will be encrypted during storage. APTrust will not perform any fixity checks on these files.
 
+* __Wasabi-OR__: Files will be stored only in Wasabi's Oregon data center. These files will receive fixity checks every 90 days.
+
+* __Wasabi-VA__: Files will be stored only in Wasabi's Virginia data center. These files will receive fixity checks every 90 days.
+
+
 !!! warning "A note on storage options"
     When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.
+
+#### Storage Options and Fixity Checks
+
+As noted in the list of storage options above, we check fixity only on items in S3 and Wasabi storage, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard, Wasabi-OR or Wasabi-VA storage options.
+
+#### Allowed Access Values
+
+* __Restricted__: Metadata about this object is accessible to the institutional administrator (at the depositing institution) and to the APTrust admin. No one else can even see that this object exists in the repository.
+
+* __Institution__: All users at the depositing institution can see metadata about this object.
+
+* ~~__Consortia__: All APTrust members can see this object's metadata.~~ DEPRECATED. Consortial access was never implemented in the APTrust repository. Use Restricted or Institution instead.
 
 ## Multipart bags - DEPRECATED
 
