@@ -140,7 +140,7 @@ As noted in the list of storage options above, we check fixity only on items in 
 
 * __Institution__: All users at the depositing institution can see metadata about this object.
 
-* ~~__Consortia__: All APTrust members can see this object's metadata.~~ DEPRECATED. Consortial access was never implemented in the APTrust repository. Use Restricted or Institution instead.
+* ~~__Consortia__: All APTrust members can see this object's metadata.~~ DEPRECATED. Consortial access was never implemented in the APTrust repository. Use Restricted or Institution instead. The Consortia access option is treated the same as the Institution access option.
 
 ## Multipart bags - DEPRECATED
 
