@@ -210,6 +210,18 @@ List 10 items in my_bucket with prefix "photo", using plain text output:
                     --format=text
 ```
 
+List items in sub-folder "music" of my_bucket. Note the trailing slash after "music/".
+
+```bash
+    apt-cmd s3 list --host=s3.amazonaws.com --bucket=my_bucket --prefix=music/
+```
+
+List items in a nested folder. Again, note the trailing slash:
+
+```bash
+    apt-cmd s3 list --host=s3.amazonaws.com --bucket=my_bucket --prefix=music/danielle_ponder/
+```
+
 ## Downloading an S3 File
 
 You can download files from any S3-compatible service. For this to work,
