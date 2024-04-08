@@ -1657,6 +1657,12 @@ environment, or in a config file specified with the --config flag.</p>
                     --maxitems<span class="o">=</span><span class="m">10</span> <span class="se">\</span>
                     --format<span class="o">=</span>text
 </code></pre></div>
+<p>List items in sub-folder "music" of my_bucket. Note the trailing slash after "music/".</p>
+<div class="highlight"><pre><span></span><code>    apt-cmd s3 list --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span>my_bucket --prefix<span class="o">=</span>music/
+</code></pre></div>
+<p>List items in a nested folder. Again, note the trailing slash:</p>
+<div class="highlight"><pre><span></span><code>    apt-cmd s3 list --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span>my_bucket --prefix<span class="o">=</span>music/danielle_ponder/
+</code></pre></div>
 <h2 id="downloading-an-s3-file">Downloading an S3 File</h2>
 <p>You can download files from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
