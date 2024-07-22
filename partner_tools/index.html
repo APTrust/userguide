@@ -8,8 +8,15 @@
       
       
       
+      
+        <link rel="prev" href="../registry/api_changes/">
+      
+      
+        <link rel="next" href="../old_partner_tools/">
+      
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
@@ -17,15 +24,14 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
-        
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -49,14 +55,8 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -76,7 +76,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="APTrust User Guide" class="md-header__button md-logo" aria-label="APTrust User Guide" data-md-component="logo">
       
@@ -85,6 +87,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -105,8 +108,12 @@
     </div>
     
     
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -115,24 +122,27 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -144,7 +154,7 @@
         <a href="https://github.com/APTrust/userguide" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -174,6 +184,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="APTrust User Guide" class="md-nav__button md-logo" aria-label="APTrust User Guide" data-md-component="logo">
@@ -189,7 +200,7 @@
       <a href="https://github.com/APTrust/userguide" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -201,14 +212,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Home
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
       </a>
     </li>
   
@@ -216,14 +232,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../quick_start/" class="md-nav__link">
-        Quick Start
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
       </a>
     </li>
   
@@ -231,368 +252,522 @@
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Preservation Actions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Preservation Actions" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Preservation Actions
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Preservation Actions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Preservation Actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../preservation/ingest/" class="md-nav__link">
-        Ingest
+        
+  
+  <span class="md-ellipsis">
+    Ingest
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../preservation/updates/" class="md-nav__link">
-        Updates
+        
+  
+  <span class="md-ellipsis">
+    Updates
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../preservation/restoration/" class="md-nav__link">
-        Restoration
+        
+  
+  <span class="md-ellipsis">
+    Restoration
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../preservation/deletion/" class="md-nav__link">
-        Deletion
+        
+  
+  <span class="md-ellipsis">
+    Deletion
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Bagging
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Bagging" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Bagging
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
           
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bagging
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Bagging
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../bagging/" class="md-nav__link">
-        APTrust Bagging Requirements
+        
+  
+  <span class="md-ellipsis">
+    APTrust Bagging Requirements
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../bagging/tools/" class="md-nav__link">
-        Bagging Tools
+        
+  
+  <span class="md-ellipsis">
+    Bagging Tools
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          Using Registry
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Using Registry" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Using Registry
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
           
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Using Registry
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Using Registry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/" class="md-nav__link">
-        Using Registry
+        
+  
+  <span class="md-ellipsis">
+    Using Registry
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/objects/" class="md-nav__link">
-        Intellectual Objects
+        
+  
+  <span class="md-ellipsis">
+    Intellectual Objects
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/files/" class="md-nav__link">
-        Generic Files
+        
+  
+  <span class="md-ellipsis">
+    Generic Files
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/events/" class="md-nav__link">
-        Premis Events
+        
+  
+  <span class="md-ellipsis">
+    Premis Events
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/work_items/" class="md-nav__link">
-        Work Items
+        
+  
+  <span class="md-ellipsis">
+    Work Items
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/user_management/" class="md-nav__link">
-        User Management
+        
+  
+  <span class="md-ellipsis">
+    User Management
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/two_factor_auth/" class="md-nav__link">
-        Two-Factor Authentication
+        
+  
+  <span class="md-ellipsis">
+    Two-Factor Authentication
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/spot_tests/" class="md-nav__link">
-        Configuring Restoration Spot Tests
+        
+  
+  <span class="md-ellipsis">
+    Configuring Restoration Spot Tests
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/reports/" class="md-nav__link">
-        Reports
+        
+  
+  <span class="md-ellipsis">
+    Reports
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/rest_api/" class="md-nav__link">
-        Registry REST API
+        
+  
+  <span class="md-ellipsis">
+    Registry REST API
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../registry/api_changes/" class="md-nav__link">
-        API Changes from Pharos
+        
+  
+  <span class="md-ellipsis">
+    API Changes from Pharos
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Partner Tools
+          
+  
+  <span class="md-ellipsis">
+    Partner Tools
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Partner Tools
+        
+  
+  <span class="md-ellipsis">
+    Partner Tools
+  </span>
+  
+
       </a>
       
         
@@ -612,28 +787,36 @@
       
         <li class="md-nav__item">
   <a href="#downloads" class="md-nav__link">
-    Downloads
+    <span class="md-ellipsis">
+      Downloads
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#help-and-troubleshooting" class="md-nav__link">
-    Help and Troubleshooting
+    <span class="md-ellipsis">
+      Help and Troubleshooting
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#exit-codes" class="md-nav__link">
-    Exit Codes
+    <span class="md-ellipsis">
+      Exit Codes
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#creating-a-bag" class="md-nav__link">
-    Creating a Bag
+    <span class="md-ellipsis">
+      Creating a Bag
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Creating a Bag">
@@ -641,14 +824,18 @@
         
           <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
-    Troubleshooting
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#limitations" class="md-nav__link">
-    Limitations
+    <span class="md-ellipsis">
+      Limitations
+    </span>
   </a>
   
 </li>
@@ -660,7 +847,9 @@
       
         <li class="md-nav__item">
   <a href="#validating-a-bag" class="md-nav__link">
-    Validating a Bag
+    <span class="md-ellipsis">
+      Validating a Bag
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Validating a Bag">
@@ -668,7 +857,9 @@
         
           <li class="md-nav__item">
   <a href="#limitations_1" class="md-nav__link">
-    Limitations
+    <span class="md-ellipsis">
+      Limitations
+    </span>
   </a>
   
 </li>
@@ -680,14 +871,18 @@
       
         <li class="md-nav__item">
   <a href="#s3-commands" class="md-nav__link">
-    S3 Commands
+    <span class="md-ellipsis">
+      S3 Commands
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#uploading-a-file-to-an-s3-bucket" class="md-nav__link">
-    Uploading a File to an S3 Bucket
+    <span class="md-ellipsis">
+      Uploading a File to an S3 Bucket
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Uploading a File to an S3 Bucket">
@@ -695,7 +890,9 @@
         
           <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -707,7 +904,9 @@
       
         <li class="md-nav__item">
   <a href="#listing-the-contents-of-an-s3-bucket" class="md-nav__link">
-    Listing the Contents of an S3 Bucket
+    <span class="md-ellipsis">
+      Listing the Contents of an S3 Bucket
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing the Contents of an S3 Bucket">
@@ -715,7 +914,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_1" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -727,7 +928,9 @@
       
         <li class="md-nav__item">
   <a href="#downloading-an-s3-file" class="md-nav__link">
-    Downloading an S3 File
+    <span class="md-ellipsis">
+      Downloading an S3 File
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Downloading an S3 File">
@@ -735,7 +938,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_2" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -747,7 +952,9 @@
       
         <li class="md-nav__item">
   <a href="#deleting-an-s3-file" class="md-nav__link">
-    Deleting an S3 File
+    <span class="md-ellipsis">
+      Deleting an S3 File
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Deleting an S3 File">
@@ -755,7 +962,9 @@
         
           <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
-    Example
+    <span class="md-ellipsis">
+      Example
+    </span>
   </a>
   
 </li>
@@ -767,14 +976,18 @@
       
         <li class="md-nav__item">
   <a href="#registry-commands" class="md-nav__link">
-    Registry Commands
+    <span class="md-ellipsis">
+      Registry Commands
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#listing-registry-work-items" class="md-nav__link">
-    Listing Registry Work Items
+    <span class="md-ellipsis">
+      Listing Registry Work Items
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing Registry Work Items">
@@ -782,35 +995,45 @@
         
           <li class="md-nav__item">
   <a href="#examples_3" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#quick-reports" class="md-nav__link">
-    Quick Reports
+    <span class="md-ellipsis">
+      Quick Reports
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#workitem-list-filter-options" class="md-nav__link">
-    WorkItem List Filter Options
+    <span class="md-ellipsis">
+      WorkItem List Filter Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#workitem-list-paging-and-sort-options" class="md-nav__link">
-    WorkItem List Paging and Sort Options
+    <span class="md-ellipsis">
+      WorkItem List Paging and Sort Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#workitem-list-response-format" class="md-nav__link">
-    WorkItem List Response Format
+    <span class="md-ellipsis">
+      WorkItem List Response Format
+    </span>
   </a>
   
 </li>
@@ -822,7 +1045,9 @@
       
         <li class="md-nav__item">
   <a href="#retrieving-a-single-registry-work-item" class="md-nav__link">
-    Retrieving a Single Registry Work Item
+    <span class="md-ellipsis">
+      Retrieving a Single Registry Work Item
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Retrieving a Single Registry Work Item">
@@ -830,7 +1055,9 @@
         
           <li class="md-nav__item">
   <a href="#workitem-get-response-format" class="md-nav__link">
-    WorkItem Get Response Format
+    <span class="md-ellipsis">
+      WorkItem Get Response Format
+    </span>
   </a>
   
 </li>
@@ -842,7 +1069,9 @@
       
         <li class="md-nav__item">
   <a href="#listing-registry-objects" class="md-nav__link">
-    Listing Registry Objects
+    <span class="md-ellipsis">
+      Listing Registry Objects
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing Registry Objects">
@@ -850,28 +1079,36 @@
         
           <li class="md-nav__item">
   <a href="#examples_4" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#object-list-filter-options" class="md-nav__link">
-    Object List Filter Options
+    <span class="md-ellipsis">
+      Object List Filter Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#object-list-paging-and-sort-options" class="md-nav__link">
-    Object List Paging and Sort Options
+    <span class="md-ellipsis">
+      Object List Paging and Sort Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#object-list-response-format" class="md-nav__link">
-    Object List Response Format
+    <span class="md-ellipsis">
+      Object List Response Format
+    </span>
   </a>
   
 </li>
@@ -883,7 +1120,9 @@
       
         <li class="md-nav__item">
   <a href="#retrieving-a-single-registry-object" class="md-nav__link">
-    Retrieving a Single Registry Object
+    <span class="md-ellipsis">
+      Retrieving a Single Registry Object
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Retrieving a Single Registry Object">
@@ -891,7 +1130,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_5" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -903,14 +1144,18 @@
       
         <li class="md-nav__item">
   <a href="#get-object-response-format" class="md-nav__link">
-    Get Object Response Format
+    <span class="md-ellipsis">
+      Get Object Response Format
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#listing-registry-files" class="md-nav__link">
-    Listing Registry Files
+    <span class="md-ellipsis">
+      Listing Registry Files
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing Registry Files">
@@ -918,28 +1163,36 @@
         
           <li class="md-nav__item">
   <a href="#examples_6" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file-list-filter-options" class="md-nav__link">
-    File List Filter Options
+    <span class="md-ellipsis">
+      File List Filter Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file-list-paging-and-sort-options" class="md-nav__link">
-    File List Paging and Sort Options
+    <span class="md-ellipsis">
+      File List Paging and Sort Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file-list-response-format" class="md-nav__link">
-    File List Response Format
+    <span class="md-ellipsis">
+      File List Response Format
+    </span>
   </a>
   
 </li>
@@ -951,7 +1204,9 @@
       
         <li class="md-nav__item">
   <a href="#retrieving-a-single-registry-file" class="md-nav__link">
-    Retrieving a Single Registry File
+    <span class="md-ellipsis">
+      Retrieving a Single Registry File
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Retrieving a Single Registry File">
@@ -959,7 +1214,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_7" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -971,14 +1228,18 @@
       
         <li class="md-nav__item">
   <a href="#get-file-response-format" class="md-nav__link">
-    Get File Response Format
+    <span class="md-ellipsis">
+      Get File Response Format
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#configuration-settings" class="md-nav__link">
-    Configuration Settings
+    <span class="md-ellipsis">
+      Configuration Settings
+    </span>
   </a>
   
 </li>
@@ -993,14 +1254,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../old_partner_tools/" class="md-nav__link">
-        Old Partner Tools
+        
+  
+  <span class="md-ellipsis">
+    Old Partner Tools
+  </span>
+  
+
       </a>
     </li>
   
@@ -1008,14 +1274,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../glossary/" class="md-nav__link">
-        Glossary
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
       </a>
     </li>
   
@@ -1023,14 +1294,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../contact_us/" class="md-nav__link">
-        Contact Us
+        
+  
+  <span class="md-ellipsis">
+    Contact Us
+  </span>
+  
+
       </a>
     </li>
   
@@ -1064,28 +1340,36 @@
       
         <li class="md-nav__item">
   <a href="#downloads" class="md-nav__link">
-    Downloads
+    <span class="md-ellipsis">
+      Downloads
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#help-and-troubleshooting" class="md-nav__link">
-    Help and Troubleshooting
+    <span class="md-ellipsis">
+      Help and Troubleshooting
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#exit-codes" class="md-nav__link">
-    Exit Codes
+    <span class="md-ellipsis">
+      Exit Codes
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#creating-a-bag" class="md-nav__link">
-    Creating a Bag
+    <span class="md-ellipsis">
+      Creating a Bag
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Creating a Bag">
@@ -1093,14 +1377,18 @@
         
           <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
-    Troubleshooting
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#limitations" class="md-nav__link">
-    Limitations
+    <span class="md-ellipsis">
+      Limitations
+    </span>
   </a>
   
 </li>
@@ -1112,7 +1400,9 @@
       
         <li class="md-nav__item">
   <a href="#validating-a-bag" class="md-nav__link">
-    Validating a Bag
+    <span class="md-ellipsis">
+      Validating a Bag
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Validating a Bag">
@@ -1120,7 +1410,9 @@
         
           <li class="md-nav__item">
   <a href="#limitations_1" class="md-nav__link">
-    Limitations
+    <span class="md-ellipsis">
+      Limitations
+    </span>
   </a>
   
 </li>
@@ -1132,14 +1424,18 @@
       
         <li class="md-nav__item">
   <a href="#s3-commands" class="md-nav__link">
-    S3 Commands
+    <span class="md-ellipsis">
+      S3 Commands
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#uploading-a-file-to-an-s3-bucket" class="md-nav__link">
-    Uploading a File to an S3 Bucket
+    <span class="md-ellipsis">
+      Uploading a File to an S3 Bucket
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Uploading a File to an S3 Bucket">
@@ -1147,7 +1443,9 @@
         
           <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -1159,7 +1457,9 @@
       
         <li class="md-nav__item">
   <a href="#listing-the-contents-of-an-s3-bucket" class="md-nav__link">
-    Listing the Contents of an S3 Bucket
+    <span class="md-ellipsis">
+      Listing the Contents of an S3 Bucket
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing the Contents of an S3 Bucket">
@@ -1167,7 +1467,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_1" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -1179,7 +1481,9 @@
       
         <li class="md-nav__item">
   <a href="#downloading-an-s3-file" class="md-nav__link">
-    Downloading an S3 File
+    <span class="md-ellipsis">
+      Downloading an S3 File
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Downloading an S3 File">
@@ -1187,7 +1491,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_2" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -1199,7 +1505,9 @@
       
         <li class="md-nav__item">
   <a href="#deleting-an-s3-file" class="md-nav__link">
-    Deleting an S3 File
+    <span class="md-ellipsis">
+      Deleting an S3 File
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Deleting an S3 File">
@@ -1207,7 +1515,9 @@
         
           <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
-    Example
+    <span class="md-ellipsis">
+      Example
+    </span>
   </a>
   
 </li>
@@ -1219,14 +1529,18 @@
       
         <li class="md-nav__item">
   <a href="#registry-commands" class="md-nav__link">
-    Registry Commands
+    <span class="md-ellipsis">
+      Registry Commands
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#listing-registry-work-items" class="md-nav__link">
-    Listing Registry Work Items
+    <span class="md-ellipsis">
+      Listing Registry Work Items
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing Registry Work Items">
@@ -1234,35 +1548,45 @@
         
           <li class="md-nav__item">
   <a href="#examples_3" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#quick-reports" class="md-nav__link">
-    Quick Reports
+    <span class="md-ellipsis">
+      Quick Reports
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#workitem-list-filter-options" class="md-nav__link">
-    WorkItem List Filter Options
+    <span class="md-ellipsis">
+      WorkItem List Filter Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#workitem-list-paging-and-sort-options" class="md-nav__link">
-    WorkItem List Paging and Sort Options
+    <span class="md-ellipsis">
+      WorkItem List Paging and Sort Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#workitem-list-response-format" class="md-nav__link">
-    WorkItem List Response Format
+    <span class="md-ellipsis">
+      WorkItem List Response Format
+    </span>
   </a>
   
 </li>
@@ -1274,7 +1598,9 @@
       
         <li class="md-nav__item">
   <a href="#retrieving-a-single-registry-work-item" class="md-nav__link">
-    Retrieving a Single Registry Work Item
+    <span class="md-ellipsis">
+      Retrieving a Single Registry Work Item
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Retrieving a Single Registry Work Item">
@@ -1282,7 +1608,9 @@
         
           <li class="md-nav__item">
   <a href="#workitem-get-response-format" class="md-nav__link">
-    WorkItem Get Response Format
+    <span class="md-ellipsis">
+      WorkItem Get Response Format
+    </span>
   </a>
   
 </li>
@@ -1294,7 +1622,9 @@
       
         <li class="md-nav__item">
   <a href="#listing-registry-objects" class="md-nav__link">
-    Listing Registry Objects
+    <span class="md-ellipsis">
+      Listing Registry Objects
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing Registry Objects">
@@ -1302,28 +1632,36 @@
         
           <li class="md-nav__item">
   <a href="#examples_4" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#object-list-filter-options" class="md-nav__link">
-    Object List Filter Options
+    <span class="md-ellipsis">
+      Object List Filter Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#object-list-paging-and-sort-options" class="md-nav__link">
-    Object List Paging and Sort Options
+    <span class="md-ellipsis">
+      Object List Paging and Sort Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#object-list-response-format" class="md-nav__link">
-    Object List Response Format
+    <span class="md-ellipsis">
+      Object List Response Format
+    </span>
   </a>
   
 </li>
@@ -1335,7 +1673,9 @@
       
         <li class="md-nav__item">
   <a href="#retrieving-a-single-registry-object" class="md-nav__link">
-    Retrieving a Single Registry Object
+    <span class="md-ellipsis">
+      Retrieving a Single Registry Object
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Retrieving a Single Registry Object">
@@ -1343,7 +1683,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_5" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -1355,14 +1697,18 @@
       
         <li class="md-nav__item">
   <a href="#get-object-response-format" class="md-nav__link">
-    Get Object Response Format
+    <span class="md-ellipsis">
+      Get Object Response Format
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#listing-registry-files" class="md-nav__link">
-    Listing Registry Files
+    <span class="md-ellipsis">
+      Listing Registry Files
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Listing Registry Files">
@@ -1370,28 +1716,36 @@
         
           <li class="md-nav__item">
   <a href="#examples_6" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file-list-filter-options" class="md-nav__link">
-    File List Filter Options
+    <span class="md-ellipsis">
+      File List Filter Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file-list-paging-and-sort-options" class="md-nav__link">
-    File List Paging and Sort Options
+    <span class="md-ellipsis">
+      File List Paging and Sort Options
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#file-list-response-format" class="md-nav__link">
-    File List Response Format
+    <span class="md-ellipsis">
+      File List Response Format
+    </span>
   </a>
   
 </li>
@@ -1403,7 +1757,9 @@
       
         <li class="md-nav__item">
   <a href="#retrieving-a-single-registry-file" class="md-nav__link">
-    Retrieving a Single Registry File
+    <span class="md-ellipsis">
+      Retrieving a Single Registry File
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Retrieving a Single Registry File">
@@ -1411,7 +1767,9 @@
         
           <li class="md-nav__item">
   <a href="#examples_7" class="md-nav__link">
-    Examples
+    <span class="md-ellipsis">
+      Examples
+    </span>
   </a>
   
 </li>
@@ -1423,14 +1781,18 @@
       
         <li class="md-nav__item">
   <a href="#get-file-response-format" class="md-nav__link">
-    Get File Response Format
+    <span class="md-ellipsis">
+      Get File Response Format
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#configuration-settings" class="md-nav__link">
-    Configuration Settings
+    <span class="md-ellipsis">
+      Configuration Settings
+    </span>
   </a>
   
 </li>
@@ -1449,10 +1811,8 @@
                 
                   
 
-  <a href="https://github.com/APTrust/userguide/edit/master/docs/partner_tools.md" title="Edit this page" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
 
 
 <h1 id="aptrust-partner-tools">APTrust Partner Tools</h1>
@@ -1577,16 +1937,16 @@ to the APTrust BagIt profile and writes the tarred bag into
 <p>This bag will include md5 and sha256 manifests and tag manifests. It will
 also include the specified tags in the bag-info.txt and aptrust-info.txt
 tag files.</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd bag create <span class="se">\</span>
-    --profile<span class="o">=</span>aptrust <span class="se">\</span>
-    --manifest-algs<span class="o">=</span><span class="s1">&#39;md5,sha256&#39;</span> <span class="se">\</span>
-    --output-file<span class="o">=</span><span class="s1">&#39;/home/josie/bags/photos.tar&#39;</span> <span class="se">\</span>
-    --bag-dir<span class="o">=</span><span class="s1">&#39;/home/josie/photos&#39;</span> <span class="se">\</span>
-    --tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Title=My Bag of Photos&#39;</span> <span class="se">\</span>
-    --tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Access=Institution&#39;</span> <span class="se">\</span>
-    --tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Storage-Option=Standard&#39;</span> <span class="se">\</span>
-    --tags<span class="o">=</span><span class="s1">&#39;bag-info.txt/Source-Organization=Faber College&#39;</span> <span class="se">\</span>
-    --tags<span class="o">=</span><span class="s1">&#39;Custom-Tag=Single quoted because it {contains} $weird &amp;characters&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--profile<span class="o">=</span>aptrust<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--manifest-algs<span class="o">=</span><span class="s1">&#39;md5,sha256&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--output-file<span class="o">=</span><span class="s1">&#39;/home/josie/bags/photos.tar&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--bag-dir<span class="o">=</span><span class="s1">&#39;/home/josie/photos&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Title=My Bag of Photos&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Access=Institution&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;aptrust-info.txt/Storage-Option=Standard&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;bag-info.txt/Source-Organization=Faber College&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tags<span class="o">=</span><span class="s1">&#39;Custom-Tag=Single quoted because it {contains} $weird &amp;characters&#39;</span>
 </code></pre></div>
 <h3 id="troubleshooting">Troubleshooting</h3>
 <ol>
@@ -1608,14 +1968,14 @@ tag files.</p>
 <h2 id="validating-a-bag">Validating a Bag</h2>
 <p>Currently, apt-cmd validates only tarred bags. The following commands
 validate a bag according to the APTrust BagIt profile:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd bag validate my_bag.tar
-  apt-cmd bag validate -p aptrust my_bag.tar
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>my_bag.tar
+<span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>-p<span class="w"> </span>aptrust<span class="w"> </span>my_bag.tar
 </code></pre></div>
 <p>To validate a bag using the Beyond the Repository (BTR) profile:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd bag validate -p btr my_bag.tar
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>-p<span class="w"> </span>btr<span class="w"> </span>my_bag.tar
 </code></pre></div>
 <p>To validate a bag using the empty profile:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd bag validate -p empty my_bag.tar
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>bag<span class="w"> </span>validate<span class="w"> </span>-p<span class="w"> </span>empty<span class="w"> </span>my_bag.tar
 </code></pre></div>
 <p>The empty profile simply ensures the bag is valid according to the general
 BagIt specification.</p>
@@ -1633,13 +1993,13 @@ you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.</p>
 <h3 id="examples">Examples</h3>
 <p>Upload file photo.jpg to Amazon's S3 service:</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 upload --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span> photo.jpg
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>upload<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>photo.jpg
 </code></pre></div>
 <p>Upload the same file, but call it renamed.jpg in S3:</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 upload --host<span class="o">=</span>s3.amazonaws.com  <span class="se">\</span>
-             --bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span> <span class="se">\</span>
-             --key<span class="o">=</span><span class="s1">&#39;renamed.jpg&#39;</span> <span class="se">\</span>
-             photo.jpg
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>upload<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w">  </span><span class="se">\</span>
+<span class="w">             </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--key<span class="o">=</span><span class="s1">&#39;renamed.jpg&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>photo.jpg
 </code></pre></div>
 <h2 id="listing-the-contents-of-an-s3-bucket">Listing the Contents of an S3 Bucket</h2>
 <p>You can list files from any S3-compatible service. For this to work,
@@ -1648,20 +2008,20 @@ environment, or in a config file specified with the --config flag.</p>
 <p>List output is in JSON format, unless you specify <code>--format=text</code>.</p>
 <h3 id="examples_1">Examples</h3>
 <p>List items in my_bucket with prefix "photo":</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 list --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span>my_bucket --prefix<span class="o">=</span>photo
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>list<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span>my_bucket<span class="w"> </span>--prefix<span class="o">=</span>photo
 </code></pre></div>
 <p>List 10 items in my_bucket with prefix "photo", using plain text output:</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 list --host<span class="o">=</span>s3.amazonaws.com <span class="se">\</span>
-                    --bucket<span class="o">=</span>my_bucket <span class="se">\</span>
-                    --prefix<span class="o">=</span>photo <span class="se">\</span>
-                    --maxitems<span class="o">=</span><span class="m">10</span> <span class="se">\</span>
-                    --format<span class="o">=</span>text
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>list<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--bucket<span class="o">=</span>my_bucket<span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--prefix<span class="o">=</span>photo<span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--maxitems<span class="o">=</span><span class="m">10</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>--format<span class="o">=</span>text
 </code></pre></div>
 <p>List items in sub-folder "music" of my_bucket. Note the trailing slash after "music/".</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 list --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span>my_bucket --prefix<span class="o">=</span>music/
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>list<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span>my_bucket<span class="w"> </span>--prefix<span class="o">=</span>music/
 </code></pre></div>
 <p>List items in a nested folder. Again, note the trailing slash:</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 list --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span>my_bucket --prefix<span class="o">=</span>music/danielle_ponder/
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>list<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span>my_bucket<span class="w"> </span>--prefix<span class="o">=</span>music/danielle_ponder/
 </code></pre></div>
 <h2 id="downloading-an-s3-file">Downloading an S3 File</h2>
 <p>You can download files from any S3-compatible service. For this to work,
@@ -1669,13 +2029,13 @@ you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.</p>
 <h3 id="examples_2">Examples</h3>
 <p>Download a file from Amazon's S3 service into the current directory:</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 download --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span> --key<span class="o">=</span><span class="s1">&#39;photo_001.jpg&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>download<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>--key<span class="o">=</span><span class="s1">&#39;photo_001.jpg&#39;</span>
 </code></pre></div>
 <p>Download the same file and save it with a custom name on your desktop:</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 download --host<span class="o">=</span>s3.amazonaws.com  <span class="se">\</span>
-               --bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span> <span class="se">\</span>
-               --key<span class="o">=</span><span class="s1">&#39;photo_001.jpg&#39;</span> <span class="se">\</span>
-               --save-as<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Desktop/vacation.jpg&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>download<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w">  </span><span class="se">\</span>
+<span class="w">               </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">               </span>--key<span class="o">=</span><span class="s1">&#39;photo_001.jpg&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">               </span>--save-as<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Desktop/vacation.jpg&quot;</span>
 </code></pre></div>
 <h2 id="deleting-an-s3-file">Deleting an S3 File</h2>
 <p>You can delete objects from any S3-compatible service. For this to work,
@@ -1683,7 +2043,7 @@ you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.</p>
 <h3 id="example">Example</h3>
 <p>Delete object photo.jpg from my-bucket on AWS S3:</p>
-<div class="highlight"><pre><span></span><code>    apt-cmd s3 delete --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span> --key<span class="o">=</span><span class="s1">&#39;photo.jpg&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>delete<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>--key<span class="o">=</span><span class="s1">&#39;photo.jpg&#39;</span>
 </code></pre></div>
 <p>Note: This returns exit status zero and <code>'{ "result": "OK" }'</code> if the key is
 successfully deleted or if the key wasn't in the bucket to begin with.</p>
@@ -1701,35 +2061,35 @@ commands, you can supply filters as name-value pairs on the command line.
 These pairs <strong>do not use the double-dash (--) prefix</strong>.</p>
 <h3 id="examples_3">Examples</h3>
 <p>List recent ingests:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems <span class="nv">action</span><span class="o">=</span><span class="s1">&#39;Ingest&#39;</span> <span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">action</span><span class="o">=</span><span class="s1">&#39;Ingest&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
 </code></pre></div>
 <p>List all work items since April 6, 2023:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems <span class="nv">date_processed__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span> <span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">date_processed__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
 </code></pre></div>
 <p>List failed work items:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems <span class="nv">status</span><span class="o">=</span><span class="s1">&#39;Failed&#39;</span> <span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">status</span><span class="o">=</span><span class="s1">&#39;Failed&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;date_processed__desc&#39;</span>
 </code></pre></div>
 <p>List work items pertaining to a tar file you uploaded:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems <span class="nv">name</span><span class="o">=</span><span class="s1">&#39;bag-of-photos.tar&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">name</span><span class="o">=</span><span class="s1">&#39;bag-of-photos.tar&#39;</span>
 </code></pre></div>
 <p>List work items pertaining to a bag with a specific etag:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems <span class="nv">etag</span><span class="o">=</span><span class="s1">&#39;987654321-100&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">etag</span><span class="o">=</span><span class="s1">&#39;987654321-100&#39;</span>
 </code></pre></div>
 <p>List work items pertaining to a specific intellectual object:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems <span class="nv">object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/TestBag&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/TestBag&#39;</span>
 </code></pre></div>
 <p>List restorations or deletions of a specific file:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems <span class="nv">generic_file_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/TestBag/data/photo1.jpg&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span><span class="nv">generic_file_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/TestBag/data/photo1.jpg&#39;</span>
 </code></pre></div>
 <h3 id="quick-reports">Quick Reports</h3>
 <p>List all items from the past 30 days that are still in process:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems --report<span class="o">=</span>inprocess
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span>--report<span class="o">=</span>inprocess
 </code></pre></div>
 <p>List all items from the past 30 days that failed or were cancelled:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems --report<span class="o">=</span>problems
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span>--report<span class="o">=</span>problems
 </code></pre></div>
 <p>List all restorations from the past 30 days:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list workitems --report<span class="o">=</span>restorations
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>workitems<span class="w"> </span>--report<span class="o">=</span>restorations
 </code></pre></div>
 <p>When running quick reports, this tool ignores all other query params.</p>
 <h3 id="workitem-list-filter-options">WorkItem List Filter Options</h3>
@@ -1936,110 +2296,110 @@ settings.</p>
 Note that <code>count</code> indicates the total number of results, while
 <code>next</code> and <code>previous</code> are URLs pointing to the next and previous
 pages of results.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Delete&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;aptrust_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;bag_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;bucket&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;date_processed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;generic_file_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;inst_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;needs_admin_review&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;queued_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;retry&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;stage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Available in S3&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;stage_started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.912Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cancelled&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.912Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Delete&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;aptrust_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bucket&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;date_processed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;inst_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;needs_admin_review&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;queued_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.911Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;retry&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;stage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Available in S3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;stage_started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.912Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cancelled&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:34:07.912Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="retrieving-a-single-registry-work-item">Retrieving a Single Registry Work Item</h2>
 <p>To retrieve a single WorkItem record from the APTrust Registry, use the
 command below. Note that id is an integer.</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry get workitem &lt;id&gt;
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>workitem<span class="w"> </span>&lt;id&gt;
 </code></pre></div>
 <h3 id="workitem-get-response-format">WorkItem Get Response Format</h3>
 <p>The command <code>aptrust registry get workitem</code> returns JSON in the following
 format:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Restore Object&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;aptrust_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;bag_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.969Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;bucket&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;date_processed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;generic_file_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;inst_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;needs_admin_review&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Success&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;queued_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;retry&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;stage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Available in S3&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;stage_started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cancelled&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Restore Object&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;aptrust_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.969Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bucket&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;date_processed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;generic_file_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;inst_approver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;needs_admin_review&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;node&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;note&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;queued_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;retry&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;stage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Available in S3&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;stage_started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cancelled&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T17:45:43.970Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="listing-registry-objects">Listing Registry Objects</h2>
 <p>You can list objects from the APTrust Registry, with filters.</p>
 <h3 id="examples_4">Examples</h3>
 <p>List 20 objects ordered by identifer:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list objects <span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span> <span class="nv">per_page</span><span class="o">=</span><span class="s1">&#39;20&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>objects<span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span><span class="w"> </span><span class="nv">per_page</span><span class="o">=</span><span class="s1">&#39;20&#39;</span>
 </code></pre></div>
 <p>List 20 objects reverse ordered by identifer:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list objects <span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier__desc&#39;</span> <span class="nv">per_page</span><span class="o">=</span><span class="s1">&#39;20&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>objects<span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier__desc&#39;</span><span class="w"> </span><span class="nv">per_page</span><span class="o">=</span><span class="s1">&#39;20&#39;</span>
 </code></pre></div>
 <p>List objects created after April 6, 2023</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list files <span class="nv">created_at__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">created_at__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span>
 </code></pre></div>
 <h3 id="object-list-filter-options">Object List Filter Options</h3>
 <table>
@@ -2182,80 +2542,80 @@ settings.</p>
 <p>The <code>list objects</code> command returns JSON with the following format. Note that
 <code>count</code> is the total number of resuls matching your query, while <code>next</code> and
 <code>previous</code> are URLs pointing to the next and previous pages of results.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;bag_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:25:28.513Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:25:28.513Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;internal_sender_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MemberInstitution&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_parent_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;payload_file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;payload_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:25:28.513Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:25:28.513Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;internal_sender_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MemberInstitution&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_parent_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;payload_file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;payload_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="retrieving-a-single-registry-object">Retrieving a Single Registry Object</h2>
 <p>You can retrieve objects from the Registry by identifier or
 by id. Object identifiers are strings, such as 'example.edu/photos'.
 Ids are numeric.</p>
 <h3 id="examples_5">Examples</h3>
-<div class="highlight"><pre><span></span><code>apt-cmd registry get object <span class="nv">identifier</span><span class="o">=</span>&lt;object_identifier&gt;
-apt-cmd registry get object <span class="nv">id</span><span class="o">=</span>&lt;object_id&gt;
+<div class="highlight"><pre><span></span><code>apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>object<span class="w"> </span><span class="nv">identifier</span><span class="o">=</span>&lt;object_identifier&gt;
+apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>object<span class="w"> </span><span class="nv">id</span><span class="o">=</span>&lt;object_id&gt;
 </code></pre></div>
 <h2 id="get-object-response-format">Get Object Response Format</h2>
 <p>The <code>get object</code> command returns JSON in the following format:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;bag_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:52:35.412Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:52:35.412Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;internal_sender_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MemberInstitution&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_parent_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;payload_file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;payload_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;alt_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:52:35.412Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:52:35.412Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;etag&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bag_group_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bagit_profile_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source_organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;internal_sender_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;internal_sender_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MemberInstitution&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_parent_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload_file_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;payload_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="listing-registry-files">Listing Registry Files</h2>
 <p>The <code>list files</code> command lists files from the APTrust Registry,
@@ -2264,13 +2624,13 @@ by this call includes only summary information for each file, while
 the <code>get file</code> call returns more detailed info.</p>
 <h3 id="examples_6">Examples</h3>
 <p>List files belonging to object test.edu/my_bag, ordered by identifer:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list files <span class="nv">intellectual_object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/my_bag&#39;</span> <span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">intellectual_object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/my_bag&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span>
 </code></pre></div>
 <p>List only the first 10 files from that same bag:</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list files <span class="nv">intellectual_object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/my_bag&#39;</span> <span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span> <span class="nv">per_page</span><span class="o">=</span><span class="m">10</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">intellectual_object_identifier</span><span class="o">=</span><span class="s1">&#39;test.edu/my_bag&#39;</span><span class="w"> </span><span class="nv">sort</span><span class="o">=</span><span class="s1">&#39;identifier&#39;</span><span class="w"> </span><span class="nv">per_page</span><span class="o">=</span><span class="m">10</span>
 </code></pre></div>
 <p>List files created after April 6, 2023</p>
-<div class="highlight"><pre><span></span><code>  apt-cmd registry list files <span class="nv">created_at__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>apt-cmd<span class="w"> </span>registry<span class="w"> </span>list<span class="w"> </span>files<span class="w"> </span><span class="nv">created_at__gteq</span><span class="o">=</span><span class="s1">&#39;2023-04-06&#39;</span>
 </code></pre></div>
 <h3 id="file-list-filter-options">File List Filter Options</h3>
 <table>
@@ -2378,35 +2738,35 @@ settings.</p>
 <p>The <code>list files</code> command returns JSON with the following format. Note that
 <code>count</code> is the total number of resuls matching your query, while <code>next</code> and
 <code>previous</code> are URLs pointing to the next and previous pages of results.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;file_format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;last_fixity_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.164Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;md5&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;sha1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;sha256&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;sha512&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.165Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.165Z&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;file_format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;object_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;access&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;consortia&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;last_fixity_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.164Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;md5&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha256&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;sha512&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.165Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T18:55:14.165Z&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="retrieving-a-single-registry-file">Retrieving a Single Registry File</h2>
 <p>You can retrieve a JSON record from the APTrust registry describing a
@@ -2415,61 +2775,61 @@ such as 'example.edu/photos/data/image1.jpg'. Ids are numeric.</p>
 <p>Note that this call returns not only the generic file info, but also all
 of the checksums and PREMIS events associated with the file.</p>
 <h3 id="examples_7">Examples</h3>
-<div class="highlight"><pre><span></span><code>apt-cmd registry get file &lt;file_identifier&gt;
-apt-cmd registry get file &lt;file_id&gt;
+<div class="highlight"><pre><span></span><code>apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>file<span class="w"> </span>&lt;file_identifier&gt;
+apt-cmd<span class="w"> </span>registry<span class="w"> </span>get<span class="w"> </span>file<span class="w"> </span>&lt;file_id&gt;
 </code></pre></div>
 <h2 id="get-file-response-format">Get File Response Format</h2>
 <p>The <code>get file</code> command returns JSON in the following format:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;file_format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;last_fixity_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;premis_events&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;agent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;date_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;event_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;access assignment&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;old_uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;outcome_detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;outcome_information&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;checksums&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;algorithm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;md5&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;datetime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;digest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;storage_records&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">],</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;file_format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;last_fixity_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;storage_option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glacier-Deep-OH&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;premis_events&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;agent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;date_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;event_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;access assignment&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;institution_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;intellectual_object_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;object&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;old_uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3fa85f64-5717-4562-b3fc-2c963f66afa6&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Failure&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome_detail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;outcome_information&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;checksums&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;algorithm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;md5&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;datetime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;digest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;storage_records&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;generic_file_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-04-20T19:09:44.674Z&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="configuration-settings">Configuration Settings</h2>
 <p>apt-cmd will read configuration values from a config file if you specify one
@@ -2484,7 +2844,7 @@ For example, you may want to store S3 credentials for Amazon in aws.env,
 credentials for Wasabi in wasabi.env, and for Minio in minio.env.</p>
 <p>Or, you can skip config files altogether and use environment variables
 like so:</p>
-<div class="highlight"><pre><span></span><code>  <span class="nv">APTRUST_AWS_KEY</span><span class="o">=</span>my_key <span class="nv">APTRUST_AWS_SECRET</span><span class="o">=</span>my_secrete apt-cmd s3 upload --host<span class="o">=</span>s3.amazonaws.com --bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span> photo.jpg
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nv">APTRUST_AWS_KEY</span><span class="o">=</span>my_key<span class="w"> </span><span class="nv">APTRUST_AWS_SECRET</span><span class="o">=</span>my_secrete<span class="w"> </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>upload<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>photo.jpg
 </code></pre></div>
 <p>apt-cmd uses the following settings.</p>
 <table>
@@ -2526,52 +2886,24 @@ like so:</p>
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../registry/api_changes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: API Changes from Pharos" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              API Changes from Pharos
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../old_partner_tools/" class="md-footer__link md-footer__link--next" aria-label="Next: Old Partner Tools" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Old Partner Tools
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2594,10 +2926,11 @@ like so:</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>
