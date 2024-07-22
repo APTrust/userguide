@@ -76,7 +76,7 @@ You can find information about updated and deleted files in the APTrust registry
 
 Because files may have been added to or deleted from a bag after its initial ingest, the Bag-Size and Payload-Oxum of the restored bag may differ from the Bag-Size and Payload-Oxum of any individual ingests. This is why we include both the current and original values in the restored version.
 
-If you're curious about why the contents of a restored bag differ from the original, the object's PREMIS events should provide a detailed record of all additions and deletions. See [PREMIS Events](/registry/events) for more info.
+If you're curious about why the contents of a restored bag differ from the original, the object's PREMIS events should provide a detailed record of all additions and deletions. See [PREMIS Events](../registry/events.md) for more info.
 
 ## Restoring Individual Files
 

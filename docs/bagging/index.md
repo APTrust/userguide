@@ -35,7 +35,7 @@ In addition to conforming to the BagIt specification [version 0.97](https://tool
 
 * Bags may contain files outside of the data directory other than manifests and tag manifests. APTrust will consider these to be tag files, and will not try to parse them.
 
-* When uploading multipart bags, use Bag-Group-Identifier tag to indicate that the bags belong together, or use the [multipart bag naming format](#multipart-bags) described below. (But note that the multipart bag naming format will soon be deprecated.)
+* When uploading multipart bags, use Bag-Group-Identifier tag to indicate that the bags belong together, or use the [multipart bag naming format](#multipart-bags-the-new-way) described below. (But note that the multipart bag naming format will soon be deprecated.)
 
 A valid untarred APTrust bag has the following structure:
 
@@ -89,7 +89,7 @@ Internal-Sender-Description | A sender-local explanation of the contents and pro
 Internal-Sender-Identifier | An alternate sender-specific identifier for the content and/or bag. |
 Bag-Group-Identifier | A sender-supplied identifier for the set, if any, of bags to which it logically belongs. | Greeling Photo Collection
 
-For more on bag group identifiers, see the [Bag Group Identifiers](../registry/objects#bag-group-identifiers) section of the Objects page.
+For more on bag group identifiers, see the [Bag Group Identifiers](../registry/objects.md#bag-group-identifiers) section of the Objects page.
 
 For a list of other commonly-used tags in the bag-info.txt file, see the official BagIt specification for [version 0.97](https://tools.ietf.org/html/draft-kunze-bagit-14) or [version 1.0](https://tools.ietf.org/html/rfc8493).
 

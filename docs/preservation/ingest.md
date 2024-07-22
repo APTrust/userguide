@@ -25,7 +25,7 @@ For most of what you'll be doing with APTrust, [DART](https://aptrust.github.io/
 !!! warning Delay in ingest
 	There can be a delay of up to 15 minutes before the tarred bag shows up in the work item list.
 
-After you upload tarred bag to your receiving bucket, APTrust's ingest process will add it to a list of items waiting to be processed.  You can check the status of your bag in the list of Registry [Work Items](../registry/work_items), using the REST API, or using the apt_check_ingest program from the [partner tools](../partner_tools.md). Once your bag is successfully ingested it is automatically deleted from your receiving bucket. If the ingest fails you can see details in Registry.
+After you upload tarred bag to your receiving bucket, APTrust's ingest process will add it to a list of items waiting to be processed.  You can check the status of your bag in the list of Registry [Work Items](../registry/work_items.md), using the REST API, or using the apt_check_ingest program from the [partner tools](../partner_tools.md). Once your bag is successfully ingested it is automatically deleted from your receiving bucket. If the ingest fails you can see details in Registry.
 
 !!! notice
 	Failed bags stay in your receiving bucket for 30 or 60 days (demo or production) for your review. After that period the bag is automatically deleted.
@@ -47,4 +47,4 @@ You can get around the 5TB bag size limit by using bag groups and the Bag-Group-
 
 ## Reingesting Existing Bags
 
-You can re-upload a bag any time you like to your receiving bucket, but be sure to read the page on [updates](../updates) so you understand how APTrust processes bag updates.
+You can re-upload a bag any time you like to your receiving bucket, but be sure to read the page on [updates](updates.md) so you understand how APTrust processes bag updates.

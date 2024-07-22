@@ -39,7 +39,7 @@ X-Pharos-API-Key: topsecretapikey
 
 ## REST API Documentation
 
-You'll find interactive documentation for the Registry REST API at [https://aptrust.github.io/registry/](https://aptrust.github.io/registry/){target=_blank}. If you're curious, you can compare this to the old [Pharos API](./api-changes){target=_blank}.
+You'll find interactive documentation for the Registry REST API at [https://aptrust.github.io/registry/](https://aptrust.github.io/registry/){target=_blank}. If you're curious, you can compare this to the old [Pharos API](api_changes.md){target=_blank}.
 
 The Registry API includes a number of new and updated endpoints. See the [API Changes](api_changes.md) page for details.
 

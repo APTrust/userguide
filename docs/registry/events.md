@@ -18,7 +18,7 @@ The APTrust repository records the following PREMIS events for intellectual obje
 
 * __Creation__ - The object record was created.
 
-* __Access Assignment__ - The object was assigned an access setting of _Consortia_, _Institution_, or _Restricted_. See [access values](/bagging/#allowed-access-values) for definitions.
+* __Access Assignment__ - The object was assigned an access setting of _Consortia_, _Institution_, or _Restricted_. See [access values](../bagging/index.md#allowed-access-values) for definitions.
 
 * __Identifier Assignment__ - The object was assigned an identifier. APTrust object identifiers use the pattern `<institution.domain>/<object_name>`, where object_name is the name of the tarred bag, minus the .tar extension. For example, `test.edu/bag_of_photos`.
 
@@ -34,8 +34,8 @@ APTrust records the following PREMIS events for the generic files that make up e
 
 * __Message Digest Calculation__ - The APTrust ingest process has calculated a message digest for the file. On ingest, there should be two of these events for each file, one with an md5 digest and one with a sha256 digest.
 
-* __Replication__ - The file has been copied to replication storage. This applies only to files using the Stadard storage option, in which the primary copy exists in S3 in Northern Virginia and the secondard (replicated) copy is in Glacier in Oregon. See [storage options](../../bagging/#allowed-storage-option-values) for more information.
+* __Replication__ - The file has been copied to replication storage. This applies only to files using the Stadard storage option, in which the primary copy exists in S3 in Northern Virginia and the secondard (replicated) copy is in Glacier in Oregon. See [storage options](../bagging/index.md#allowed-storage-option-values) for more information.
 
-* __Fixity Check__ - This records the outcome of a fixity check on this file. APTrust perform fixity checks on items in Standard storage every 90 days, but does not perform fixity checks on items in Glacier-Only or Glacier Deep Archive storage. See [storage options](../../bagging/#allowed-storage-option-values) for more information. Also note that APTrust checks the sha256 fixity only, even though we also know the md5 fixity value.
+* __Fixity Check__ - This records the outcome of a fixity check on this file. APTrust perform fixity checks on items in Standard storage every 90 days, but does not perform fixity checks on items in Glacier-Only or Glacier Deep Archive storage. See [storage options](../bagging/index.md#allowed-storage-option-values) for more information. Also note that APTrust checks the sha256 fixity only, even though we also know the md5 fixity value.
 
 * __Deletion__ - Records when a file was deleted and at whose request.
