@@ -20,6 +20,8 @@ If you plan on interacting frequently with S3, the [Minio Client](https://docs.m
 
 For most of what you'll be doing with APTrust, [DART](https://aptrust.github.io/dart-docs/users/getting_started/) and the [APTrust Partner Tools](../partner_tools.md) should be sufficient.
 
+__Note:__ Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., [CyberDuck](https://cyberduck.io/){:target="_blank"}, [S3 Browser](https://s3browser.com/){:target="_blank"}) to upload them. 
+
 ## The Ingest Process
 
 !!! warning Delay in ingest
