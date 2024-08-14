@@ -90,6 +90,8 @@ Contact help@aptrust.org if you want to delete a large number of objects. For bu
 
 Your institutional admins will still have to confirm the deletions before we execute them, but the process can save you having to click on the delete button on a large number of object or file detail pages.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xa9hA1yHBGs?si=yeFU8WqAiVrH-ycT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Reingest After Deletion
 
 If you delete an object and then upload a new version, Registry will mark the deleted object as active again and will create a new ingest event. The new object will include all of the files in the newly uploaded bag. If any of the newly uploaded files have the same identifier as a deleted file, Registry will mark the previously deleted file as active again, and will record the new version's checksums along with a new ingest event.

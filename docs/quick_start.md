@@ -14,6 +14,10 @@ You can log in to Registry, APTrust's online registry, at the URLs below:
 * __Production Repository__ - https://repo.aptrust.org
     - Production is for materials you want to preserve for the long term.
 
+## Quick Start Training Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dKekC3jHTpM?si=iQ8oIvgmM9NRutkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Adding Users
 
 See the [User Management](registry/user_management.md) page for info on how to add users to your institution's Registry account.

@@ -28,3 +28,5 @@ Once your local administrator has access to Registry, they can add new users and
 Registry administrators can do both of the above.
 
 If you're new to APTrust, you will likely start out by using our demo system to fine-tune your ingest workflows. Once you are able to push materials successfully into the demo repository, you can begin using the production system.
+
+See also the [Quick Start training video](quick_start.md#quick-start-training-video).
