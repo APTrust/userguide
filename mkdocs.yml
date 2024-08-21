@@ -34,6 +34,7 @@ nav:
   - Depositing:
       - depositing/index.md
       - depositing/tools.md
+      - depositing/guidelines.md
   - Using Registry:
       - registry/index.md
       - registry/objects.md
