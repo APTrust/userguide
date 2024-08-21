@@ -55,5 +55,4 @@ plugins:
       redirect_maps:
         'bagging/index.md': 'depositing/index.md'
         'bagging/tools.md': 'depositing/tools.md'
-        'depositing/tools.md': 'bagging/tools.md'
         #'some_file.md': 'http://external.url.com/foobar'

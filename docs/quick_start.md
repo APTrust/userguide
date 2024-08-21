@@ -44,7 +44,7 @@ After Fedora produces the bag, you can use APTrust [apt_upload tool](partner_too
 
 ### Custom Bagging
 
-If you want to bag materials yourself, be sure your bags conform to the [APTrust bagging requirements](bagging/index.md). After bagging, you can use APTrust's [apt_upload tool](partner_tools.md) or other publicly available tools such as the [MinIO client](https://docs.min.io/docs/minio-client-complete-guide) to upload your bag.
+If you want to bag materials yourself, be sure your bags conform to the [APTrust bagging (SIP) requirements](depositing/index.md). After bagging, you can use APTrust's [apt_upload tool](partner_tools.md) or other publicly available tools such as the [MinIO client](https://docs.min.io/docs/minio-client-complete-guide) to upload your bag.
 
 ### REST API Integration
 

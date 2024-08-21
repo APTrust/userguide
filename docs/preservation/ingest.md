@@ -3,7 +3,7 @@
 !!! notice AWS Credentials required
 	Before sending materials to APTrust for ingest, you'll need to get AWS keys that allow you to upload materials to your receiving bucket. If you don't already have these, contact help@aptrust.org to get them. Also keep in mind that you'll have separate AWS keys for the demo and production environments.
 
-You'll also need to know how to produce a valid APTrust bag. If you don't know how to do that yet, see the [bagging page](../bagging/index.md) for details, or use [DART](https://aptrust.github.io/dart-docs/users/getting_started/) to get going quickly.
+You'll also need to know how to produce a valid APTrust bag. If you don't know how to do that yet, see [Bagging (SIP) Requirements](../depositing/index.md) for details, or use [DART](https://aptrust.github.io/dart-docs/users/getting_started/) to get going quickly.
 
 ## Uploading for Ingest
 
@@ -45,7 +45,7 @@ Smaller bags (those under about 5GB) tend to ingest quickly. Larger bags can tak
 * Maximum bag size on our demo system is 5 GB
 * Maximum bag size on our production system is 5 TB
 
-You can get around the 5TB bag size limit by using bag groups and the Bag-Group-Identifier tag. See the [bagging page](../bagging/index.md) for more info.
+You can get around the 5TB bag size limit by using bag groups and the Bag-Group-Identifier tag. See the [Bagging (SIP) Requirements](../depositing/index.md) for more info.
 
 ## Reingesting Existing Bags
 
