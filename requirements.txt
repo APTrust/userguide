@@ -2,3 +2,4 @@ mkdocs
 mkdocs-material
 pymdown-extensions
 fontawesome_markdown
+mkdocs-redirects

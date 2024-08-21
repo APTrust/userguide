@@ -31,9 +31,9 @@ nav:
       - preservation/updates.md
       - preservation/restoration.md
       - preservation/deletion.md
-  - Bagging:
-      - bagging/index.md
-      - bagging/tools.md
+  - Depositing:
+      - depositing/index.md
+      - depositing/tools.md
   - Using Registry:
       - registry/index.md
       - registry/objects.md
@@ -50,3 +50,10 @@ nav:
   - Old Partner Tools: old_partner_tools.md
   - Glossary: glossary.md
   - Contact Us: contact_us.md
+plugins:
+  - redirects:
+      redirect_maps:
+        'bagging/index.md': 'depositing/index.md'
+        'bagging/tools.md': 'depositing/tools.md'
+        'depositing/tools.md': 'bagging/tools.md'
+        #'some_file.md': 'http://external.url.com/foobar'

@@ -1,5 +1,4 @@
-# APTrust Bagging Requirements
-
+# Bagging (SIP) Requirements
 APTrust currently accepts bags for ingest that use the APTrust BagIt and Beyond the Repository (BTR) BagIt profiles. Bags will be restored using the same profile as the submission.
 
 For info on what constitutes a valid BTR bag, see version 1.0 of the [BTR bagit profile](https://github.com/dpscollaborative/btr_bagit_profile/blob/1.0/btr-bagit-profile.json){target=_blank}.
