@@ -43,9 +43,9 @@ Smaller bags (those under about 5GB) tend to ingest quickly. Larger bags can tak
 * Materials must be sent in tarred bags.
 * Bag names, and the names of files within bags, may not include control characters (such as backspace, delete, etc.)
 * Maximum bag size on our demo system is 5 GB
-* Maximum bag size on our production system is 5 TB
+* Maximum bag size on our production system is 5 TB. (This is a [limit set by AWS S3](https://aws.amazon.com/s3/faqs/#:~:text=Individual%20Amazon%20S3%20objects%20can,using%20the%20multipart%20upload%20capability.).)
 
-You can get around the 5TB bag size limit by using bag groups and the Bag-Group-Identifier tag. See the [Bagging (SIP) Requirements](../depositing/index.md) for more info.
+You can get around the 5TB bag size limit by splitting files and using bag groups and the Bag-Group-Identifier tag. See the [Bagging (SIP) Requirements](../depositing/index.md) for more info.
 
 ## Reingesting Existing Bags
 
