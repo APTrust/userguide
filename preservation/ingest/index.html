@@ -991,9 +991,9 @@
 <li>Materials must be sent in tarred bags.</li>
 <li>Bag names, and the names of files within bags, may not include control characters (such as backspace, delete, etc.)</li>
 <li>Maximum bag size on our demo system is 5 GB</li>
-<li>Maximum bag size on our production system is 5 TB</li>
+<li>Maximum bag size on our production system is 5 TB. (This is a <a href="https://aws.amazon.com/s3/faqs/#:~:text=Individual%20Amazon%20S3%20objects%20can,using%20the%20multipart%20upload%20capability.">limit set by AWS S3</a>.)</li>
 </ul>
-<p>You can get around the 5TB bag size limit by using bag groups and the Bag-Group-Identifier tag. See the <a href="../../depositing/">Bagging (SIP) Requirements</a> for more info.</p>
+<p>You can get around the 5TB bag size limit by splitting files and using bag groups and the Bag-Group-Identifier tag. See the <a href="../../depositing/">Bagging (SIP) Requirements</a> for more info.</p>
 <h2 id="reingesting-existing-bags">Reingesting Existing Bags</h2>
 <p>You can re-upload a bag any time you like to your receiving bucket, but be sure to read the page on <a href="../updates/">updates</a> so you understand how APTrust processes bag updates.</p>
 
