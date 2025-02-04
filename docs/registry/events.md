@@ -36,6 +36,6 @@ APTrust records the following PREMIS events for the generic files that make up e
 
 * __Replication__ - The file has been copied to replication storage. This applies only to files using the Stadard storage option, in which the primary copy exists in S3 in Northern Virginia and the secondard (replicated) copy is in Glacier in Oregon. See [storage options](../depositing/index.md#allowed-storage-option-values) for more information.
 
-* __Fixity Check__ - This records the outcome of a fixity check on this file. APTrust perform fixity checks on items in Standard storage every 90 days, but does not perform fixity checks on items in Glacier-Only or Glacier Deep Archive storage. See [storage options](../depositing/index.md#allowed-storage-option-values) for more information. Also note that APTrust checks the sha256 fixity only, even though we also know the md5 fixity value.
+* __Fixity Check__ - This records the outcome of a fixity check on this file. APTrust perform fixity checks on items in Standard storage every 180 days, but does not perform fixity checks on items in Glacier-Only or Glacier Deep Archive storage. See [storage options](../depositing/index.md#allowed-storage-option-values) for more information. Also note that APTrust checks the sha256 fixity only, even though we also know the md5 fixity value.
 
 * __Deletion__ - Records when a file was deleted and at whose request.
