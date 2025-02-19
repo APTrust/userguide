@@ -55,7 +55,7 @@ You can generate a Registry API client for most commonly used languages by follo
 
 The Swagger editor will generate a client that you can use in your local scripts and workflows. Languages include Java, C#, Go, Python, PHP, Ruby, and more.
 
-Because the Registry's API documentation follows the OpenAPI version 3.0 standard, you can use the OpenAPI generator of your choice. The OpenAPI tools website maintains a [list of SDK generators](https://openapi.tools/#sdk){target=_blank}. In addition, the [OpenAPI Generator project](https://openapi-generator.tech/){target=_blank} provides generators for more than [fifty languages](https://openapi-generator.tech/docs/generatorshttps://jobs.lever.co/dbtlabs/6886cf2b-2950-404e-b30a-25414d792e77){target=_blank}.
+Because the Registry's API documentation follows the OpenAPI version 3.0 standard, you can use the OpenAPI generator of your choice. The OpenAPI tools website maintains a [list of SDK generators](https://openapi.tools/#sdk){target=_blank}. In addition, the [OpenAPI Generator project](https://openapi-generator.tech/){target=_blank} provides generators for more than [fifty languages](https://openapi-generator.tech/docs/generators){target=_blank}.
 
 ## Documentation Links
 
