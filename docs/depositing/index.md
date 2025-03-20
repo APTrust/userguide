@@ -60,11 +60,10 @@ A valid untarred APTrust bag has the following structure:
 * May contain virtually any printable character, except newlines, carriage returns, tabs, vertical tabs and ASCII bells. (As of 1/30/2017)
 * Are considered case sensitive.
 * MUST not begin with a dash. (-)
-* MUST not contain whitespaces
-* May contain whitespaces. (As of 1/30/2017)
 * Restricted to 255 characters in length including extension.
 * MUST be at least 1 character in length.
 
+See also [Deposit Guidelines](guidelines.md) for more information on deposit limitations.
 
 ### bagit.txt file
 
