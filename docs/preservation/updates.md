@@ -19,7 +19,7 @@ data/document.pdf | data/document.pdf (unchanged) | old version | The document d
 (file not present) | data/new_image.jpg | new version | File did not exist in old bag, but it's here now
 data/old_image.jpg | (file not present) | old version | Although this file has been deleted from the new bag, we will not assume you want to delete it from storage. File deletion must be a deliberate act of the depositor.
 
-**WARNING:** In general, depositors should not upload update bag until they see that the initial ingest has completed successfully. Preservation Services will ingest only one version of a bag at a time, and it will pick the latest version whenever possible, cancelling ingest of the earlier version. Files from the cancelled version will not be ingested. To ensure ingest of all files, wait until the first ingest completes successfully before uploading new versions of the bag.
+**WARNING:** In general, depositors should not upload update bag​s until they see that the initial​ ingest ​or subsequent update bags ha​ve completed​ ingest successfully. Preservation Services will ingest only one version of a bag at a time, and it will pick the latest version whenever possible, cancelling ingest of the earlier version. Files from the cancelled version will not be ingested. To ensure ingest of all files, wait until the first ingest completes successfully before uploading new ​u​pdates ​to the​ object.
 
 This update policy has three important implications:
 
