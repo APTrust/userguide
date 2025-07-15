@@ -20,7 +20,7 @@ The APTrust repository records the following PREMIS events for intellectual obje
 
 * __Access Assignment__ - The object was assigned an access setting of _Consortia_, _Institution_, or _Restricted_. See [access values](../depositing/index.md#allowed-access-values) for definitions.
 
-* __Identifier Assignment__ - The object was assigned an identifier. APTrust object identifiers use the pattern `<institution.domain>/<object_name>`, where object_name is the name of the tarred bag, minus the .tar extension. For example, `test.edu/bag_of_photos`.
+* __Identifier Assignment__ - The object was assigned an identifier. APTrust object identifiers use the pattern `<institution.domain>/<object_name>`, where object_name is the institutional identifier concatenated with name of the tarred bag (minus the .tar extension). For example, `test.edu/bag_of_photos`.
 
 * __Deletion__ - The object was deleted. This means that all of its component files were deleted. Registry keeps a record of the object and all of its files after deletion, though it does not retain the files themselves.
 
