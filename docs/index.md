@@ -16,11 +16,11 @@ We'll reply to your email with the following:
 
 * Information on how to log in to your Registry account. Registry is our online registry, showing what you have deposited with APTrust and exposing the features you'll need to restore, delete, query, and audit your materials.
 
-* A set of AWS credentials that you'll use to upload matierials to our system.
+* A set of AWS credentials that you'll use to upload materials to our system.
 
 ## First Steps
 
-Once your local administrator has access to Registry, they can add new users and/or adminstrators for your institution. Registry users have access to all features except:
+Once your local administrator has access to Registry, they can add new users and/or administrators for your institution. Registry users have access to all features except:
 
 * Adding and deactivating user accounts.
 * Approving requests to delete materials from the repository.
