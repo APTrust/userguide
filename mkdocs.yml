@@ -29,6 +29,7 @@ nav:
   - Preservation Actions:
       - preservation/ingest.md
       - preservation/updates.md
+      - preservation/recovery.md
       - preservation/restoration.md
       - preservation/deletion.md
   - Depositing:
