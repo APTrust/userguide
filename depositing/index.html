@@ -534,6 +534,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#descriptive-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descriptive Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multipart-bags-deprecated" class="md-nav__link">
     <span class="md-ellipsis">
       Multipart bags - DEPRECATED
@@ -1091,6 +1100,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#descriptive-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descriptive Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#multipart-bags-deprecated" class="md-nav__link">
     <span class="md-ellipsis">
       Multipart bags - DEPRECATED
@@ -1213,7 +1231,8 @@ ingest services will validate the bag according to the APTrust profile.</p>
 </ul>
 <p>See also <a href="guidelines/">Deposit Guidelines</a> for more information on deposit limitations.</p>
 <h3 id="bagittxt-file">bagit.txt file</h3>
-<p>The bag must have a bagit.txt file, with the following tags.</p>
+<p>The bag MUST have a bagit.txt file, with the following tags.</p>
+<p>Note: This file is not retained by APTrust. When a file or object is restored, a new bag is created and this file will be re-generated, it records information about the bag itself.</p>
 <table>
 <thead>
 <tr>
@@ -1233,7 +1252,8 @@ ingest services will validate the bag according to the APTrust profile.</p>
 </tbody>
 </table>
 <h3 id="bag-infotxt-file">bag-info.txt file</h3>
-<p>The bag-info.txt file should contain the following tags:</p>
+<p>The bag MUST have a bag-info.txt file and it SHOULD contain the following tags.</p>
+<p>Note: This file is retained by APTrust and will be included in a restored object.</p>
 <table>
 <thead>
 <tr>
@@ -1276,10 +1296,10 @@ ingest services will validate the bag according to the APTrust profile.</p>
 </tbody>
 </table>
 <p>For more on bag group identifiers, see the <a href="../registry/objects/#bag-group-identifiers">Bag Group Identifiers</a> section of the Objects page.</p>
-<p>For a list of other commonly-used tags in the bag-info.txt file, see the official BagIt specification for <a href="https://tools.ietf.org/html/draft-kunze-bagit-14">version 0.97</a> or <a href="https://tools.ietf.org/html/rfc8493">version 1.0</a>.</p>
-<p>APTrust supports all of the tags mentioned in the 0.97 and 1.0 specifications. You may also add your own custom tags to this file.</p>
+<p>For a list of other commonly-used tags in the bag-info.txt file, see the official BagIt specification for <a href="https://tools.ietf.org/html/draft-kunze-bagit-14">version 0.97</a> or <a href="https://tools.ietf.org/html/rfc8493">version 1.0</a>.  <strong>However, this additional tags are not indexed or searchable within the APTrust repository</strong>. </p>
 <h3 id="aptrust-infotxt-file">aptrust-info.txt file</h3>
-<p>This file must contain the following tags:</p>
+<p>This bag MUST have a aptrust-info.txt file and it MUST contain the following tags.</p>
+<p>Note: This file is retained by APTrust and will be included in a restored object.</p>
 <table>
 <thead>
 <tr>
@@ -1357,6 +1377,25 @@ ingest services will validate the bag according to the APTrust profile.</p>
 <p><del><strong>Consortia</strong>: All APTrust members can see this object's metadata.</del> DEPRECATED. Consortial access was never implemented in the APTrust repository. Use Restricted or Institution instead. The Consortia access option is treated the same as the Institution access option.</p>
 </li>
 </ul>
+<h2 id="descriptive-metadata">Descriptive Metadata</h2>
+<p>APTrust follows a known-item searching model and does not index metadata. This helps us keep our repository and services performant. <strong>Generally speaking, only the identifiers assigned during ingest are indexed.</strong></p>
+<p>Select fields are available as <em>filters</em>. (Filters do not allow wildcards.) These fields may be included as bag tags or derived from the bag itself.</p>
+<ul>
+<li>State (Active or Deleted)</li>
+<li>Storage Option</li>
+<li>Bag Name</li>
+<li>Alternate Identifier</li>
+<li>Bag Group Identifier</li>
+<li>Internal Sender Identifier</li>
+<li>BagIt Profile</li>
+<li>Miniumum Size, Maximum Size</li>
+<li>Institution</li>
+<li>Minimum File Count, Maximum File Count</li>
+<li>Created On or After, Created On or Before</li>
+<li>Ypdated On or After, and Updated On or Before</li>
+</ul>
+<p>Members are free to include any additional metadata. In fact, obligations to their designated community may require additional metadata (Preservation Description Information or Representation Information in OAIS terms). <strong>However, this additional metadata is not indexed or searchable within the APTrust repository</strong>. </p>
+<p>This metadata may be included as additional tag files or payload data files. Because member are able to delete files and add files to objects while they are deposited in the APTrust repository, changes could be made to the object that conflict with the originally supplied metadata. The same process to the object may be used to update the metadata files. (Metadata updates are the most common use case for update bags.)</p>
 <h2 id="multipart-bags-deprecated">Multipart bags - DEPRECATED</h2>
 <div class="admonition warning">
 <p class="admonition-title">Deprecation Notice</p>
