@@ -67,7 +67,9 @@ See also [Deposit Guidelines](guidelines.md) for more information on deposit lim
 
 ### bagit.txt file
 
-The bag must have a bagit.txt file, with the following tags.
+The bag MUST have a bagit.txt file, with the following tags.
+
+Note: This file is not retained by APTrust. When a file or object is restored, a new bag is created and this file will be re-generated, it records information about the bag itself.
 
 Tag | Allowed values
 ----|----
@@ -76,31 +78,33 @@ Tag-File-Character-Encoding | UTF-8
 
 ### bag-info.txt file
 
-The bag-info.txt file should contain the following tags:
+The bag MUST have a bag-info.txt file and it SHOULD contain the following tags.
+
+Note: This file is retained by APTrust and will be included in a restored object.
 
 Tag  | Description | Example
 ---- | ---- | ----
 Source-Organization | This should be the human readable name of the APTrust partner organization. For example, "University of Virginia." You may be more specific, if you wish, specifying a specific college or library within the university, such as "Georgetown University Law Library." However, when APTrust restores bags, the source organization in the bag-info.txt file will be set to the name of the partner institution. | University of Virginia
-Bagging-Date | The date the content was bagged. Use ISO 8601 UTC format (YYYY-MM-DD). | 2019-08-19
+Bagging-Date | The date the content was bagged. Use ISO 8601 UTC format (YYYY-MM-DD). | 2019-08-19 | No
 Bag-Count | Two numbers separated by "of", in particular, "N of T", where T is the total number of bags in a group of bags and N is the ordinal number within the group; if T is not known, specify it as "?" (question mark). | Examples: 1 of 2, 4 of 4, 3 of ?, 89 of 145.
-Internal-Sender-Description | A sender-local explanation of the contents and provenance. |
-Internal-Sender-Identifier | An alternate sender-specific identifier for the content and/or bag. |
+Internal-Sender-Description | A sender-local explanation of the contents and provenance.
+Internal-Sender-Identifier | An alternate sender-specific identifier for the content and/or bag.
 Bag-Group-Identifier | A sender-supplied identifier for the set, if any, of bags to which it logically belongs. | Greeling Photo Collection
 
 For more on bag group identifiers, see the [Bag Group Identifiers](../registry/objects.md#bag-group-identifiers) section of the Objects page.
 
-For a list of other commonly-used tags in the bag-info.txt file, see the official BagIt specification for [version 0.97](https://tools.ietf.org/html/draft-kunze-bagit-14) or [version 1.0](https://tools.ietf.org/html/rfc8493).
-
-APTrust supports all of the tags mentioned in the 0.97 and 1.0 specifications. You may also add your own custom tags to this file.
+For a list of other commonly-used tags in the bag-info.txt file, see the official BagIt specification for [version 0.97](https://tools.ietf.org/html/draft-kunze-bagit-14) or [version 1.0](https://tools.ietf.org/html/rfc8493).  **However, this additional tags are not indexed or searchable within the APTrust repository**. 
 
 ### aptrust-info.txt file
 
-This file must contain the following tags:
+This bag MUST have a aptrust-info.txt file and it MUST contain the following tags.
+
+Note: This file is retained by APTrust and will be included in a restored object.
 
 Tag  | Description
 ---- | ----
 Title | A human readable title for searching and listing in APTrust. This cannot be empty.
-Description | A human-readable description of the bag. This will appear in Registry. |
+Description | A human-readable description of the bag. This will appear in Registry.
 Access | One of three access options listed below. The access option describes who can see an object's metadata, including its name and description, a list of its generic files and events. APTrust does not currently provide access to the objects themselves, except when you restore one of your bags. No matter which access option you choose, no other institution can access your intellectual object.
 Storage-Option | This indicates how and where you want APTrust to store your bag. If omitted, Storage-Option defaults to "Standard". See the section on Storage Options below for more information.
 
@@ -141,6 +145,28 @@ As noted in the list of storage options above, we check fixity only on items in 
 * __Institution__: All users at the depositing institution can see metadata about this object.
 
 * ~~__Consortia__: All APTrust members can see this object's metadata.~~ DEPRECATED. Consortial access was never implemented in the APTrust repository. Use Restricted or Institution instead. The Consortia access option is treated the same as the Institution access option.
+
+## Descriptive Metadata
+APTrust follows a known-item searching model and does not index metadata. This helps us keep our repository and services performant. **Generally speaking, only the identifiers assigned during ingest are indexed.**
+
+Select fields are available as *filters*. (Filters do not allow wildcards.) These fields may be included as bag tags or derived from the bag itself.
+
+  * State (Active or Deleted)
+  * Storage Option
+  * Bag Name
+  * Alternate Identifier
+  * Bag Group Identifier
+  * Internal Sender Identifier
+  * BagIt Profile
+  * Miniumum Size, Maximum Size
+  * Institution
+  * Minimum File Count, Maximum File Count
+  * Created On or After, Created On or Before
+  * Ypdated On or After, and Updated On or Before
+
+Members are free to include any additional metadata. In fact, obligations to their designated community may require additional metadata (Preservation Description Information or Representation Information in OAIS terms). **However, this additional metadata is not indexed or searchable within the APTrust repository**. 
+
+This metadata may be included as additional tag files or payload data files. Because member are able to delete files and add files to objects while they are deposited in the APTrust repository, changes could be made to the object that conflict with the originally supplied metadata. The same process to the object may be used to update the metadata files. (Metadata updates are the most common use case for update bags.)
 
 ## Multipart bags - DEPRECATED
 
