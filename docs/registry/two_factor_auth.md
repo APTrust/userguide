@@ -16,15 +16,15 @@ To enable two-factor authentication for yourself, click the __My Account__ in th
 
 ![Enable two-factor authentication for yourself](../img/registry/MyAccount.png)
 
-Click the __Set Up Two-Factor Auth__ button. Then enter your mobile phone number and choose either Authy or Text Message.
+Click the __Set Up Two-Factor Auth__ button. Then enter your mobile phone number and choose either Authenticator App, Authy or Text Message.
 
-Authy allows you to complete two-factor authentication via push notification, while Text sends a text (SMS) message to your phone with a one-time authentication token.
+Using an Authenticator App will require you to enroll a compatible device, most commonly your phone, in 2FA by scanning a QR code (or entering a setup key) on your authenticator app of choice. Some common authenticator apps include Google Authenticator, Microsoft Authenticator, and the Duo app. Authy allows you to complete two-factor authentication via push notification, while Text sends a text (SMS) message to your phone with a one-time authentication token.
 
 ![Choose two-factor method](../img/registry/TwoFactorMethod.png)
 
 Click __Submit__ when you're done.
 
-You should receive a text message or push notification within a minute or so. If you chose the text/SMS option, enter the code you received in the text message into the verification field in Registry.
+You should receive a text message or push notification within a minute or so. If you chose the authenticator app or text/SMS option, enter the code you received in the text message into the verification field in Registry. If you chose the authenticator app method, you will need to view your code in your app.
 
 If you have Authy installed on your phone and you chose to verify via push notification, click the __Approve__ button when the Authy verification request appears.
 
