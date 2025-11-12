@@ -30,11 +30,11 @@ We suggest you make your first deposits in the [demo repository](https://demo.ap
 
 The easiest way to make your first APTrust deposit is to use DART, which enables drag-and-drop deposits.
 
-DART runs on Windows, Mac, and Linux. To install DART and run your first ingest job, see the [DART user guide](https://aptrust.github.io/dart-docs/users/getting_started/).
+DART runs on Windows, Mac, and Linux. To install DART and run your first ingest job, see the [DART user guide](https://aptrust.github.io/dart-docs/dart2/users/getting_started/).
 
-DART allows you to test test out different bagging and uploading options through a simple point-and-click interface. Once you find the combination that works for you, you can save it as a [Workflow](https://aptrust.github.io/dart-docs/users/workflows/), and then you can run that workflow from within DART, or from the command line. You can also incorporate DART's command-line workflows into larger scripted workflows using languages like Ruby, Python, PHP, JavaScript or even bash shell scripts.
+DART allows you to test test out different bagging and uploading options through a simple point-and-click interface. Once you find the combination that works for you, you can save it as a [Workflow](https://aptrust.github.io/dart-docs/dart2/users/workflows/), and then you can run that workflow from within DART, or from the command line. You can also incorporate DART's command-line workflows into larger scripted workflows using languages like Ruby, Python, PHP, JavaScript or even bash shell scripts.
 
-__Note:__ Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., [CyberDuck](https://cyberduck.io/){:target="_blank"}, [S3 Browser](https://s3browser.com/){:target="_blank"}) to upload them. 
+__Note:__ Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., [CyberDuck](https://cyberduck.io/){:target="_blank"}, [S3 Browser](https://s3browser.com/){:target="_blank"}) to upload them.
 
 ### Exporting from Fedora
 

@@ -21,7 +21,7 @@ Each of these tools returns specific exit codes, so you can integrate them into 
 
 ## List of Partner Tools
 
-In addition to our graphical tool for bagging and uploading, [DART](https://aptrust.github.io/dart-docs/users/getting_started/), APTrust also distributes a suite of command-line tools.
+In addition to our graphical tool for bagging and uploading, [DART](https://aptrust.github.io/dart-docs/dart2/users/getting_started/), APTrust also distributes a suite of command-line tools.
 
 These tools use less memory and generally less CPU than DART. They include:
 
