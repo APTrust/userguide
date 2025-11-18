@@ -2,7 +2,7 @@
 
 The Registry REST API enables you to programmatically query information about intellectual objects, files, premis events, and work items.
 
-For safety purposes, the API is primarily read-only. It does not allow object or file deletion, though it does allow you to request object restoration.
+For safety purposes, the API is primarily read-only. It does not allow object or file deletion or any other operations that could alter or remove ingested materials.
 
 The most common uses of the API are:
 
