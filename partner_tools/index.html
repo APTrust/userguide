@@ -2291,7 +2291,7 @@ options:</p>
 <tr>
 <td>storage_option</td>
 <td>string</td>
-<td>Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA</td>
+<td>Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard</td>
 </tr>
 <tr>
 <td>user</td>
@@ -2533,7 +2533,7 @@ format:</p>
 <tr>
 <td>storage_option</td>
 <td>string</td>
-<td>Return objects with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA.</td>
+<td>Return objects with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard.</td>
 </tr>
 <tr>
 <td>updated_at__gteq</td>
@@ -2729,7 +2729,7 @@ the <code>get file</code> call returns more detailed info.</p>
 <tr>
 <td>storage_option</td>
 <td>string</td>
-<td>Return files with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA.</td>
+<td>Return files with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard.</td>
 </tr>
 <tr>
 <td>updated_at__gteq</td>
@@ -2879,8 +2879,7 @@ configuration used for testing.</p>
 correct file extension (.env, .yml, .yaml, or .json) so apt-cmd knows how to
 parse the file.</p>
 <p>You may find it useful to maintain separate config file for separate profiles.
-For example, you may want to store S3 credentials for Amazon in aws.env,
-credentials for Wasabi in wasabi.env, and for Minio in minio.env.</p>
+For example, you may want to store S3 credentials for Amazon in aws.env and for Minio in minio.env.</p>
 <p>Or, you can skip config files altogether and use environment variables
 like so:</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nv">APTRUST_AWS_KEY</span><span class="o">=</span>my_key<span class="w"> </span><span class="nv">APTRUST_AWS_SECRET</span><span class="o">=</span>my_secrete<span class="w"> </span>apt-cmd<span class="w"> </span>s3<span class="w"> </span>upload<span class="w"> </span>--host<span class="o">=</span>s3.amazonaws.com<span class="w"> </span>--bucket<span class="o">=</span><span class="s2">&quot;my-bucket&quot;</span><span class="w"> </span>photo.jpg

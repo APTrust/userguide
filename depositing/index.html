@@ -1370,22 +1370,13 @@ ingest services will validate the bag according to the APTrust profile.</p>
 <li>
 <p><strong>Glacier-Deep-VA</strong>: Files will be stored ONLY in Glacier Deep Archive, in AWS's Northern Virginia region, and will be encrypted during storage. APTrust will not perform any fixity checks on these files.</p>
 </li>
-<li>
-<p><strong>Wasabi-OR</strong>: Files will be stored only in Wasabi's Oregon data center. These files will receive fixity checks every 180 days.</p>
-</li>
-<li>
-<p><strong>Wasabi-TX</strong>: Files will be stored only in Wasabi's Texas data center. These files will receive fixity checks every 180 days.</p>
-</li>
-<li>
-<p><strong>Wasabi-VA</strong>: Files will be stored only in Wasabi's Virginia data center. These files will receive fixity checks every 180 days.</p>
-</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">A note on storage options</p>
 <p>When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.</p>
 </div>
 <h4 id="storage-options-and-fixity-checks">Storage Options and Fixity Checks</h4>
-<p>As noted in the list of storage options above, we check fixity only on items in S3 and Wasabi storage, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard, Wasabi-OR, Wasabi-TX or Wasabi-VA storage options.</p>
+<p>As noted in the list of storage options above, we check fixity only on items in S3, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard storage option.</p>
 <h4 id="allowed-access-values">Allowed Access Values</h4>
 <ul>
 <li>
