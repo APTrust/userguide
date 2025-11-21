@@ -124,19 +124,12 @@ Storage-Option | This indicates how and where you want APTrust to store your bag
 
 * __Glacier-Deep-VA__: Files will be stored ONLY in Glacier Deep Archive, in AWS's Northern Virginia region, and will be encrypted during storage. APTrust will not perform any fixity checks on these files.
 
-* __Wasabi-OR__: Files will be stored only in Wasabi's Oregon data center. These files will receive fixity checks every 180 days.
-
-* __Wasabi-TX__: Files will be stored only in Wasabi's Texas data center. These files will receive fixity checks every 180 days.
-
-* __Wasabi-VA__: Files will be stored only in Wasabi's Virginia data center. These files will receive fixity checks every 180 days.
-
-
 !!! warning "A note on storage options"
     When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.
 
 #### Storage Options and Fixity Checks
 
-As noted in the list of storage options above, we check fixity only on items in S3 and Wasabi storage, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard, Wasabi-OR, Wasabi-TX or Wasabi-VA storage options.
+As noted in the list of storage options above, we check fixity only on items in S3, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard storage option.
 
 #### Allowed Access Values
 

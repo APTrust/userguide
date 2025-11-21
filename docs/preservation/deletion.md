@@ -15,12 +15,11 @@ Deleting objects from APTrust is a multi-step process.
 Files and objects stored in S3 or in APTrust's Standard storage option (which includes both S3 and Glacier)
 can be deleted at any time.
 
-Items stored in Glacier, Glacier Deep Archive and Wasabi cannot be deleted until they have been stored for 
+Items stored in Glacier, Glacier Deep Archive cannot be deleted until they have been stored for 
 the minimum retention period. Minimum retention periods are:
 
 * __Glacier__ 90 days
 * __Glacier Deep Archive__ 180 days
-* __Wasabi__ 90 days
 
 For files and objects that have not met the minimum retention period, Registry's __Delete__ button will be
 disabled. Hovering over the button will display a message describing why the item can't be deleted
