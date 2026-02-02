@@ -386,7 +386,7 @@ options:
 | stage__in | string | Specify this filter multiple times to retrieve items in any one of a number of stages. For example, to retrieve items in the Store, Unpack, or Validate stages, use `stage__in=Store stage__in=Unpack stage_in=Validate` |
 | status | string | Retrieve items having this status. Values include Cancelled, Failed, Pending, Started, Success, Suspended. |
 | status__in | string | Specify this filter multiple times to retrieve items having any of a number of statuses. For example, to retrieve items with Pending and Started status, use `status__in=Pending status__in=Started`. |
-| storage_option | string | Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA |
+| storage_option | string | Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard |
 | user | string (email address) | Return work items initiated by the user with this email address. |
 
 ### WorkItem List Paging and Sort Options
@@ -555,7 +555,7 @@ List objects created after April 6, 2023
 | size__gteq | integer | Return objects whose size is at least this number of bytes. |
 | size__lteq | integer | Return objects whose size is no more than this number of bytes. |
 | state | string | Return objects with this state. A = Active, D = Deleted. Available values: A, D. |
-| storage_option | string | Return objects with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA. |
+| storage_option | string | Return objects with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard. |
 | updated_at__gteq | date string 'yyyy-mm-dd' | Return objects updated on or after the given timestamp. |
 | updated_at__lteq | date string 'yyyy-mm-dd' | Return objects updated on or before the given timestamp. |
 
@@ -704,7 +704,7 @@ List files created after April 6, 2023
 | size__gteq | integer | Return files whose size is at least this number of bytes. |
 | size__lteq | integer | Return files whose size is no more than this number of bytes. |
 | state | string | Return files with this state. A = Active, D = Deleted. Available values: A, D. |
-| storage_option | string | Return files with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA. |
+| storage_option | string | Return files with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard. |
 | updated_at__gteq | date string 'yyyy-mm-dd' | Return files updated on or after the given timestamp. |
 | updated_at__lteq | date string 'yyyy-mm-dd' | Return files updated on or before the given timestamp. |
 
@@ -844,8 +844,7 @@ correct file extension (.env, .yml, .yaml, or .json) so apt-cmd knows how to
 parse the file.
 
 You may find it useful to maintain separate config file for separate profiles.
-For example, you may want to store S3 credentials for Amazon in aws.env,
-credentials for Wasabi in wasabi.env, and for Minio in minio.env.
+For example, you may want to store S3 credentials for Amazon in aws.env and for Minio in minio.env.
 
 Or, you can skip config files altogether and use environment variables
 like so:
