@@ -17,16 +17,16 @@ anyone can use apt-cmd's bagging and S3 features.
 
 ## Downloads
 
-The latest version is 3.0.0, released April 23, 2025. See the [change log](https://github.com/APTrust/apt-cmd/blob/master/CHANGELOG.md){target=_blank} for details.
+The latest version is 3.0.3, released February 3, 2026. See the [change log](https://github.com/APTrust/apt-cmd/blob/master/CHANGELOG.md){target=_blank} for details.
 
 | Platform | Architecture | Version | SHA-256 |
 | -------- | ------------ | ------- | ------- |
-| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/windows/amd64/apt-cmd.exe) | Intel 64-bit | v3.0.0 | 0aa6629c275c4780ad031568c4a6f8f5e929e1100dca40dd40a3937262d924ef |
-| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/windows/arm64/apt-cmd.exe) | ARM 64-bit | v3.0.0 | 216812412f027e8cff4919da8c2f10ab8ca56aa53f1f5f284cf514d29d804a3a |
-| [Mac Intel](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/mac/amd64/apt-cmd)  | Intel 64-bit | v3.0.0 | c2356d9486a77530c561011d34717cd91895316788e474b82a5a674d144b5330 |
-| [Mac ARM](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/mac/arm64/apt-cmd) | Apple Silicon (M series) | v3.0.0 | 4eb060b1669887837801d70a42856e17a948cc3fb9db58dc0a8463ab575fe8a0 |
-| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/linux/amd64/apt-cmd) | Intel 64-bit | v3.0.0 | a3c78535987026080512a9626f8d7a7fd47afc7e9178d03334edb205086780cf |
-| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/linux/arm64/apt-cmd) | ARM 64-bit | v3.0.0 | 2fff16d7ab063fbfaee8a47662c77ff0420525de986f375f6532b844fa9df35b |
+| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.3/windows/amd64/apt-cmd.exe) | Intel 64-bit | v3.0.3 | f039bb5ed01a4dd53a9d07ebab6b3440b13042a6ae71ab73361b2c27d4b3269e |
+| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.3/windows/arm64/apt-cmd.exe) | ARM 64-bit | v3.0.3 | f0a04c2a276d6aca5dfc94805f0fbb499176edb9e3c60243d3b4e561e86e1c54 |
+| [Mac Intel](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.3/mac/amd64/apt-cmd)  | Intel 64-bit | v3.0.3 | 648c3dc7bc67126e7a7aae108f3808d9d6881632989e0efc032418ca469ddb2d |
+| [Mac ARM](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.3/mac/arm64/apt-cmd) | Apple Silicon (M series) | v3.0.3 | 7559817ba00da694d01501c53f4226f4c6e5b792f7750bc2b5294ecaeb0b5069 |
+| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.3/linux/amd64/apt-cmd) | Intel 64-bit | v3.0.3 | f7ed19dc5d2e06226baa3a733667090020994f184149d44a8016ad2e36b3efeb |
+| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.3/linux/arm64/apt-cmd) | ARM 64-bit | v3.0.3 | 30a2380b10e5e5d4799982229bd345d4f2855ed0dcdaa00ce1d2c040e482b1dd |
 
 APTrust partner tools are open source, distributed under the BSD 2-clause license. The source code is available on github at [https://github.com/APTrust/apt-cmd](https://github.com/APTrust/apt-cmd){target=_blank}.
 
