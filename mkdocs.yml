@@ -53,6 +53,7 @@ nav:
   - Old Partner Tools: old_partner_tools.md
   - Glossary: glossary.md
   - Contact Us: contact_us.md
+  - Accessibility Statement: https://aptrust.org/accessibility-statement/
 plugins:
   - redirects:
       redirect_maps:
