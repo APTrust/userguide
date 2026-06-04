@@ -4,19 +4,19 @@
 
 You can log in to Registry, APTrust's online registry, at the URLs below:
 
-* __Staging Repository__ - https://staging.aptrust.org
+* __Staging Repository__ - [staging.aptrust.org](https://staging.aptrust.org)
     - Staging is for very new, potentially unstable features.
     - Staging is currently the only system that accepts Beyond the Repository (BTR) formatted bags.
     - Staging does not preserve anything for more than 7 days.
-* __Test/Demo Repository__ - https://demo.aptrust.org
+* __Test/Demo Repository__ - [demo.aptrust.org](https://demo.aptrust.org)
     - Demo is for you to test your bagging process and for APTrust to test new features that are considered stable.
     - Demo does not guarantee preservation of anything beyond a few days.
-* __Production Repository__ - https://repo.aptrust.org
+* __Production Repository__ - [repo.aptrust.org](https://repo.aptrust.org)
     - Production is for materials you want to preserve for the long term.
 
 ## Quick Start Training Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dKekC3jHTpM?si=iQ8oIvgmM9NRutkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Watch the APTrust Quick Start Training Video on YouTube (opens in new window)](https://www.youtube.com/watch?v=dKekC3jHTpM){:target="_blank"}
 
 ## Adding Users
 
@@ -34,7 +34,7 @@ DART runs on Windows, Mac, and Linux. To install DART and run your first ingest 
 
 DART allows you to test test out different bagging and uploading options through a simple point-and-click interface. Once you find the combination that works for you, you can save it as a [Workflow](https://aptrust.github.io/dart-docs/dart2/users/workflows/), and then you can run that workflow from within DART, or from the command line. You can also incorporate DART's command-line workflows into larger scripted workflows using languages like Ruby, Python, PHP, JavaScript or even bash shell scripts.
 
-__Note:__ Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., [CyberDuck](https://cyberduck.io/){:target="_blank"}, [S3 Browser](https://s3browser.com/){:target="_blank"}) to upload them.
+__Note:__ Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., [CyberDuck (opens in new window)](https://cyberduck.io/){:target="_blank"}, [S3 Browser (opens in new window)](https://s3browser.com/){:target="_blank"}) to upload them.
 
 ### Exporting from Fedora
 
