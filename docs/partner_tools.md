@@ -19,16 +19,16 @@ anyone can use apt-cmd's bagging and S3 features.
 
 The latest version is 3.0.4, released April 23, 2026. See the [change log](https://github.com/APTrust/apt-cmd/blob/master/CHANGELOG.md){target=_blank} for details.
 
-| Platform | Architecture | Version | SHA-256 |
-| -------- | ------------ | ------- | ------- |
-| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/windows/amd64/apt-cmd.exe) | Intel 64-bit | v3.0.4 | 8f2785f5c88fe2839d2ec95ce31a758163d4cd6808e4a0600fbfa8fa76079489 |
-| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/windows/arm64/apt-cmd.exe) | ARM 64-bit | v3.0.4 | c25b677a6206fb59e9cd6dced4a272b375484c9b5c46faa87b77c37bb1a2cf23 |
-| [Mac Intel](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/mac/amd64/apt-cmd)  | Intel 64-bit | v3.0.4 | 8c8a37b0f56d1a1618b773624586961a5c235dd527dca61b6eb9cb5570038860 |
-| [Mac ARM](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/mac/arm64/apt-cmd) | Apple Silicon (M series) | v3.0.4 | f9f1e1f2a02eba3871c366b15ed75cd7b56f4ae654ae5ac7105b618e8c928da8 |
-| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/linux/amd64/apt-cmd) | Intel 64-bit | v3.0.4 | 95fcc4cdc89a416c8fd472874e817e40b7d3d3344823606a5704bbfa4dfcca7c |
-| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/linux/arm64/apt-cmd) | ARM 64-bit | v3.0.4 | dc2d69d22f70abd339813cfc97afb6f84f5f402a0c62e8ab27c7cbb09a2bd4dd |
+| Platform | Version | SHA-256 |
+| -------- | ------- | ------- |
+| [Windows Intel 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/windows/amd64/apt-cmd.exe) | v3.0.4 | 8f2785f5c88fe2839d2ec95ce31a758163d4cd6808e4a0600fbfa8fa76079489 |
+| [Windows ARM 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/windows/arm64/apt-cmd.exe) | v3.0.4 | c25b677a6206fb59e9cd6dced4a272b375484c9b5c46faa87b77c37bb1a2cf23 |
+| [Mac Intel 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/mac/amd64/apt-cmd) | v3.0.4 | 8c8a37b0f56d1a1618b773624586961a5c235dd527dca61b6eb9cb5570038860 |
+| [Mac Apple Silicon](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/mac/arm64/apt-cmd) | v3.0.4 | f9f1e1f2a02eba3871c366b15ed75cd7b56f4ae654ae5ac7105b618e8c928da8 |
+| [Linux Intel 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/linux/amd64/apt-cmd) | v3.0.4 | 95fcc4cdc89a416c8fd472874e817e40b7d3d3344823606a5704bbfa4dfcca7c |
+| [Linux ARM 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/linux/arm64/apt-cmd) | v3.0.4 | dc2d69d22f70abd339813cfc97afb6f84f5f402a0c62e8ab27c7cbb09a2bd4dd |
 
-APTrust partner tools are open source, distributed under the BSD 2-clause license. The source code is available on github at [https://github.com/APTrust/apt-cmd](https://github.com/APTrust/apt-cmd){target=_blank}.
+APTrust partner tools are open source, distributed under the BSD 2-clause license. The [apt-cmd source code is available on GitHub](https://github.com/APTrust/apt-cmd){target=_blank}.
 
 
 ## Help and Troubleshooting
