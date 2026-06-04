@@ -34,6 +34,18 @@ After you upload tarred bag to your receiving bucket, APTrust's ingest process w
 
 ![Ingest process on the backend](../img/aptrust_ingest_process.png# boxshadow)
 
+??? note "Text description of the ingest process diagram"
+    The ingest process consists of eight sequential stages:
+
+    1. **Pre-Fetch**: The depositor uploads a bag to their receiving bucket. APTrust gathers metadata including file names, checksums, manifests, and tag files.
+    2. **Validation**: The system untars the bag to validate its contents, ensuring all files are present and checksums match.
+    3. **Reingest check**: The system checks whether a copy already exists. If so, existing file UUIDs are reused and any changes are detected.
+    4. **Copy to Staging**: Files are uploaded to a staging bucket.
+    5. **Format Identification**: The bag is streamed to identify the format of each file, and format and metadata are checked.
+    6. **Copy to Storage**: Files are copied to preservation buckets for long-term storage, retaining key metadata.
+    7. **Verify Storage**: Metadata from each file is grabbed for verification and stored in the registry. The preservation copy is confirmed to exist.
+    8. **Record Metadata**: File metadata and a PREMIS Event are recorded in the registry. Temporary files are cleaned up — ingest is complete.
+
 [DART's dashboard](https://aptrust.github.io/dart-docs/dart2/users/dashboard/) also shows the status of items recently ingested and pending ingest.
 
 Smaller bags (those under about 5GB) tend to ingest quickly. Larger bags can take longer, with multi-terabyte bags sometimes taking a few days. This is because the ingest process calculates checksums on every byte of data in the bag and then typically copies each of the bag's files to two distinct regions of the country.
