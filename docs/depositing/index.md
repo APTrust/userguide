@@ -1,3 +1,9 @@
+---
+description: >
+  Learn how to package digital objects as BagIt bags and deposit them to APTrust
+  for long-term cloud preservation using DART or command-line tools.
+---
+
 # Bagging (SIP) Requirements
 APTrust currently accepts bags for ingest that use the APTrust BagIt and Beyond the Repository (BTR) BagIt profiles. Bags will be restored using the same profile as the submission.
 
