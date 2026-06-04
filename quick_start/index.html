@@ -1103,25 +1103,24 @@
 <h2 id="logging-in">Logging In</h2>
 <p>You can log in to Registry, APTrust's online registry, at the URLs below:</p>
 <ul>
-<li><strong>Staging Repository</strong> - <a href="https://staging.aptrust.org">https://staging.aptrust.org</a><ul>
+<li><strong>Staging Repository</strong> - <a href="https://staging.aptrust.org">staging.aptrust.org</a><ul>
 <li>Staging is for very new, potentially unstable features.</li>
 <li>Staging is currently the only system that accepts Beyond the Repository (BTR) formatted bags.</li>
 <li>Staging does not preserve anything for more than 7 days.</li>
 </ul>
 </li>
-<li><strong>Test/Demo Repository</strong> - <a href="https://demo.aptrust.org">https://demo.aptrust.org</a><ul>
+<li><strong>Test/Demo Repository</strong> - <a href="https://demo.aptrust.org">demo.aptrust.org</a><ul>
 <li>Demo is for you to test your bagging process and for APTrust to test new features that are considered stable.</li>
 <li>Demo does not guarantee preservation of anything beyond a few days.</li>
 </ul>
 </li>
-<li><strong>Production Repository</strong> - <a href="https://repo.aptrust.org">https://repo.aptrust.org</a><ul>
+<li><strong>Production Repository</strong> - <a href="https://repo.aptrust.org">repo.aptrust.org</a><ul>
 <li>Production is for materials you want to preserve for the long term.</li>
 </ul>
 </li>
 </ul>
 <h2 id="quick-start-training-video">Quick Start Training Video</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dKekC3jHTpM?si=iQ8oIvgmM9NRutkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<p><a href="https://www.youtube.com/watch?v=dKekC3jHTpM" target="_blank">Watch the APTrust Quick Start Training Video on YouTube (opens in new window)</a></p>
 <h2 id="adding-users">Adding Users</h2>
 <p>See the <a href="../registry/user_management/">User Management</a> page for info on how to add users to your institution's Registry account.</p>
 <h2 id="making-your-first-deposit">Making Your First Deposit</h2>
@@ -1130,7 +1129,7 @@
 <p>The easiest way to make your first APTrust deposit is to use DART, which enables drag-and-drop deposits.</p>
 <p>DART runs on Windows, Mac, and Linux. To install DART and run your first ingest job, see the <a href="https://aptrust.github.io/dart-docs/dart2/users/getting_started/">DART user guide</a>.</p>
 <p>DART allows you to test test out different bagging and uploading options through a simple point-and-click interface. Once you find the combination that works for you, you can save it as a <a href="https://aptrust.github.io/dart-docs/dart2/users/workflows/">Workflow</a>, and then you can run that workflow from within DART, or from the command line. You can also incorporate DART's command-line workflows into larger scripted workflows using languages like Ruby, Python, PHP, JavaScript or even bash shell scripts.</p>
-<p><strong>Note:</strong> Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., <a href="https://cyberduck.io/" target="_blank">CyberDuck</a>, <a href="https://s3browser.com/" target="_blank">S3 Browser</a>) to upload them.</p>
+<p><strong>Note:</strong> Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., <a href="https://cyberduck.io/" target="_blank">CyberDuck (opens in new window)</a>, <a href="https://s3browser.com/" target="_blank">S3 Browser (opens in new window)</a>) to upload them.</p>
 <h3 id="exporting-from-fedora">Exporting from Fedora</h3>
 <p>If your local repository uses Fedora, you can <a href="https://github.com/fcrepo4-labs/fcrepo-import-export/blob/master/README.md#running-the-importexport-utility-with-a-bagit-support">export APTrust-compliant bags directly from Fedora</a> and then upload them to your receiving bucket for ingest.</p>
 <p>After Fedora produces the bag, you can use APTrust <a href="../partner_tools/">apt_upload tool</a> to upload the bag to your receiving bucket. From there, APTrust ingest services will pick it up for processing, and you can track its progress in the <a href="../registry/work_items/">Registry Work Items</a> list.</p>
