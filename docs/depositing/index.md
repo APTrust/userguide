@@ -49,7 +49,7 @@ A valid untarred APTrust bag has the following structure:
            |   aptrust-info.txt
            |   bag-info.txt
            |   bagit.txt
-           |   manifest-&lt;algorithm&gt;.txt (md5 AND/OR sha256)
+           |   manifest-<algorithm>.txt (md5 AND/OR sha256)
            |   [optional tag manifests]
            |   [optional additional tag files]
            \--- data/
