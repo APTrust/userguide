@@ -165,19 +165,19 @@ items from S3.
 To access S3 services, you'll need to S3 credentials, as specified in the
 [Configuration Settings](#configuration-settings) section below.
 
-## Uploading a File to an S3 Bucket
+### Uploading a File to an S3 Bucket
 
 apt-cmd can upload a file to any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### APTrust Example
+#### APTrust Example
 
 ```bash
     apt-cmd s3 upload --host=s3.amazonaws.com --bucket="aptrust.receiving.yoda.edu" yoda.edu.ms-12.888333k3.tar
 ```
 
-### Generic Examples
+#### Generic Examples
 
 Upload file photo.jpg to Amazon's S3 service:
 
@@ -194,7 +194,7 @@ Upload the same file, but call it renamed.jpg in S3:
              photo.jpg
 ```
 
-## Listing the Contents of an S3 Bucket
+### Listing the Contents of an S3 Bucket
 
 You can list files from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
@@ -202,7 +202,7 @@ environment, or in a config file specified with the --config flag.
 
 List output is in JSON format, unless you specify `--format=text`.
 
-### APTrust Example
+#### APTrust Example
 
 List items in your restoration bucket (note the trailing slash on the prefix):
 
@@ -220,7 +220,7 @@ List 10 items in aptrust.restore.yoda.edu with prefix "yoda.edu/", using plain t
                     --format=text
 ```
 
-### Generic Examples
+#### Generic Examples
 
 List items in my_bucket with prefix "photo":
 
@@ -250,13 +250,13 @@ List items in a nested folder. Again, note the trailing slash:
     apt-cmd s3 list --host=s3.amazonaws.com --bucket=my_bucket --prefix=music/danielle_ponder/
 ```
 
-## Downloading an S3 File
+### Downloading an S3 File
 
 You can download files from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### APTrust Examples
+#### APTrust Examples
 
 Download a file from your restoration bucket to your current directory:
 
@@ -264,7 +264,7 @@ Download a file from your restoration bucket to your current directory:
     apt-cmd s3 download --host=s3.amazonaws.com --bucket="aptrust.restore.yoda.edu" --key='yoda.edu/yoda.edu.ms-12.888333k3.tar' --save-as="yoda.edu.ms-12.888333k3.tar"
 ```
 
-### Generic Examples
+#### Generic Examples
 
 Download a file from Amazon's S3 service into the current directory:
 
@@ -281,13 +281,13 @@ Download the same file and save it with a custom name on your desktop:
                --save-as="$HOME/Desktop/vacation.jpg"
 ```
 
-## Deleting an S3 File
+### Deleting an S3 File
 
 You can delete objects from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### APTrust Example
+#### APTrust Example
 
 Delete a bag from your receiving bucket:
 
@@ -298,7 +298,7 @@ Delete a bag from your receiving bucket:
 Note: This returns exit status zero and `'{ "result": "OK" }'` if the key is
 successfully deleted or if the key wasn't in the bucket to begin with.
 
-### Generic Example
+#### Generic Example
 
 Delete object photo.jpg from my-bucket on AWS S3:
 
@@ -316,7 +316,7 @@ need APTrust credentials to query the Registry. See
 [Configuration Settings](#configuration-settings) below for info on how
 to pass these credentials to apt-cmd.
 
-## Listing Registry Work Items
+### Listing Registry Work Items
 
 List work items from the APTrust registry, or run a special "quick report."
 
@@ -327,7 +327,7 @@ Note that when filtering Work Items, Objects or Files using any of the list
 commands, you can supply filters as name-value pairs on the command line.
 These pairs **do not use the double-dash (--) prefix**.
 
-### Examples
+#### Examples
 
 List recent ingests:
 
@@ -371,7 +371,7 @@ List restorations or deletions of a specific file:
   apt-cmd registry list workitems generic_file_identifier='test.edu/TestBag/data/photo1.jpg'
 ```
 
-### Quick Reports
+#### Quick Reports
 
 List all items from the past 30 days that are still in process:
 
@@ -393,7 +393,7 @@ List all restorations from the past 30 days:
 
 When running quick reports, this tool ignores all other query params.
 
-### WorkItem List Filter Options
+#### WorkItem List Filter Options
 
 When querying for Work Items, apt-cmd supports the following filter
 options:
@@ -432,7 +432,7 @@ options:
 | storage_option | string | Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard |
 | user | string (email address) | Return work items initiated by the user with this email address. |
 
-### WorkItem List Paging and Sort Options
+#### WorkItem List Paging and Sort Options
 
 By default, the `list workitems` command returns the first 25 results,
 sorting items by id. You can override these defaults with the following
@@ -444,7 +444,7 @@ settings.
 | page | integer | The page of results you want to retrieve. Default is 1. |
 | sort | string | Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, `sort=name` sorts by the name of the tar file, while `sort=name__desc` does a reverse sort by name. |
 
-### WorkItem List Response Format
+#### WorkItem List Response Format
 
 The `workitem list` command returns JSON in the following format.
 Note that `count` indicates the total number of results, while
@@ -499,7 +499,7 @@ pages of results.
 }
 ```
 
-## Retrieving a Single Registry Work Item
+### Retrieving a Single Registry Work Item
 
 To retrieve a single WorkItem record from the APTrust Registry, use the
 command below. Note that id is an integer.
@@ -508,7 +508,7 @@ command below. Note that id is an integer.
   apt-cmd registry get workitem <id>
 ```
 
-### WorkItem Get Response Format
+#### WorkItem Get Response Format
 
 The command `aptrust registry get workitem` returns JSON in the following
 format:
@@ -554,11 +554,11 @@ format:
 }
 ```
 
-## Listing Registry Objects
+### Listing Registry Objects
 
 You can list objects from the APTrust Registry, with filters.
 
-### Examples
+#### Examples
 
 List 20 objects ordered by identifer:
 
@@ -578,7 +578,7 @@ List objects created after April 6, 2023
   apt-cmd registry list files created_at__gteq='2023-04-06'
 ```
 
-### Object List Filter Options
+#### Object List Filter Options
 
 | Name | DataType | Description |
 | ---- | -------- | ----------- |
@@ -603,7 +603,7 @@ List objects created after April 6, 2023
 | updated_at__lteq | date string 'yyyy-mm-dd' | Return objects updated on or before the given timestamp. |
 
 
-### Object List Paging and Sort Options
+#### Object List Paging and Sort Options
 
 By default, the `list objects` command returns the first 25 results,
 sorting objects by id. You can override these defaults with the following
@@ -615,7 +615,7 @@ settings.
 | page | integer | The page of results you want to retrieve. Default is 1. |
 | sort | string | Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, `sort=identifier` sorts by the object identifier, while `sort=identifier__desc` does a reverse sort by identifier. |
 
-### Object List Response Format
+#### Object List Response Format
 
 The `list objects` command returns JSON with the following format. Note that
 `count` is the total number of resuls matching your query, while `next` and
@@ -659,20 +659,20 @@ The `list objects` command returns JSON with the following format. Note that
 }
 ```
 
-## Retrieving a Single Registry Object
+### Retrieving a Single Registry Object
 
 You can retrieve objects from the Registry by identifier or
 by id. Object identifiers are strings, such as 'example.edu/photos'.
 Ids are numeric.
 
-### Examples
+#### Examples
 
 ```bash
 apt-cmd registry get object identifier=<object_identifier>
 apt-cmd registry get object id=<object_id>
 ```
 
-## Get Object Response Format
+#### Get Object Response Format
 
 The `get object` command returns JSON in the following format:
 
@@ -707,14 +707,14 @@ The `get object` command returns JSON in the following format:
 }
 ```
 
-## Listing Registry Files
+### Listing Registry Files
 
 The `list files` command lists files from the APTrust Registry,
 applying whatever filters you specify. Note that the file JSON returned
 by this call includes only summary information for each file, while
 the `get file` call returns more detailed info.
 
-### Examples
+#### Examples
 
 List files belonging to object test.edu/my_bag, ordered by identifer:
 
@@ -734,7 +734,7 @@ List files created after April 6, 2023
   apt-cmd registry list files created_at__gteq='2023-04-06'
 ```
 
-### File List Filter Options
+#### File List Filter Options
 
 | Name | DataType | Description |
 | ---- | -------- | ----------- |
@@ -752,7 +752,7 @@ List files created after April 6, 2023
 | updated_at__lteq | date string 'yyyy-mm-dd' | Return files updated on or before the given timestamp. |
 
 
-### File List Paging and Sort Options
+#### File List Paging and Sort Options
 
 By default, the `list files` command returns the first 25 results,
 sorting files by id. You can override these defaults with the following
@@ -764,7 +764,7 @@ settings.
 | page | integer | The page of results you want to retrieve. Default is 1. |
 | sort | string | Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, `sort=identifier` sorts by the file identifier, while `sort=identifier__desc` does a reverse sort by identifier. |
 
-### File List Response Format
+#### File List Response Format
 
 The `list files` command returns JSON with the following format. Note that
 `count` is the total number of resuls matching your query, while `next` and
@@ -802,7 +802,7 @@ The `list files` command returns JSON with the following format. Note that
 }
 ```
 
-## Retrieving a Single Registry File
+### Retrieving a Single Registry File
 
 You can retrieve a JSON record from the APTrust registry describing a
 generic file with a specified identifier or id. File identifiers are strings,
@@ -811,14 +811,14 @@ such as 'example.edu/photos/data/image1.jpg'. Ids are numeric.
 Note that this call returns not only the generic file info, but also all
 of the checksums and PREMIS events associated with the file.
 
-### Examples
+#### Examples
 
 ```bash
 apt-cmd registry get file <file_identifier>
 apt-cmd registry get file <file_id>
 ```
 
-## Get File Response Format
+#### Get File Response Format
 
 The `get file` command returns JSON in the following format:
 
