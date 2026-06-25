@@ -171,7 +171,13 @@ apt-cmd can upload a file to any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### Examples
+### APTrust Example
+
+```bash
+    apt-cmd s3 upload --host=s3.amazonaws.com --bucket="aptrust.receiving.yoda.edu" yoda.edu.ms-12.888333k3.tar
+```
+
+### Generic Examples
 
 Upload file photo.jpg to Amazon's S3 service:
 
@@ -196,7 +202,25 @@ environment, or in a config file specified with the --config flag.
 
 List output is in JSON format, unless you specify `--format=text`.
 
-### Examples
+### APTrust Example
+
+List items in your restoration bucket (note the trailing slash on the prefix):
+
+```bash
+    apt-cmd s3 list --host=s3.amazonaws.com --bucket=aptrust.restore.yoda.edu --prefix=yoda.edu/
+```
+
+List 10 items in aptrust.restore.yoda.edu with prefix "yoda.edu/", using plain text output:
+
+```bash
+    apt-cmd s3 list --host=s3.amazonaws.com \
+                    --bucket=aptrust.restore.yoda.edu \
+                    --prefix=yoda.edu/ \
+                    --maxitems=10 \
+                    --format=text
+```
+
+### Generic Examples
 
 List items in my_bucket with prefix "photo":
 
@@ -232,7 +256,15 @@ You can download files from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### Examples
+### APTrust Examples
+
+Download a file from your restoration bucket to your current directory:
+
+```bash
+    apt-cmd s3 download --host=s3.amazonaws.com --bucket="aptrust.restore.yoda.edu" --key='yoda.edu/yoda.edu.ms-12.888333k3.tar' --save-as="yoda.edu.ms-12.888333k3.tar"
+```
+
+### Generic Examples
 
 Download a file from Amazon's S3 service into the current directory:
 
@@ -255,7 +287,18 @@ You can delete objects from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### Example
+### APTrust Example
+
+Delete a bag from your receiving bucket:
+
+```bash
+    apt-cmd s3 delete --host=s3.amazonaws.com --bucket="aptrust.receive.yoda.edu" --key='yoda.edu.ms-12.888333k3.tar'
+```
+
+Note: This returns exit status zero and `'{ "result": "OK" }'` if the key is
+successfully deleted or if the key wasn't in the bucket to begin with.
+
+### Generic Example
 
 Delete object photo.jpg from my-bucket on AWS S3:
 
