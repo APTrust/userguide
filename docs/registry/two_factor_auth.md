@@ -26,6 +26,9 @@ Click __Submit__ when you're done.
 
 You should receive a text message or push notification within a minute or so. If you chose the authenticator app or text/SMS option, enter the code you received in the text message into the verification field in Registry. If you chose the authenticator app method, you will need to view your code in your app.
 
+!!! tip
+    If you are having trouble verifying with your authenticator app, try ensuring that the device where your authenticator app is running, such as your phone, is synced with the current time. This method of authentication relies on the second factor device being able to know the exact current time. Time zone, however, is not relevant. If you are unsure if your device is synced to the current time, try accessing your device's Date & Time Settings and select Set Automatically if not already chosen. This is the default setting for most devices that are connected to a network. If your device is not or does not connect to a network, you will have to set the device time to the current time manually. Otherwise, your authenticator app may not function correctly.
+
 If you have Authy installed on your phone and you chose to verify via push notification, click the __Approve__ button when the Authy verification request appears.
 
 ![Authy request to verify phone number](../img/registry/2fa_authy_app_request_phone_verification.jpg)
