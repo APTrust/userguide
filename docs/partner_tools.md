@@ -17,18 +17,18 @@ anyone can use apt-cmd's bagging and S3 features.
 
 ## Downloads
 
-The latest version is 3.0.0, released April 23, 2025. See the [change log](https://github.com/APTrust/apt-cmd/blob/master/CHANGELOG.md){target=_blank} for details.
+The latest version is 3.0.4, released April 23, 2026. See the [change log](https://github.com/APTrust/apt-cmd/blob/master/CHANGELOG.md){target=_blank} for details.
 
-| Platform | Architecture | Version | SHA-256 |
-| -------- | ------------ | ------- | ------- |
-| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/windows/amd64/apt-cmd.exe) | Intel 64-bit | v3.0.0 | 0aa6629c275c4780ad031568c4a6f8f5e929e1100dca40dd40a3937262d924ef |
-| [Windows](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/windows/arm64/apt-cmd.exe) | ARM 64-bit | v3.0.0 | 216812412f027e8cff4919da8c2f10ab8ca56aa53f1f5f284cf514d29d804a3a |
-| [Mac Intel](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/mac/amd64/apt-cmd)  | Intel 64-bit | v3.0.0 | c2356d9486a77530c561011d34717cd91895316788e474b82a5a674d144b5330 |
-| [Mac ARM](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/mac/arm64/apt-cmd) | Apple Silicon (M series) | v3.0.0 | 4eb060b1669887837801d70a42856e17a948cc3fb9db58dc0a8463ab575fe8a0 |
-| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/linux/amd64/apt-cmd) | Intel 64-bit | v3.0.0 | a3c78535987026080512a9626f8d7a7fd47afc7e9178d03334edb205086780cf |
-| [Linux](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.0/linux/arm64/apt-cmd) | ARM 64-bit | v3.0.0 | 2fff16d7ab063fbfaee8a47662c77ff0420525de986f375f6532b844fa9df35b |
+| Platform | Version | SHA-256 |
+| -------- | ------- | ------- |
+| [Windows Intel 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/windows/amd64/apt-cmd.exe) | v3.0.4 | 8f2785f5c88fe2839d2ec95ce31a758163d4cd6808e4a0600fbfa8fa76079489 |
+| [Windows ARM 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/windows/arm64/apt-cmd.exe) | v3.0.4 | c25b677a6206fb59e9cd6dced4a272b375484c9b5c46faa87b77c37bb1a2cf23 |
+| [Mac Intel 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/mac/amd64/apt-cmd) | v3.0.4 | 8c8a37b0f56d1a1618b773624586961a5c235dd527dca61b6eb9cb5570038860 |
+| [Mac Apple Silicon](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/mac/arm64/apt-cmd) | v3.0.4 | f9f1e1f2a02eba3871c366b15ed75cd7b56f4ae654ae5ac7105b618e8c928da8 |
+| [Linux Intel 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/linux/amd64/apt-cmd) | v3.0.4 | 95fcc4cdc89a416c8fd472874e817e40b7d3d3344823606a5704bbfa4dfcca7c |
+| [Linux ARM 64-bit](https://s3.amazonaws.com/aptrust.public.download/apt-cmd/v3.0.4/linux/arm64/apt-cmd) | v3.0.4 | dc2d69d22f70abd339813cfc97afb6f84f5f402a0c62e8ab27c7cbb09a2bd4dd |
 
-APTrust partner tools are open source, distributed under the BSD 2-clause license. The source code is available on github at [https://github.com/APTrust/apt-cmd](https://github.com/APTrust/apt-cmd){target=_blank}.
+APTrust partner tools are open source, distributed under the BSD 2-clause license. The [apt-cmd source code is available on GitHub](https://github.com/APTrust/apt-cmd){target=_blank}.
 
 
 ## Help and Troubleshooting
@@ -165,13 +165,19 @@ items from S3.
 To access S3 services, you'll need to S3 credentials, as specified in the
 [Configuration Settings](#configuration-settings) section below.
 
-## Uploading a File to an S3 Bucket
+### Uploading a File to an S3 Bucket
 
 apt-cmd can upload a file to any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### Examples
+#### APTrust Example
+
+```bash
+    apt-cmd s3 upload --host=s3.amazonaws.com --bucket="aptrust.receiving.yoda.edu" yoda.edu.ms-12.888333k3.tar
+```
+
+#### Generic Examples
 
 Upload file photo.jpg to Amazon's S3 service:
 
@@ -188,7 +194,7 @@ Upload the same file, but call it renamed.jpg in S3:
              photo.jpg
 ```
 
-## Listing the Contents of an S3 Bucket
+### Listing the Contents of an S3 Bucket
 
 You can list files from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
@@ -196,7 +202,25 @@ environment, or in a config file specified with the --config flag.
 
 List output is in JSON format, unless you specify `--format=text`.
 
-### Examples
+#### APTrust Example
+
+List items in your restoration bucket (note the trailing slash on the prefix):
+
+```bash
+    apt-cmd s3 list --host=s3.amazonaws.com --bucket=aptrust.restore.yoda.edu --prefix=yoda.edu/
+```
+
+List 10 items in aptrust.restore.yoda.edu with prefix "yoda.edu/", using plain text output:
+
+```bash
+    apt-cmd s3 list --host=s3.amazonaws.com \
+                    --bucket=aptrust.restore.yoda.edu \
+                    --prefix=yoda.edu/ \
+                    --maxitems=10 \
+                    --format=text
+```
+
+#### Generic Examples
 
 List items in my_bucket with prefix "photo":
 
@@ -226,13 +250,21 @@ List items in a nested folder. Again, note the trailing slash:
     apt-cmd s3 list --host=s3.amazonaws.com --bucket=my_bucket --prefix=music/danielle_ponder/
 ```
 
-## Downloading an S3 File
+### Downloading an S3 File
 
 You can download files from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### Examples
+#### APTrust Examples
+
+Download a file from your restoration bucket to your current directory:
+
+```bash
+    apt-cmd s3 download --host=s3.amazonaws.com --bucket="aptrust.restore.yoda.edu" --key='yoda.edu/yoda.edu.ms-12.888333k3.tar' --save-as="yoda.edu.ms-12.888333k3.tar"
+```
+
+#### Generic Examples
 
 Download a file from Amazon's S3 service into the current directory:
 
@@ -249,13 +281,24 @@ Download the same file and save it with a custom name on your desktop:
                --save-as="$HOME/Desktop/vacation.jpg"
 ```
 
-## Deleting an S3 File
+### Deleting an S3 File
 
 You can delete objects from any S3-compatible service. For this to work,
 you will need to have APTRUST_AWS_KEY and APTRUST_AWS_SECRET set in your
 environment, or in a config file specified with the --config flag.
 
-### Example
+#### APTrust Example
+
+Delete a bag from your receiving bucket:
+
+```bash
+    apt-cmd s3 delete --host=s3.amazonaws.com --bucket="aptrust.receive.yoda.edu" --key='yoda.edu.ms-12.888333k3.tar'
+```
+
+Note: This returns exit status zero and `'{ "result": "OK" }'` if the key is
+successfully deleted or if the key wasn't in the bucket to begin with.
+
+#### Generic Example
 
 Delete object photo.jpg from my-bucket on AWS S3:
 
@@ -273,7 +316,7 @@ need APTrust credentials to query the Registry. See
 [Configuration Settings](#configuration-settings) below for info on how
 to pass these credentials to apt-cmd.
 
-## Listing Registry Work Items
+### Listing Registry Work Items
 
 List work items from the APTrust registry, or run a special "quick report."
 
@@ -284,7 +327,7 @@ Note that when filtering Work Items, Objects or Files using any of the list
 commands, you can supply filters as name-value pairs on the command line.
 These pairs **do not use the double-dash (--) prefix**.
 
-### Examples
+#### Examples
 
 List recent ingests:
 
@@ -328,7 +371,7 @@ List restorations or deletions of a specific file:
   apt-cmd registry list workitems generic_file_identifier='test.edu/TestBag/data/photo1.jpg'
 ```
 
-### Quick Reports
+#### Quick Reports
 
 List all items from the past 30 days that are still in process:
 
@@ -350,7 +393,7 @@ List all restorations from the past 30 days:
 
 When running quick reports, this tool ignores all other query params.
 
-### WorkItem List Filter Options
+#### WorkItem List Filter Options
 
 When querying for Work Items, apt-cmd supports the following filter
 options:
@@ -386,10 +429,10 @@ options:
 | stage__in | string | Specify this filter multiple times to retrieve items in any one of a number of stages. For example, to retrieve items in the Store, Unpack, or Validate stages, use `stage__in=Store stage__in=Unpack stage_in=Validate` |
 | status | string | Retrieve items having this status. Values include Cancelled, Failed, Pending, Started, Success, Suspended. |
 | status__in | string | Specify this filter multiple times to retrieve items having any of a number of statuses. For example, to retrieve items with Pending and Started status, use `status__in=Pending status__in=Started`. |
-| storage_option | string | Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA |
+| storage_option | string | Retrieve items pertaining to objects or files having the specified storage option. Available values : Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard |
 | user | string (email address) | Return work items initiated by the user with this email address. |
 
-### WorkItem List Paging and Sort Options
+#### WorkItem List Paging and Sort Options
 
 By default, the `list workitems` command returns the first 25 results,
 sorting items by id. You can override these defaults with the following
@@ -401,7 +444,7 @@ settings.
 | page | integer | The page of results you want to retrieve. Default is 1. |
 | sort | string | Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, `sort=name` sorts by the name of the tar file, while `sort=name__desc` does a reverse sort by name. |
 
-### WorkItem List Response Format
+#### WorkItem List Response Format
 
 The `workitem list` command returns JSON in the following format.
 Note that `count` indicates the total number of results, while
@@ -456,7 +499,7 @@ pages of results.
 }
 ```
 
-## Retrieving a Single Registry Work Item
+### Retrieving a Single Registry Work Item
 
 To retrieve a single WorkItem record from the APTrust Registry, use the
 command below. Note that id is an integer.
@@ -465,7 +508,7 @@ command below. Note that id is an integer.
   apt-cmd registry get workitem <id>
 ```
 
-### WorkItem Get Response Format
+#### WorkItem Get Response Format
 
 The command `aptrust registry get workitem` returns JSON in the following
 format:
@@ -511,11 +554,11 @@ format:
 }
 ```
 
-## Listing Registry Objects
+### Listing Registry Objects
 
 You can list objects from the APTrust Registry, with filters.
 
-### Examples
+#### Examples
 
 List 20 objects ordered by identifer:
 
@@ -535,7 +578,7 @@ List objects created after April 6, 2023
   apt-cmd registry list files created_at__gteq='2023-04-06'
 ```
 
-### Object List Filter Options
+#### Object List Filter Options
 
 | Name | DataType | Description |
 | ---- | -------- | ----------- |
@@ -555,12 +598,12 @@ List objects created after April 6, 2023
 | size__gteq | integer | Return objects whose size is at least this number of bytes. |
 | size__lteq | integer | Return objects whose size is no more than this number of bytes. |
 | state | string | Return objects with this state. A = Active, D = Deleted. Available values: A, D. |
-| storage_option | string | Return objects with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA. |
+| storage_option | string | Return objects with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard. |
 | updated_at__gteq | date string 'yyyy-mm-dd' | Return objects updated on or after the given timestamp. |
 | updated_at__lteq | date string 'yyyy-mm-dd' | Return objects updated on or before the given timestamp. |
 
 
-### Object List Paging and Sort Options
+#### Object List Paging and Sort Options
 
 By default, the `list objects` command returns the first 25 results,
 sorting objects by id. You can override these defaults with the following
@@ -572,7 +615,7 @@ settings.
 | page | integer | The page of results you want to retrieve. Default is 1. |
 | sort | string | Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, `sort=identifier` sorts by the object identifier, while `sort=identifier__desc` does a reverse sort by identifier. |
 
-### Object List Response Format
+#### Object List Response Format
 
 The `list objects` command returns JSON with the following format. Note that
 `count` is the total number of resuls matching your query, while `next` and
@@ -616,20 +659,20 @@ The `list objects` command returns JSON with the following format. Note that
 }
 ```
 
-## Retrieving a Single Registry Object
+### Retrieving a Single Registry Object
 
 You can retrieve objects from the Registry by identifier or
 by id. Object identifiers are strings, such as 'example.edu/photos'.
 Ids are numeric.
 
-### Examples
+#### Examples
 
 ```bash
 apt-cmd registry get object identifier=<object_identifier>
 apt-cmd registry get object id=<object_id>
 ```
 
-## Get Object Response Format
+#### Get Object Response Format
 
 The `get object` command returns JSON in the following format:
 
@@ -664,14 +707,14 @@ The `get object` command returns JSON in the following format:
 }
 ```
 
-## Listing Registry Files
+### Listing Registry Files
 
 The `list files` command lists files from the APTrust Registry,
 applying whatever filters you specify. Note that the file JSON returned
 by this call includes only summary information for each file, while
 the `get file` call returns more detailed info.
 
-### Examples
+#### Examples
 
 List files belonging to object test.edu/my_bag, ordered by identifer:
 
@@ -691,7 +734,7 @@ List files created after April 6, 2023
   apt-cmd registry list files created_at__gteq='2023-04-06'
 ```
 
-### File List Filter Options
+#### File List Filter Options
 
 | Name | DataType | Description |
 | ---- | -------- | ----------- |
@@ -704,12 +747,12 @@ List files created after April 6, 2023
 | size__gteq | integer | Return files whose size is at least this number of bytes. |
 | size__lteq | integer | Return files whose size is no more than this number of bytes. |
 | state | string | Return files with this state. A = Active, D = Deleted. Available values: A, D. |
-| storage_option | string | Return files with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard, Wasabi-OR, Wasabi-TX, Wasabi-VA. |
+| storage_option | string | Return files with the specified storage option. Available values: Glacier-Deep-OH, Glacier-Deep-OR, Glacier-Deep-VA, Glacier-OH, Glacier-OR, Glacier-VA, Standard. |
 | updated_at__gteq | date string 'yyyy-mm-dd' | Return files updated on or after the given timestamp. |
 | updated_at__lteq | date string 'yyyy-mm-dd' | Return files updated on or before the given timestamp. |
 
 
-### File List Paging and Sort Options
+#### File List Paging and Sort Options
 
 By default, the `list files` command returns the first 25 results,
 sorting files by id. You can override these defaults with the following
@@ -721,7 +764,7 @@ settings.
 | page | integer | The page of results you want to retrieve. Default is 1. |
 | sort | string | Sort results using the specified column. You can sort on any field listed in the JSON sample below. Append "__desc" to the field name to do a descending (reverse) sort. For example, `sort=identifier` sorts by the file identifier, while `sort=identifier__desc` does a reverse sort by identifier. |
 
-### File List Response Format
+#### File List Response Format
 
 The `list files` command returns JSON with the following format. Note that
 `count` is the total number of resuls matching your query, while `next` and
@@ -759,7 +802,7 @@ The `list files` command returns JSON with the following format. Note that
 }
 ```
 
-## Retrieving a Single Registry File
+### Retrieving a Single Registry File
 
 You can retrieve a JSON record from the APTrust registry describing a
 generic file with a specified identifier or id. File identifiers are strings,
@@ -768,14 +811,14 @@ such as 'example.edu/photos/data/image1.jpg'. Ids are numeric.
 Note that this call returns not only the generic file info, but also all
 of the checksums and PREMIS events associated with the file.
 
-### Examples
+#### Examples
 
 ```bash
 apt-cmd registry get file <file_identifier>
 apt-cmd registry get file <file_id>
 ```
 
-## Get File Response Format
+#### Get File Response Format
 
 The `get file` command returns JSON in the following format:
 
@@ -844,8 +887,7 @@ correct file extension (.env, .yml, .yaml, or .json) so apt-cmd knows how to
 parse the file.
 
 You may find it useful to maintain separate config file for separate profiles.
-For example, you may want to store S3 credentials for Amazon in aws.env,
-credentials for Wasabi in wasabi.env, and for Minio in minio.env.
+For example, you may want to store S3 credentials for Amazon in aws.env and for Minio in minio.env.
 
 Or, you can skip config files altogether and use environment variables
 like so:

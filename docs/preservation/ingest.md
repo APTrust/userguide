@@ -3,7 +3,7 @@
 !!! notice AWS Credentials required
 	Before sending materials to APTrust for ingest, you'll need to get AWS keys that allow you to upload materials to your receiving bucket. If you don't already have these, contact help@aptrust.org to get them. Also keep in mind that you'll have separate AWS keys for the demo and production environments.
 
-You'll also need to know how to produce a valid APTrust bag. If you don't know how to do that yet, see [Bagging (SIP) Requirements](../depositing/index.md) for details, or use [DART](https://aptrust.github.io/dart-docs/users/getting_started/) to get going quickly.
+You'll also need to know how to produce a valid APTrust bag. If you don't know how to do that yet, see [Bagging (SIP) Requirements](../depositing/index.md) for details, or use [DART](https://aptrust.github.io/dart-docs/dart2/users/getting_started/) to get going quickly.
 
 ## Uploading for Ingest
 
@@ -11,16 +11,16 @@ Assuming you have a valid bag, you can send it to our production system by uploa
 
 The following tools can upload files to your receiving bucket:
 
-* [DART](https://aptrust.github.io/dart-docs/users/getting_started/)
+* [DART](https://aptrust.github.io/dart-docs/dart2/users/getting_started/)
 * [APTrust Partner Tools](../partner_tools.md)
 * [Minio Client](https://docs.min.io/docs/minio-client-complete-guide)
 * [Amazon's AWS Command Line Tools](https://aws.amazon.com/cli/)
 
 If you plan on interacting frequently with S3, the [Minio Client](https://docs.min.io/docs/minio-client-complete-guide) provides the best combination of rich features, ease of installation, and ease of use.
 
-For most of what you'll be doing with APTrust, [DART](https://aptrust.github.io/dart-docs/users/getting_started/) and the [APTrust Partner Tools](../partner_tools.md) should be sufficient.
+For most of what you'll be doing with APTrust, [DART](https://aptrust.github.io/dart-docs/dart2/users/getting_started/) and the [APTrust Partner Tools](../partner_tools.md) should be sufficient.
 
-__Note:__ Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., [CyberDuck](https://cyberduck.io/){:target="_blank"}, [S3 Browser](https://s3browser.com/){:target="_blank"}) to upload them. 
+__Note:__ Some members have issues using DART to upload large bags (400GB or larger) because of local networking infrastructure. If you encounter this, we recommend using DART to create bags and using a third-party S3 client (e.g., [CyberDuck (opens in new window)](https://cyberduck.io/){:target="_blank"}, [S3 Browser (opens in new window)](https://s3browser.com/){:target="_blank"}) to upload them.
 
 ## The Ingest Process
 
@@ -34,7 +34,19 @@ After you upload tarred bag to your receiving bucket, APTrust's ingest process w
 
 ![Ingest process on the backend](../img/aptrust_ingest_process.png# boxshadow)
 
-[DART's dashboard](https://aptrust.github.io/dart-docs/users/dashboard/) also shows the status of items recently ingested and pending ingest.
+??? note "Text description of the ingest process diagram"
+    The ingest process consists of eight sequential stages:
+
+    1. **Pre-Fetch**: The depositor uploads a bag to their receiving bucket. APTrust gathers metadata including file names, checksums, manifests, and tag files.
+    2. **Validation**: The system untars the bag to validate its contents, ensuring all files are present and checksums match.
+    3. **Reingest check**: The system checks whether a copy already exists. If so, existing file UUIDs are reused and any changes are detected.
+    4. **Copy to Staging**: Files are uploaded to a staging bucket.
+    5. **Format Identification**: The bag is streamed to identify the format of each file, and format and metadata are checked.
+    6. **Copy to Storage**: Files are copied to preservation buckets for long-term storage, retaining key metadata.
+    7. **Verify Storage**: Metadata from each file is grabbed for verification and stored in the registry. The preservation copy is confirmed to exist.
+    8. **Record Metadata**: File metadata and a PREMIS Event are recorded in the registry. Temporary files are cleaned up — ingest is complete.
+
+[DART's dashboard](https://aptrust.github.io/dart-docs/dart2/users/dashboard/) also shows the status of items recently ingested and pending ingest.
 
 Smaller bags (those under about 5GB) tend to ingest quickly. Larger bags can take longer, with multi-terabyte bags sometimes taking a few days. This is because the ingest process calculates checksums on every byte of data in the bag and then typically copies each of the bag's files to two distinct regions of the country.
 

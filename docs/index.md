@@ -1,3 +1,9 @@
+---
+description: >
+  Get started with APTrust: request credentials, configure DART, run your first
+  deposit, and navigate the Registry to track your preserved objects.
+---
+
 # Welcome to APTrust
 
 The Academic Preservation Trust (APTrust) is a distributed digital preservation repository committed to preserving the digital heritage of its depositors. APTrust services are open to sustaining members (who pay an annual fee directly to us) and to sub-accounts created by sustaining members.

@@ -1,3 +1,9 @@
+---
+description: >
+  Learn how to package digital objects as BagIt bags and deposit them to APTrust
+  for long-term cloud preservation using DART or command-line tools.
+---
+
 # Bagging (SIP) Requirements
 APTrust currently accepts bags for ingest that use the APTrust BagIt and Beyond the Repository (BTR) BagIt profiles. Bags will be restored using the same profile as the submission.
 
@@ -43,7 +49,7 @@ A valid untarred APTrust bag has the following structure:
            |   aptrust-info.txt
            |   bag-info.txt
            |   bagit.txt
-           |   manifest-&lt;algorithm&gt;.txt (md5 AND/OR sha256)
+           |   manifest-<algorithm>.txt (md5 AND/OR sha256)
            |   [optional tag manifests]
            |   [optional additional tag files]
            \--- data/
@@ -71,10 +77,24 @@ The bag MUST have a bagit.txt file, with the following tags.
 
 Note: This file is not retained by APTrust. When a file or object is restored, a new bag is created and this file will be re-generated, it records information about the bag itself.
 
-Tag | Allowed values
-----|----
-BagIt-Version | 0.97 or 1.0
-Tag-File-Character-Encoding | UTF-8
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Tag</th>
+      <th scope="col">Allowed values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BagIt-Version</td>
+      <td>0.97 or 1.0</td>
+    </tr>
+    <tr>
+      <td>Tag-File-Character-Encoding</td>
+      <td>UTF-8</td>
+    </tr>
+  </tbody>
+</table>
 
 ### bag-info.txt file
 
@@ -82,14 +102,47 @@ The bag MUST have a bag-info.txt file and it SHOULD contain the following tags.
 
 Note: This file is retained by APTrust and will be included in a restored object.
 
-Tag  | Description | Example
----- | ---- | ----
-Source-Organization | This should be the human readable name of the APTrust partner organization. For example, "University of Virginia." You may be more specific, if you wish, specifying a specific college or library within the university, such as "Georgetown University Law Library." However, when APTrust restores bags, the source organization in the bag-info.txt file will be set to the name of the partner institution. | University of Virginia
-Bagging-Date | The date the content was bagged. Use ISO 8601 UTC format (YYYY-MM-DD). | 2019-08-19 | No
-Bag-Count | Two numbers separated by "of", in particular, "N of T", where T is the total number of bags in a group of bags and N is the ordinal number within the group; if T is not known, specify it as "?" (question mark). | Examples: 1 of 2, 4 of 4, 3 of ?, 89 of 145.
-Internal-Sender-Description | A sender-local explanation of the contents and provenance.
-Internal-Sender-Identifier | An alternate sender-specific identifier for the content and/or bag.
-Bag-Group-Identifier | A sender-supplied identifier for the set, if any, of bags to which it logically belongs. | Greeling Photo Collection
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Tag</th>
+      <th scope="col">Description</th>
+      <th scope="col">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Source-Organization</td>
+      <td>This should be the human readable name of the APTrust partner organization. For example, "University of Virginia." You may be more specific, if you wish, specifying a specific college or library within the university, such as "Georgetown University Law Library." However, when APTrust restores bags, the source organization in the bag-info.txt file will be set to the name of the partner institution.</td>
+      <td>University of Virginia</td>
+    </tr>
+    <tr>
+      <td>Bagging-Date</td>
+      <td>The date the content was bagged. Use ISO 8601 UTC format (YYYY-MM-DD).</td>
+      <td>2019-08-19</td>
+    </tr>
+    <tr>
+      <td>Bag-Count</td>
+      <td>Two numbers separated by "of", in particular, "N of T", where T is the total number of bags in a group of bags and N is the ordinal number within the group; if T is not known, specify it as "?" (question mark).</td>
+      <td>Examples: 1 of 2, 4 of 4, 3 of ?, 89 of 145.</td>
+    </tr>
+    <tr>
+      <td>Internal-Sender-Description</td>
+      <td>A sender-local explanation of the contents and provenance.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Internal-Sender-Identifier</td>
+      <td>An alternate sender-specific identifier for the content and/or bag.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bag-Group-Identifier</td>
+      <td>A sender-supplied identifier for the set, if any, of bags to which it logically belongs.</td>
+      <td>Greeling Photo Collection</td>
+    </tr>
+  </tbody>
+</table>
 
 For more on bag group identifiers, see the [Bag Group Identifiers](../registry/objects.md#bag-group-identifiers) section of the Objects page.
 
@@ -101,12 +154,32 @@ This bag MUST have a aptrust-info.txt file and it MUST contain the following tag
 
 Note: This file is retained by APTrust and will be included in a restored object.
 
-Tag  | Description
----- | ----
-Title | A human readable title for searching and listing in APTrust. This cannot be empty.
-Description | A human-readable description of the bag. This will appear in Registry.
-Access | One of three access options listed below. The access option describes who can see an object's metadata, including its name and description, a list of its generic files and events. APTrust does not currently provide access to the objects themselves, except when you restore one of your bags. No matter which access option you choose, no other institution can access your intellectual object.
-Storage-Option | This indicates how and where you want APTrust to store your bag. If omitted, Storage-Option defaults to "Standard". See the section on Storage Options below for more information.
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Tag</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Title</td>
+      <td>A human readable title for searching and listing in APTrust. This cannot be empty.</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>A human-readable description of the bag. This will appear in Registry.</td>
+    </tr>
+    <tr>
+      <td>Access</td>
+      <td>One of three access options listed below. The access option describes who can see an object's metadata, including its name and description, a list of its generic files and events. APTrust does not currently provide access to the objects themselves, except when you restore one of your bags. No matter which access option you choose, no other institution can access your intellectual object.</td>
+    </tr>
+    <tr>
+      <td>Storage-Option</td>
+      <td>This indicates how and where you want APTrust to store your bag. If omitted, Storage-Option defaults to "Standard". See the section on Storage Options below for more information.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Allowed Storage-Option Values
 
@@ -124,19 +197,12 @@ Storage-Option | This indicates how and where you want APTrust to store your bag
 
 * __Glacier-Deep-VA__: Files will be stored ONLY in Glacier Deep Archive, in AWS's Northern Virginia region, and will be encrypted during storage. APTrust will not perform any fixity checks on these files.
 
-* __Wasabi-OR__: Files will be stored only in Wasabi's Oregon data center. These files will receive fixity checks every 180 days.
-
-* __Wasabi-TX__: Files will be stored only in Wasabi's Texas data center. These files will receive fixity checks every 180 days.
-
-* __Wasabi-VA__: Files will be stored only in Wasabi's Virginia data center. These files will receive fixity checks every 180 days.
-
-
 !!! warning "A note on storage options"
     When you update an existing bag, APTrust will apply Storage-Option of the original version to the new version, even if the new version's Storage-Option tag explicitly specifies something different. This is to prevent the proliferation of multiple different versions of an object across multiple storage areas. If you want to change the Storage-Option of an existing object, you must delete it and then re-ingest it with the new option.
 
 #### Storage Options and Fixity Checks
 
-As noted in the list of storage options above, we check fixity only on items in S3 and Wasabi storage, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard, Wasabi-OR, Wasabi-TX or Wasabi-VA storage options.
+As noted in the list of storage options above, we check fixity only on items in S3, not on items in Glacier and Glacier Deep Archive. If you want APTrust to run regular fixity checks on your materials, choose the Standard storage option.
 
 #### Allowed Access Values
 

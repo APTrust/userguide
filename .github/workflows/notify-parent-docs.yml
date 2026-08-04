@@ -1,0 +1,47 @@
+name: Notify Parent Docs Repo
+
+# Fires whenever content is pushed to master, then sends a repository_dispatch
+# event to APTrust/aptrust-docs so that repo rebuilds and redeploys the unified
+# documentation site with the latest content from this repo.
+#
+# Branch note: this repo uses 'master' as its default branch. If it is ever
+# renamed to 'main', update the branch name below to match.
+#
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Send a repository_dispatch event to APTrust/aptrust-docs.
+      #
+      # peter-evans/repository-dispatch calls the GitHub API endpoint:
+      #   POST /repos/APTrust/aptrust-docs/dispatches
+      # with body:
+      #   { "event_type": "sub-repo-updated", "client_payload": { ... } }
+      #
+      # The token must have permission to trigger Actions workflows in
+      # APTrust/aptrust-docs. See the README or the setup instructions in
+      # the parent repo for how to create and register DOCS_DISPATCH_TOKEN.
+      #
+      # client-payload fields:
+      #   repo   — identifies which sub-repo fired the event (used in logs)
+      #   branch — the branch that was pushed (always master here, but explicit)
+      #   sha    — the exact commit that triggered this run, for traceability
+      #
+      - name: Dispatch rebuild to aptrust-docs
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.DOCS_DISPATCH_TOKEN }}
+          repository: APTrust/aptrust-docs
+          event-type: sub-repo-updated
+          client-payload: >-
+            {
+              "repo": "userguide",
+              "branch": "${{ github.ref_name }}",
+              "sha": "${{ github.sha }}"
+            }
