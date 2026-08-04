@@ -18,6 +18,9 @@ To enable two-factor authentication for yourself, click the __My Account__ in th
 
 Click the __Set Up Two-Factor Auth__ button. Then enter your mobile phone number and choose either Authenticator App, Authy or Text Message.
 
+!!! notice
+    The Authenticator App method is currently available only on demo.aptrust.org. We hope to make this option available on repo.aptrust.org shortly.
+
 ![Choose two-factor method](../img/registry/TwoFactorMethod.png)
 
 Click __Submit__ when you're done.
