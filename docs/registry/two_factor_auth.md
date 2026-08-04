@@ -18,16 +18,26 @@ To enable two-factor authentication for yourself, click the __My Account__ in th
 
 Click the __Set Up Two-Factor Auth__ button. Then enter your mobile phone number and choose either Authenticator App, Authy or Text Message.
 
-Using an Authenticator App will require you to enroll a compatible device, most commonly your phone, in 2FA by scanning a QR code (or entering a setup key) on your authenticator app of choice. Some common authenticator apps include Google Authenticator, Microsoft Authenticator, and the Duo app. Authy allows you to complete two-factor authentication via push notification, while Text sends a text (SMS) message to your phone with a one-time authentication token.
-
 ![Choose two-factor method](../img/registry/TwoFactorMethod.png)
 
 Click __Submit__ when you're done.
 
-You should receive a text message or push notification within a minute or so. If you chose the authenticator app or text/SMS option, enter the code you received in the text message into the verification field in Registry. If you chose the authenticator app method, you will need to view your code in your app.
+Using an Authenticator App will require you to enroll a compatible device, most commonly your phone, in 2FA by scanning a QR code (or entering a setup key) on your authenticator app of choice. Some common authenticator apps include Google Authenticator, Microsoft Authenticator, and the Duo Mobile app. Authy allows you to complete two-factor authentication via push notification, while Text sends a text (SMS) message to your phone with a one-time authentication token.
+
+Here are some examples of authenticator apps that you can use including documentation of setup, though there are others available.
+
+[Duo Mobile for iOS](https://guide.duo.com/iphone/)
+
+[Duo Mobile for Android](https://guide.duo.com/android/)
+
+[Google Authenticator](https://support.google.com/accounts/answer/1066447)
+
+[Microsoft Authenticator](https://support.microsoft.com/en-us/authenticator/how-to-add-your-accounts-to-microsoft-authenticator#add-other-non-microsoft-accounts-using-a-qr-code)
+
+You should receive a text message or push notification within a minute or so. If you chose the authenticator app or text/SMS option, enter the code you received in the text message into the verification field in Registry. If you chose the authenticator app method, you will need to view your code in your app. This code will appear under the default name "APTrust" (if on the demo environment, it will say "APTrust/demo" instead).
 
 !!! tip
-    If you are having trouble verifying with your authenticator app, try ensuring that the device where your authenticator app is running, such as your phone, is synced with the current time. This method of authentication relies on the second factor device being able to know the exact current time. Time zone, however, is not relevant. If you are unsure if your device is synced to the current time, try accessing your device's Date & Time Settings and select Set Automatically if not already chosen. This is the default setting for most devices that are connected to a network. If your device is not or does not connect to a network, you will have to set the device time to the current time manually. Otherwise, your authenticator app may not function correctly.
+    If you are having trouble verifying with your authenticator app, try ensuring that the device where your authenticator app is running, such as your phone, is synced with the current time. This method of authentication relies on the second factor device being able to know the exact current time. Time zone, however, is not relevant. If you are unsure if your device is synced to the current time, try accessing your device's Date & Time Settings and select Set Automatically if not already chosen. This is the default setting for most devices that are connected to a network. If your device is not connected to a network, or does not connect to a network, you will have to set the device time to the current time manually. Otherwise, your authenticator app may not function correctly.
 
 If you have Authy installed on your phone and you chose to verify via push notification, click the __Approve__ button when the Authy verification request appears.
 
