@@ -4,19 +4,17 @@
 
 You can log in to Registry, APTrust's online registry, at the URLs below:
 
-* __Staging Repository__ - [staging.aptrust.org](https://staging.aptrust.org)
-    - Staging is for very new, potentially unstable features.
-    - Staging is currently the only system that accepts Beyond the Repository (BTR) formatted bags.
-    - Staging does not preserve anything for more than 7 days.
-* __Test/Demo Repository__ - [demo.aptrust.org](https://demo.aptrust.org)
+* [__Demo Repository__](https://demo.aptrust.org)
     - Demo is for you to test your bagging process and for APTrust to test new features that are considered stable.
     - Demo does not guarantee preservation of anything beyond a few days.
-* __Production Repository__ - [repo.aptrust.org](https://repo.aptrust.org)
+* [__Production Repository__](https://repo.aptrust.org)
     - Production is for materials you want to preserve for the long term.
 
 ## Quick Start Training Video
 
-[Watch the APTrust Quick Start Training Video on YouTube (opens in new window)](https://www.youtube.com/watch?v=dKekC3jHTpM){:target="_blank"}
+![APTrust Quick Start Training Video thumbnail](img/quickstart.jpg "APTrust Quick Start Training Video")
+
+[Watch the APTrust Quick Start Training Video on YouTube (opens in new window)](https://www.youtube.com/watch?v=dKekC3jHTpM){:target="_blank"} A [transcript](./APTrust-Quick-Start-Training-Video.txt) is available.
 
 ## Adding Users
 
