@@ -406,7 +406,7 @@ options:
 | bag_date__gteq | date string 'yyyy-mm-dd' | Return work items pertaining to bags created on or after this date. |
 | bag_date__lteq | date string 'yyyy-mm-dd' | Return work items pertaining to bags created on or before this date. |
 | bag_group_identifier | string | Return work items pertaining to bags having this bag group identifier. (Exact match only. Group identifier prefixes won't work here.) |
-| bagit_profile_identifier | string | Return work items pertaining to bags having this BagIt profile identifier. Allowed values are https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json (for the BTR profile), and https://raw.githubusercontent.com/APTrust/preservation-services/master/profiles/aptrust-v2.2.json (for the APTrust profile). |
+| bagit_profile_identifier | string | Return work items pertaining to bags having this BagIt profile identifier. See [BTR profile](https://github.com/dpscollaborative/btr_bagit_profile/releases/download/1.0/btr-bagit-profile.json) and [APTrust profile](https://raw.githubusercontent.com/APTrust/preservation-services/master/profiles/aptrust-v2.2.json) for allowed values. |
 | date_processed__gteq | date string 'yyyy-mm-dd' | Return items last touched by a worker process on or after this date. |
 | date_processed__lteq | date string 'yyyy-mm-dd' | Return items last touched by a worker process on or before this date. |
 | etag | string | Return work items pertaining to an uploaded bag with this etag. |
