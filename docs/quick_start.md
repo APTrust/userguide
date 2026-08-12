@@ -46,4 +46,4 @@ If you want to bag materials yourself, be sure your bags conform to the [APTrust
 
 ### REST API Integration
 
-If you're interested in automating deposits, restorations and other preservation activities, see our [REST API](registry/rest_api.md) and [Swagger Docs](https://aptrust.github.io/registry/){target=_blank}
+If you're interested in automating deposits, restorations and other preservation activities, see our [REST API](registry/rest_api.md) and [OpenAPI/Swagger Docs](https://docs.aptrust.org/api/).
