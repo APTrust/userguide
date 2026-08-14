@@ -1,3 +1,9 @@
+---
+description: >-
+  Move an APTrust object to a new storage class or location by restoring,
+  deleting, and redepositing it with a new Storage-Option value.
+---
+
 # Moving
 
 **It is not possible to change an object's (or file's) storage class or location after it has been successfully ingested.** Do not try to change the storage class or location by sending an [update](updates.md) with a new value in the storage-option field. When this happens, Registry enforces the original storage class and location. The correct procedure to move an object to a new storage class or location is described below.

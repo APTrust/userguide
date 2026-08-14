@@ -1,3 +1,9 @@
+---
+description: >-
+  Upload bags to your APTrust receiving bucket and follow the ingest process,
+  restrictions, and rules for reingesting existing bags.
+---
+
 # Ingest
 
 !!! notice AWS Credentials required

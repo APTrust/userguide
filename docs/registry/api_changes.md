@@ -1,3 +1,9 @@
+---
+description: >-
+  Migrating from the Pharos API to the Registry v3 REST API: numeric IDs, list
+  structure, query parameters, and JSON response changes.
+---
+
 # API Changes from Pharos
 
 The primary API changes from Pharos to Registry include:

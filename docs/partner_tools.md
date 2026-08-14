@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the apt-cmd command-line tool to create and validate bags, manage S3
+  uploads, and query the APTrust Registry API.
+---
+
 # APTrust Partner Tools
 
 The aptrust command-line utility (apt-cmd, aka Partner Tools) enables you to create and validate bags, manage S3 files, and query data in the APTrust Registry. This tool replaces the older version 2.x partner tools which did not have bag creation features and worked only with Pharos.

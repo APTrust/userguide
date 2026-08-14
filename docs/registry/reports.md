@@ -1,3 +1,9 @@
+---
+description: >-
+  Use the Registry's Deposits by Institution and Deposits Over Time reports to
+  track APTrust deposit statistics and storage use.
+---
+
 # Reports
 
 The Registry includes two reports to show deposit statistics, Deposits by Institution and Deposits Over Time.

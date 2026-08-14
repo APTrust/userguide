@@ -1,3 +1,9 @@
+---
+description: >-
+  Recommended bag size, file count, and batch limits for depositing to APTrust,
+  plus the computing resources needed to prepare deposits.
+---
+
 # Deposit Guidelines
 
 This document provides guidelines for bagging and depositing content to APTrust. Many deposited bags fall outside these characteristics; members have a lot of flexibility in how and what they bag and how they deposit. As our services mature, members have been sending more, differing bags at a higher frequency. The document describes typical bag characteristics so members can more easily identify unusual deposits and notify APTrust staff for manual scaling or additional monitoring if required. **This document does not limit APTrust’s [SIP specification](index.md); members can deposit bags outside these characteristics, but we request advance notice when possible.**

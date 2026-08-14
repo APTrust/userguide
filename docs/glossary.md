@@ -1,3 +1,9 @@
+---
+description: >-
+  Definitions of APTrust preservation, Registry, and BagIt bagging terms used
+  throughout the APTrust user guide.
+---
+
 # Glossary
 This glossary defines [APTrust and Preservation Terms](#aptrust-and-preservation-terms), [Registry Terms](#registry-terms), and [Bagging Terms](#bagging-terms).
 

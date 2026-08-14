@@ -1,3 +1,9 @@
+---
+description: >-
+  Enable two-factor authentication in the APTrust Registry for yourself or your
+  institution, and recover access if you are locked out.
+---
+
 # Two-Factor Authentication
 
 Registry supports two-factor authentication for users and institutions who want an extra layer of security. Two Factor Authentication is required for institutional administrators in both the production repository and the demo repository, since institutional admins have the ability to delete materials. It is not required for institutional users, however we recommend that all users enable it.

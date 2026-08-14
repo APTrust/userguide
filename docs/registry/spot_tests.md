@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure restoration spot tests in the APTrust Registry to periodically
+  restore a random object and verify you can still use it.
+---
+
 # Configuring Restoration Spot Tests
 
 Restoration spot tests periodically restore a single, random intellectual object to your institution's restoration bucket. When the spot test completes, APTrust sends an email to your institution's users and admins telling them a restored item is available for download.

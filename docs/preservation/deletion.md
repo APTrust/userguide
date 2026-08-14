@@ -1,3 +1,9 @@
+---
+description: >-
+  How to request and confirm deletion of objects and files in APTrust, including
+  the minimum retention period and bulk deletion.
+---
+
 # Deletion
 
 ## The Deletion Process

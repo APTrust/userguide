@@ -1,4 +1,10 @@
-# Partner Tools
+---
+description: >-
+  Deprecated version 2 APTrust partner tools: downloads, command list, and
+  configuration file reference. Use the version 3 tools instead.
+---
+
+# Old Partner Tools
 
 !!! warning
 

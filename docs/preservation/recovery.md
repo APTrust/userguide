@@ -1,3 +1,9 @@
+---
+description: >-
+  How APTrust recovers objects after a failed fixity check, by storage class:
+  High Assurance, Basic Archive, and Deep Archive.
+---
+
 # Recovery
 
 When a fixity check fails, APTrust sends an alert to Institutional Admin users and APTrust Admins. APTrust does **not** have an automated self-healing process for fixity failures. The recovery process depends on the storage class and the location of the affected object.

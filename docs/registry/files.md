@@ -1,3 +1,9 @@
+---
+description: >-
+  List and view generic files in the APTrust Registry, the individual payload
+  and tag files that make up intellectual objects.
+---
+
 # Generic Files
 
 Generic files are the individual files or bitstreams that make up intellectual objects. These may be photos, videos, text documents, XML metadata files exported from your internal repository, etc.

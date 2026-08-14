@@ -1,3 +1,9 @@
+---
+description: >-
+  View and filter PREMIS events in the APTrust Registry, including the object-
+  level and file-level event types APTrust records.
+---
+
 # Premis Events
 
 APTrust records PREMIS events for intellectual objects and generic files. You can view a list of all events related to your instution's objects and files by clicking the __Events__ link under  __More Options__ tab in the left nav.

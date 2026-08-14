@@ -1,3 +1,9 @@
+---
+description: >-
+  What happens when you redeposit a bag with an existing name in APTrust, and
+  how to version bags with a naming convention.
+---
+
 # Updates
 
 APTrust does not version bags. If you want to keep multiple versions of a bag, use a naming convention. For example: `virginia.edu.bag_of_photos`, `virginia.edu.bag_of_photos_V2`, `virginia.edu.bag_of_photos_V3`.

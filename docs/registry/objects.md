@@ -1,3 +1,9 @@
+---
+description: >-
+  Browse, filter, and view intellectual objects in the APTrust Registry,
+  including alternate identifiers and bag group identifiers.
+---
+
 # Intellectual Objects
 
 An intellectual object is a logical collection of files. Registry creates one intellectual object for each tarred bag file you upload to your receiving bucket. Collections spanning multiple bags can be logically linked using the Bag-Group-Identifier in the bag-info.txt file.

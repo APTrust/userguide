@@ -1,3 +1,9 @@
+---
+description: >-
+  Track APTrust work items in the Registry and learn their actions, stages, and
+  statuses to monitor ingests and restorations.
+---
+
 # Work Items
 
 Work items are tasks that APTrust systems perform in response to depositor requests. The Work Items list shows the status of your institution's recent requests. You can view the list by clicking the __Work Items__ link in the left navigation bar.

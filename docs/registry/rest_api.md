@@ -1,3 +1,9 @@
+---
+description: >-
+  Get an API key and connect to the read-only APTrust Registry REST API to query
+  objects, files, PREMIS events, and work items.
+---
+
 # Registry REST API
 
 The Registry REST API enables you to programmatically query information about intellectual objects, files, premis events, and work items.

@@ -1,5 +1,5 @@
 ---
-description: >
+description: >-
   Get started with APTrust: request credentials, configure DART, run your first
   deposit, and navigate the Registry to track your preserved objects.
 ---

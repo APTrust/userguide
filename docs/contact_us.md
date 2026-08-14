@@ -1,3 +1,9 @@
+---
+description: >-
+  Contact APTrust for technical support, account help, and bug reports, or join
+  the community mailing list and Slack channels.
+---
+
 # Contact APTrust
 
 For technical problems and help with your account, contact help@aptrust.org.

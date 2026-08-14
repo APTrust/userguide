@@ -1,3 +1,9 @@
+---
+description: >-
+  Log in to the APTrust Registry demo or production system, and reset your
+  password if you have forgotten it.
+---
+
 # Using Registry
 
 ## Logging In

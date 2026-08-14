@@ -1,3 +1,9 @@
+---
+description: >-
+  Restore intellectual objects and individual files from APTrust, and monitor
+  restoration progress and expected timelines.
+---
+
 # Restoration
 
 ## Restoring Intellectual Objects

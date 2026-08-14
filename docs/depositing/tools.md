@@ -1,3 +1,9 @@
+---
+description: >-
+  Compare bagging tools for APTrust deposits: DART's graphical and command-line
+  interface, the APTrust partner tools, and Python BagIt.
+---
+
 # Bagging Tools
 
 ## DART

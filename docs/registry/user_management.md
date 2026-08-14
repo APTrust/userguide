@@ -1,3 +1,9 @@
+---
+description: >-
+  List, view, edit, and add users at your institution in the APTrust Registry,
+  and reactivate deactivated user accounts.
+---
+
 # User Management
 
 ## Listing Users

@@ -1,3 +1,9 @@
+---
+description: >-
+  Log in to the APTrust demo or production Registry, add users, and make your
+  first deposit with DART, Fedora exports, or the REST API.
+---
+
 # Quick Start
 
 ## Logging In
