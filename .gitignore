@@ -1,5 +1,7 @@
 # emacs
 *~
 site/*
+# generated redirect site (scripts/build_redirects.py)
+build/
 *DS_Store
 .python-version

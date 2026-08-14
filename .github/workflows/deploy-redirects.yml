@@ -1,0 +1,62 @@
+name: Deploy Redirects to GitHub Pages
+
+# The User Guide is no longer published from this repo. It is built by
+# APTrust/aptrust-docs and served at https://docs.aptrust.org/user-guide/.
+#
+# This workflow keeps the old standalone address,
+# https://aptrust.github.io/userguide/, alive as a set of redirects so old
+# bookmarks and inbound links still reach the guide. It regenerates a redirect
+# stub for every page in docs/ and force-publishes the result to gh-pages.
+#
+# Do NOT run `mkdocs gh-deploy` against this repo. It would overwrite gh-pages
+# with a second, competing copy of the guide. This workflow is the only thing
+# that should write to that branch.
+#
+# Branch note: this repo uses 'master' as its default branch. If it is ever
+# renamed to 'main', update the branch name below to match.
+#
+on:
+  push:
+    branches:
+      - master
+  # Lets a maintainer re-publish the redirects from the Actions tab without
+  # having to push a commit.
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    # peaceiris/actions-gh-pages pushes a commit to the gh-pages branch using
+    # GITHUB_TOKEN, which needs write access to repository contents.
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # The generator uses only the standard library, so there is nothing to
+      # install. It writes the complete publish tree to ./build.
+      - name: Generate redirect pages
+        run: python3 scripts/build_redirects.py
+
+      # force_orphan replaces the gh-pages tree outright rather than layering
+      # on top of it. That is what clears out the old mkdocs build, and it keeps
+      # gh-pages from accumulating history for generated files.
+      #
+      # No cname option here: this repo's Pages site is served from
+      # aptrust.github.io/userguide/, with no custom domain to preserve.
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: 'Publish redirects for ${{ github.sha }}'
