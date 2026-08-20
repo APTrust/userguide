@@ -6,7 +6,7 @@ description: >-
 
 # Ingest
 
-!!! notice AWS Credentials required
+!!! note "AWS Credentials Required"
 	Before sending materials to APTrust for ingest, you'll need to get AWS keys that allow you to upload materials to your receiving bucket. If you don't already have these, contact help@aptrust.org to get them. Also keep in mind that you'll have separate AWS keys for the demo and production environments.
 
 You'll also need to know how to produce a valid APTrust bag. If you don't know how to do that yet, see [Bagging (SIP) Requirements](../depositing/index.md) for details, or use [DART](https://aptrust.github.io/dart-docs/dart2/users/getting_started/) to get going quickly.
@@ -30,12 +30,12 @@ __Note:__ Some members have issues using DART to upload large bags (400GB or lar
 
 ## The Ingest Process
 
-!!! warning Delay in ingest
+!!! warning "Delay in Ingest"
 	There can be a delay of up to 15 minutes before the tarred bag shows up in the work item list.
 
 After you upload tarred bag to your receiving bucket, APTrust's ingest process will add it to a list of items waiting to be processed.  You can check the status of your bag in the list of Registry [Work Items](../registry/work_items.md), using the REST API, or using the apt_check_ingest program from the [partner tools](../partner_tools.md). Once your bag is successfully ingested it is automatically deleted from your receiving bucket. If the ingest fails you can see details in Registry.
 
-!!! notice
+!!! note "Failed Bags Automatically Delete"
 	Failed bags stay in your receiving bucket for 30 or 60 days (demo or production) for your review. After that period the bag is automatically deleted.
 
 [![Ingest process on the backend](../img/ingest_userguide_accessible.png)](../img/ingest_userguide_accessible.png)
