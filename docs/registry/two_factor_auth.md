@@ -9,6 +9,9 @@ description: >-
 Registry supports two-factor authentication for users and institutions who want an extra layer of security. Two Factor Authentication is required for institutional administrators in both the production repository and the demo repository, since institutional admins have the ability to delete materials. It is not required for institutional users, however we recommend that all users enable it.
 
 !!! tip
+    The Authy One-Touch push notification method of 2FA has been disabled in the demo environment as of September 3, 2026. It will be disabled on repo.aptrust.org on September 10, 2026. We are no longer supporting this method. We recommend switching your 2FA settings to use an Authenticator App or SMS (codes via text).
+
+!!! tip
     Two-factor settings are separate on the production and demo repositories. Enabling or disabling this feature in the Registry production system has no effect on the demo system and vice-versa. You'll have to set your preferences separately on each system.
 
 
@@ -22,13 +25,13 @@ To enable two-factor authentication for yourself, click the __My Account__ in th
 
 ![Enable two-factor authentication for yourself](../img/registry/MyAccount.png)
 
-Click the __Set Up Two-Factor Auth__ button. Then enter your mobile phone number and choose either Authenticator App, Authy or Text Message.
+Click the __Set Up Two-Factor Auth__ button. Then enter your mobile phone number and choose either Authenticator App or Text Message.
 
 ![Choose two-factor method](../img/registry/TwoFactorMethod.png)
 
 Click __Submit__ when you're done.
 
-Using an Authenticator App will require you to enroll a compatible device, most commonly your phone, in 2FA by scanning a QR code (or entering a setup key) on your authenticator app of choice. Some common authenticator apps include Google Authenticator, Microsoft Authenticator, and the Duo Mobile app. Authy allows you to complete two-factor authentication via push notification, while Text sends a text (SMS) message to your phone with a one-time authentication token.
+Using an Authenticator App will require you to enroll a compatible device, most commonly your phone, in 2FA by scanning a QR code (or entering a setup key) on your authenticator app of choice. Some common authenticator apps include Google Authenticator, Microsoft Authenticator, and the Duo Mobile app. Alternatively, selecting the Text method sends a text (SMS) message to your phone with a one-time authentication token.
 
 Here are some examples of authenticator apps that you can use including documentation of setup, though there are others available.
 
@@ -44,10 +47,6 @@ You should receive a text message or push notification within a minute or so. If
 
 !!! tip
     If you are having trouble verifying with your authenticator app, try ensuring that the device where your authenticator app is running, such as your phone, is synced with the current time. This method of authentication relies on the second factor device being able to know the exact current time. Time zone, however, is not relevant. If you are unsure if your device is synced to the current time, try accessing your device's Date & Time Settings and select Set Automatically if not already chosen. This is the default setting for most devices that are connected to a network. If your device is not connected to a network, or does not connect to a network, you will have to set the device time to the current time manually. Otherwise, your authenticator app may not function correctly.
-
-If you have Authy installed on your phone and you chose to verify via push notification, click the __Approve__ button when the Authy verification request appears.
-
-![Authy request to verify phone number](../img/registry/2fa_authy_app_request_phone_verification.jpg)
 
 #### Generating Backup Codes
 
