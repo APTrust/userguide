@@ -9,10 +9,10 @@ description: >-
 Registry supports two-factor authentication for users and institutions who want an extra layer of security. Two Factor Authentication is required for institutional administrators in both the production repository and the demo repository, since institutional admins have the ability to delete materials. It is not required for institutional users, however we recommend that all users enable it.
 
 !!! tip
-    The Authy One-Touch push notification method of 2FA has been disabled in the demo environment as of September 3, 2026. It will be disabled on repo.aptrust.org on September 10, 2026. We are no longer supporting this method. We recommend switching your 2FA settings to use an Authenticator App or SMS (codes via text).
+    Two-factor settings are separate on the production and demo repositories. Enabling or disabling this feature in the Registry production system has no effect on the demo system and vice-versa. You'll have to set your preferences separately on each system.
 
 !!! tip
-    Two-factor settings are separate on the production and demo repositories. Enabling or disabling this feature in the Registry production system has no effect on the demo system and vice-versa. You'll have to set your preferences separately on each system.
+    The Authy One-Touch push notification method of 2FA has been deprecated in Registry as of September 10, 2026. We are no longer supporting this method. We continue to support Registry 2FA via Authenticator App (such as Google Authenticator, Duo or others) or SMS (codes via text).
 
 
 ## Enabling Two-Factor Authentication
