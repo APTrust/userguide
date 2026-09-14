@@ -31,9 +31,9 @@ __Note:__ Some members have issues using DART to upload large bags (400GB or lar
 ## The Ingest Process
 
 !!! warning "Delay in Ingest"
-	There can be a delay of up to 15 minutes before the tarred bag shows up in the work item list.
+	There can be a delay of up to 15 minutes before the bag shows up in the work item list.
 
-After you upload tarred bag to your receiving bucket, APTrust's ingest process will add it to a list of items waiting to be processed.  You can check the status of your bag in the list of Registry [Work Items](../registry/work_items.md), using the REST API, or using the apt_check_ingest program from the [partner tools](../partner_tools.md). Once your bag is successfully ingested it is automatically deleted from your receiving bucket. If the ingest fails you can see details in Registry.
+After you upload a bag to your receiving bucket, APTrust's ingest process will add it to a list of items waiting to be processed.  You can check the status of your bag in the list of Registry [Work Items](../registry/work_items.md), using the REST API, or using the apt_check_ingest program from the [partner tools](../partner_tools.md). Once your bag is successfully ingested it is automatically deleted from your receiving bucket. If the ingest fails you can see details in Registry.
 
 !!! note "Failed Bags Automatically Delete"
 	Failed bags stay in your receiving bucket for 30 or 60 days (demo or production) for your review. After that period the bag is automatically deleted.
@@ -61,7 +61,7 @@ Smaller bags (those under about 5GB) tend to ingest quickly. Larger bags can tak
 * Materials must be sent in tarred bags.
 * Bag names, and the names of files within bags, may not include control characters (such as backspace, delete, etc.)
 * Maximum bag size on our demo system is 5 GB
-* Maximum bag size on our production system is 5 TB. (This is a [limit set by AWS S3](https://aws.amazon.com/s3/faqs/#:~:text=Individual%20Amazon%20S3%20objects%20can,using%20the%20multipart%20upload%20capability.).)
+* Maximum bag size on our production system is 5 TB.
 
 You can get around the 5TB bag size limit by splitting files and using bag groups and the Bag-Group-Identifier tag. See the [Bagging (SIP) Requirements](../depositing/index.md) for more info.
 
