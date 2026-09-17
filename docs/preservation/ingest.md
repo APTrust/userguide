@@ -38,7 +38,7 @@ After you upload a bag to your receiving bucket, APTrust's ingest process will a
 !!! note "Failed Bags Automatically Delete"
 	Failed bags stay in your receiving bucket for 30 or 60 days (demo or production) for your review. After that period the bag is automatically deleted.
 
-[![Ingest process on the backend](../img/aptrust_ingest_process.png)](../img/ingest_userguide_accessible.png)
+[![Ingest process on the backend](../img/aptrust_ingest_process.png)](../img/aptrust_ingest_process.png)
 
 ??? note "Text description of the ingest process diagram"
     The ingest process consists of eight sequential stages:
