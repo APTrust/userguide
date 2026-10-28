@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page moved &mdash; APTrust User Guide</title>
+<link rel="canonical" href="https://docs.aptrust.org/user-guide/">
+<meta http-equiv="refresh" content="0; url=https://docs.aptrust.org/user-guide/">
+<style>body{font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;line-height:1.5;margin:0;padding:2rem;color:#1a1a1a;background:#fff}main{max-width:40rem;margin:0 auto}h1{font-size:1.5rem}a{color:#0b4f9c}</style>
+</head>
+<body>
+<main>
+<h1>This documentation has moved</h1>
+<p>The APTrust User Guide now lives on APTrust's
+<a href="https://docs.aptrust.org/user-guide/">unified documentation site</a>. You should be redirected
+there automatically.</p>
+<p>If you are not redirected, or if the page you were looking for is no longer
+at the same address, start from the documentation home page and use the search
+or navigation to find what you need:<br>
+<a href="https://docs.aptrust.org/user-guide/">https://docs.aptrust.org/user-guide/</a></p>
+</main>
+<script>
+// GitHub Pages serves this file for any path without a stub of its own: old
+// image URLs, mkdocs asset URLs, and any page removed after the redirect site
+// was last built. The path structure is identical on the new site, so swapping
+// the base prefix is enough.
+(function () {
+  var oldPrefix = "/userguide/";
+  var newBase = "https://docs.aptrust.org/user-guide/";
+  var path = location.pathname;
+  var target = newBase;
+  if (path.indexOf(oldPrefix) === 0) {
+    target = newBase + path.slice(oldPrefix.length);
+  }
+  location.replace(target + location.search + location.hash);
+})();
+</script>
+</body>
+</html>
